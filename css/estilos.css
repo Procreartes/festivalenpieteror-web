@@ -374,3 +374,14 @@ p{margin:0 0 1em}
 .ficha-nav a:hover{color:var(--coral-osc)}
 .ficha-nav svg{width:18px;height:18px}
 @media (max-width:860px){.espectaculo-ficha{grid-template-columns:1fr}}
+
+/* Franja con las fechas de la próxima edición */
+.franja-proxima{background:var(--mostaza);color:var(--noche);border-bottom:2px solid var(--noche);font-size:.98rem}
+.franja-proxima .contenedor{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 18px;padding:9px 0;text-align:center}
+.franja-proxima p{margin:0;display:inline-flex;align-items:center;gap:8px}
+.franja-proxima svg{width:18px;height:18px;flex:none}
+.franja-proxima strong{font-family:var(--f-titulo);font-weight:800}
+.franja-proxima a{color:var(--noche);font-weight:600;display:inline-flex;align-items:center;gap:6px;text-decoration:underline;text-underline-offset:3px}
+.franja-proxima a svg{width:16px;height:16px}
+.franja-proxima a:hover{color:var(--coral-osc)}
+@media (max-width:600px){.franja-proxima{font-size:.86rem}.franja-proxima a,.franja-proxima .ancho{display:none}.franja-proxima .contenedor{padding:7px 0}}

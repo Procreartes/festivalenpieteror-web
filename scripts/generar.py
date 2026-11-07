@@ -78,8 +78,14 @@ def cabecera():
     items = [("/programa", "Programa"), ("/companias", "Compañías"), ("/#video", "Vídeo"), ("/#sostenibilidad", "Sostenibilidad"),
              ("/#teror", "Teror")]
     lis = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in items)
+    prox, ultimo = D.proxima(), D.ultima_con_programa()
+    franja = ""
+    if prox.get("fechas") and prox["anio"] > (ultimo or 0):
+        franja = (f'<div class="franja-proxima"><div class="contenedor"><p>{ICO["cal"]}<span><strong>En Pie {prox["anio"]}</strong>'
+                  f'<span class="ancho">{" · " + esc(prox["numero"]) + " edición" if prox.get("numero") else ""}</span> · <strong>{esc(prox["fechas"])}</strong><span class="ancho"> · Teror</span></span></p>'
+                  f'<a href="/inscripcion">Inscribe tu compañía {ICO["flecha"]}</a></div></div>\n')
     return f'''<a class="saltar" href="#contenido">Saltar al contenido</a>
-<header class="nav">
+{franja}<header class="nav">
   <div class="contenedor">
     <a class="marca" href="/" aria-label="Festival En Pie Teror, ir al inicio"><img src="/img/logos/enpie-color.webp" alt="" width="72" height="44"><small>Festival Internacional de Artes en la Calle</small></a>
     <button class="boton-menu" type="button" aria-controls="menu" aria-expanded="false"><span class="visualmente-oculto">Abrir menú</span>{ICO["menu"]}</button>
@@ -269,8 +275,8 @@ def inicio():
               (ed_ult.get("numero") or str(ultimo), "ediciones del festival"), ("0 €", "todo gratis y en la calle")]
     cifras = "".join(f'<li class="cifra aparece"><strong>{a}</strong><span>{b}</span></li>' for a, b in CIFRAS)
     if prox["anio"] > (ultimo or 0):
-        pildora = f'{prox.get("numero", "")} edición · {prox["anio"]} · {esc(prox.get("fechas") or "Fechas muy pronto")}'.strip(" ·")
-        lema_extra = f'La próxima edición será en {prox["anio"]}. Mientras, revive el programa de {ultimo} y prepara tu propuesta.'
+        pildora = f'{prox.get("numero", "")} edición · {esc(prox.get("fechas") or str(prox["anio"]) + " · Fechas muy pronto")}'.strip(" ·")
+        lema_extra = (f'Vuelve los días {esc(prox["fechas"])}. ' if prox.get("fechas") else f'La próxima edición será en {prox["anio"]}. ') + f'Mientras, revive el programa de {ultimo} y prepara tu propuesta.'
     else:
         pildora = f'{prox.get("numero", "")} edición · {fechas_texto(dias)}'
         lema_extra = "Consulta el programa, filtra por día, espacio o género y monta tu propio itinerario."

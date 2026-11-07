@@ -2,22 +2,25 @@
  {
   "anio": 2024,
   "numero": "XI",
-  "estado": "archivo"
+  "estado": "archivo",
+  "fechas": ""
  },
  {
   "anio": 2025,
   "numero": "XII",
-  "estado": "archivo"
+  "estado": "archivo",
+  "fechas": ""
  },
  {
   "anio": 2026,
   "numero": "XIII",
-  "estado": "archivo"
+  "estado": "archivo",
+  "fechas": ""
  },
  {
   "anio": 2027,
   "numero": "XIV",
   "estado": "proxima",
-  "fechas": ""
+  "fechas": "27, 28 y 29 de agosto de 2027"
  }
 ]
