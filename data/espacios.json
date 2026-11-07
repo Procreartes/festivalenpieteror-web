@@ -43,9 +43,9 @@
   "id": "bulevar",
   "nombre": "Bulevar (Paseo González Díaz)",
   "corto": "Bulevar",
-  "lat": null,
-  "lng": null,
-  "direccion": "Paseo González Díaz, Teror"
+  "lat": 28.0612179,
+  "lng": -15.5464496,
+  "direccion": ""
  },
  {
   "id": "oficinas-municipales",
