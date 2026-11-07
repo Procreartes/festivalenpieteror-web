@@ -6,6 +6,7 @@ Los JSON se editan desde el portal (Programación En Pie) o a mano. Estructura:
   funciones.json   [{id, edicion, inicio "AAAA-MM-DDTHH:MM" (hora de Canarias), espacio, compania, espectaculo, nota}]
   espacios.json    [{id, nombre, corto, lat, lng, direccion}]
   ediciones.json   [{anio, numero, estado: archivo|programada|proxima, fechas (texto libre, opcional)}]
+                   «proxima» = se anuncia en portada pero su programa es borrador (no se publica)
 """
 import json
 import pathlib
@@ -40,7 +41,11 @@ class Datos:
         self.por_compania = {c["id"]: c for c in self.companias}
         self.por_espacio = {e["id"]: e for e in self.espacios}
         self.funciones = []
+        # Una edición «proxima» es un borrador: su programa no se publica hasta pasarla a «programada»
+        borrador = {e["anio"] for e in self.ediciones if e.get("estado") == "proxima"}
         for f in _cargar("funciones.json", []):
+            if f.get("edicion") in borrador:
+                continue
             c = self.por_compania.get(f["compania"])
             if not c:
                 continue

@@ -11,16 +11,27 @@ cambia de estado. La persona de contacto entra sola en Contactos → Personas, s
 La edición a la que se apuntan (2027) y abrir o cerrar la convocatoria se cambian en el portal (`ENPIE_EDICION`,
 `ENPIE_INSCRIPCIONES`); el año que se ve en la web, en `EDICION_CONVOCATORIA` de `scripts/generar.py`.
 
-## Cambiar contenidos
+## Programa, compañías y archivo
 
-Todo está en `scripts/generar.py` (compañías, cifras, espacios, colaboradores, textos y legales).
-Después de editar, ejecuta `python3 scripts/generar.py` y sube los cambios. No edites los `.html` a mano.
-Imágenes de compañías: `img/companias/NOMBRE-400.webp` y `NOMBRE-800.webp` (cuadradas).
+Compañías, espectáculos, funciones, espacios y ediciones viven en `data/*.json` (se importaron de Wix con
+`scripts/importar_wix.py`: ediciones 2024, 2025 y 2026). Se editan desde **Portal → Gestor de webs → Festival En Pie Teror →
+Programación y compañías** (funciones a mano o importadas de un CSV, fichas, fotos, espacios y ediciones) y se publican
+en un único commit. Salen en la web:
 
-## Imágenes
+- `/programa` (última edición publicada) y `/programa/AAAA`: filtros por día, espacio, compañía y género, y
+  **Mi itinerario** (estrellas, aviso de solapes, compartir por enlace y descargar al calendario). Se guarda en el navegador.
+- `/companias`: archivo de todas las compañías por año y género. `/companias/NOMBRE`: ficha con textos, vídeo y funciones.
+- Las fichas antiguas de Wix (`/companias/...`) redirigen a las nuevas (`data/redirecciones-wix.json`).
 
-Se trajeron de Wix con la acción **Traer imágenes de Wix** (`.github/workflows/imagenes-wix.yml`), que las descarga y
-guarda en WebP, junto al programa 2026 en PDF (`programa/`).
+Ediciones: **próxima** = se anuncia en portada y su programa es borrador; **programada** = el programa sale en la web;
+**archivo** = ya pasó. Las horas son las reales de Canarias; lo que empieza antes de las 6:00 sale en la noche anterior.
+
+## Cómo se publica
+
+La acción **Publicar la web** (`.github/workflows/publicar.yml`) se lanza al cambiar `data/`, `scripts/` o fotos de
+compañías: trae de Wix las fotos que falten, ejecuta `python3 scripts/generar.py` y sube las páginas; Cloudflare publica.
+Textos fijos, colaboradores y legales están en `scripts/generar.py`. No edites los `.html` a mano.
+Fotos: `img/companias/ID-400|800.webp` y, si un espectáculo tiene la suya, `img/espectaculos/ID--ESPECTACULO-400|800.webp`.
 
 ## Qué incluye
 
