@@ -98,7 +98,7 @@ def cabecera():
   <div class="contenedor">
     <a class="marca" href="/" aria-label="Festival En Pie Teror, ir al inicio"><img src="/img/logos/enpie-color.webp" alt="" width="72" height="44"><small>Festival Internacional de Artes en la Calle</small></a>
     <button class="boton-menu" type="button" aria-controls="menu" aria-expanded="false"><span class="visualmente-oculto">Abrir menú</span>{ICO["menu"]}</button>
-    <ul class="menu" id="menu">{lis}<li class="cta"><a href="/#inscripcion">Inscribe tu compañía</a></li></ul>
+    <ul class="menu" id="menu">{lis}<li class="cta"><a href="/inscripcion">Inscribe tu compañía</a></li></ul>
   </div>
 </header>'''
 
@@ -286,7 +286,7 @@ def inicio():
     <h1 class="titular" id="titulo-portada">Teror se pone <em>en pie</em></h1>
     <p class="portada-lema">Festival Internacional de Artes en la Calle. Circo, clown, teatro de calle, danza y música por las plazas y rincones del casco de Teror, en Gran Canaria. Gratis y para todos los públicos.</p>
     <div class="botones">
-      <a class="boton boton-coral" href="#inscripcion">Inscribe tu compañía · {EDICION_CONVOCATORIA} {ICO["flecha"]}</a>
+      <a class="boton boton-coral" href="/inscripcion">Inscribe tu compañía · {EDICION_CONVOCATORIA} {ICO["flecha"]}</a>
       <a class="boton boton-claro" href="#companias">Compañías 2026</a>
       <a class="boton boton-claro" href="#video">{ICO["play"]} Ver el vídeo</a>
     </div>
@@ -342,17 +342,17 @@ def inicio():
   </div>
 </section>
 
-<section class="seccion convocatoria" id="inscripcion" aria-labelledby="titulo-inscripcion">
-  <div class="contenedor">
-    <div class="cabecera aparece"><span class="antetitulo">Convocatoria {EDICION_CONVOCATORIA} · abierta</span>
-      <h2 id="titulo-inscripcion">¿Quieres actuar en En Pie {EDICION_CONVOCATORIA}?</h2>
-      <p>Buscamos compañías y artistas de circo, clown, teatro de calle, danza, música y espectáculos itinerantes para la próxima edición. Cuéntanos tu propuesta: tarda unos 10 minutos y se guarda sola en tu navegador por si lo dejas a medias.</p></div>
-    <ol class="pasos aparece">
-      <li><strong>Rellena la ficha</strong> con tu espectáculo y un enlace al vídeo.</li>
+<section class="seccion convocatoria" id="convocatoria" aria-labelledby="titulo-convocatoria">
+  <div class="contenedor dos-col">
+    <div class="aparece"><span class="antetitulo">Convocatoria {EDICION_CONVOCATORIA} · abierta</span>
+      <h2 id="titulo-convocatoria" style="font-size:clamp(2.3rem,5.6vw,4rem)">¿Quieres actuar en En Pie {EDICION_CONVOCATORIA}?</h2>
+      <p style="font-size:1.15rem">Buscamos compañías y artistas de circo, clown, teatro de calle, danza, música y espectáculos itinerantes para la próxima edición.</p>
+      <div class="botones"><a class="boton boton-coral" href="/inscripcion">Inscribe tu compañía {ICO["flecha"]}</a></div></div>
+    <ol class="pasos aparece" style="grid-template-columns:1fr;margin:0">
+      <li><strong>Rellena la ficha</strong> con tu espectáculo y un enlace al vídeo. Tarda unos 10 minutos.</li>
       <li><strong>La revisamos</strong>: el equipo del festival valora todas las propuestas.</li>
       <li><strong>Te llamamos</strong> si tu espectáculo encaja en la programación.</li>
     </ol>
-    {formulario()}
   </div>
 </section>
 
@@ -450,8 +450,35 @@ def no_encontrada():
     cuerpo = f'''<section class="seccion oscuro" style="min-height:62vh"><div class="contenedor">
       <span class="antetitulo">Error 404</span><h1 style="font-size:clamp(2.6rem,6vw,4.4rem)">Este espectáculo se ha ido de gira</h1>
       <p>La página que busca no existe o ha cambiado con la nueva web.</p>
-      <div class="botones"><a class="boton boton-coral" href="/">Volver al inicio {ICO["flecha"]}</a><a class="boton boton-claro" href="/#inscripcion">Inscribe tu compañía</a></div></div></section>'''
+      <div class="botones"><a class="boton boton-coral" href="/">Volver al inicio {ICO["flecha"]}</a><a class="boton boton-claro" href="/inscripcion">Inscribe tu compañía</a></div></div></section>'''
     return pagina("Página no encontrada · Festival En Pie Teror", "La página que busca no existe.", "/404.html", cuerpo)
+
+
+def pagina_inscripcion():
+    cuerpo = f'''
+<section class="portada portada-corta" aria-labelledby="titulo-inscripcion">
+  <figure class="portada-foto">{img("img/fotos/puja-asteroide", "", [900, 1600], "100vw", carga="eager", prioridad=True)}</figure>
+  <div class="contenedor">
+    <p class="pildora">Convocatoria {EDICION_CONVOCATORIA} · abierta</p>
+    <h1 class="titular" id="titulo-inscripcion" style="max-width:14ch">Inscribe tu compañía en En Pie {EDICION_CONVOCATORIA}</h1>
+    <p class="portada-lema">Circo, clown, teatro de calle, danza, música y espectáculos itinerantes. Tarda unos 10 minutos y lo que escribas se guarda en tu navegador por si lo dejas a medias.</p>
+  </div>
+  {ONDA}
+</section>
+<section class="seccion" aria-label="Formulario de inscripción">
+  <div class="contenedor" style="max-width:980px">
+    <ol class="pasos aparece">
+      <li><strong>Rellena la ficha</strong> con tu espectáculo y un enlace al vídeo.</li>
+      <li><strong>La revisamos</strong>: el equipo del festival valora todas las propuestas.</li>
+      <li><strong>Te llamamos</strong> si tu espectáculo encaja en la programación.</li>
+    </ol>
+    {formulario()}
+    <p style="margin-top:28px"><a href="/">← Volver al festival</a></p>
+  </div>
+</section>'''
+    return pagina(f"Inscripción de compañías {EDICION_CONVOCATORIA} · Festival En Pie Teror",
+                  f"Convocatoria abierta para compañías y artistas de artes de calle: preséntate al Festival En Pie Teror {EDICION_CONVOCATORIA} (Gran Canaria).",
+                  "/inscripcion", cuerpo)
 
 
 def escribir(ruta, texto):
@@ -462,11 +489,12 @@ def escribir(ruta, texto):
 
 def main():
     escribir("index.html", inicio())
+    escribir("inscripcion.html", pagina_inscripcion())
     escribir("aviso-legal.html", legal("aviso-legal", "Aviso legal", "Aviso legal de la web del Festival En Pie Teror: datos del titular, el Ayuntamiento de Teror.", AVISO))
     escribir("privacidad.html", legal("privacidad", "Política de privacidad", "Cómo trata el Ayuntamiento de Teror los datos de las inscripciones de compañías y de los correos.", PRIVACIDAD))
     escribir("cookies.html", legal("cookies", "Política de cookies", "Uso de cookies en la web del Festival En Pie Teror.", COOKIES))
     escribir("404.html", no_encontrada())
-    urls = ["/", "/aviso-legal.html", "/privacidad.html", "/cookies.html"]
+    urls = ["/", "/inscripcion", "/aviso-legal.html", "/privacidad.html", "/cookies.html"]
     escribir("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
              + "\n".join(f"  <url><loc>{DOMINIO}{u}</loc></url>" for u in urls) + "\n</urlset>\n")
     escribir("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {DOMINIO}/sitemap.xml\n")

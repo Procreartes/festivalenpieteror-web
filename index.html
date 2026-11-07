@@ -29,7 +29,7 @@
   <div class="contenedor">
     <a class="marca" href="/" aria-label="Festival En Pie Teror, ir al inicio"><img src="/img/logos/enpie-color.webp" alt="" width="72" height="44"><small>Festival Internacional de Artes en la Calle</small></a>
     <button class="boton-menu" type="button" aria-controls="menu" aria-expanded="false"><span class="visualmente-oculto">Abrir menú</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-    <ul class="menu" id="menu"><li><a href="/#companias">Compañías 2026</a></li><li><a href="/#video">Vídeo</a></li><li><a href="/#espacios">Espacios</a></li><li><a href="/#sostenibilidad">Sostenibilidad</a></li><li><a href="/#teror">Teror</a></li><li class="cta"><a href="/#inscripcion">Inscribe tu compañía</a></li></ul>
+    <ul class="menu" id="menu"><li><a href="/#companias">Compañías 2026</a></li><li><a href="/#video">Vídeo</a></li><li><a href="/#espacios">Espacios</a></li><li><a href="/#sostenibilidad">Sostenibilidad</a></li><li><a href="/#teror">Teror</a></li><li class="cta"><a href="/inscripcion">Inscribe tu compañía</a></li></ul>
   </div>
 </header>
 <main id="contenido">
@@ -42,7 +42,7 @@
     <h1 class="titular" id="titulo-portada">Teror se pone <em>en pie</em></h1>
     <p class="portada-lema">Festival Internacional de Artes en la Calle. Circo, clown, teatro de calle, danza y música por las plazas y rincones del casco de Teror, en Gran Canaria. Gratis y para todos los públicos.</p>
     <div class="botones">
-      <a class="boton boton-coral" href="#inscripcion">Inscribe tu compañía · 2027 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="boton boton-coral" href="/inscripcion">Inscribe tu compañía · 2027 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="boton boton-claro" href="#companias">Compañías 2026</a>
       <a class="boton boton-claro" href="#video"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg> Ver el vídeo</a>
     </div>
@@ -144,94 +144,17 @@
   </div>
 </section>
 
-<section class="seccion convocatoria" id="inscripcion" aria-labelledby="titulo-inscripcion">
-  <div class="contenedor">
-    <div class="cabecera aparece"><span class="antetitulo">Convocatoria 2027 · abierta</span>
-      <h2 id="titulo-inscripcion">¿Quieres actuar en En Pie 2027?</h2>
-      <p>Buscamos compañías y artistas de circo, clown, teatro de calle, danza, música y espectáculos itinerantes para la próxima edición. Cuéntanos tu propuesta: tarda unos 10 minutos y se guarda sola en tu navegador por si lo dejas a medias.</p></div>
-    <ol class="pasos aparece">
-      <li><strong>Rellena la ficha</strong> con tu espectáculo y un enlace al vídeo.</li>
+<section class="seccion convocatoria" id="convocatoria" aria-labelledby="titulo-convocatoria">
+  <div class="contenedor dos-col">
+    <div class="aparece"><span class="antetitulo">Convocatoria 2027 · abierta</span>
+      <h2 id="titulo-convocatoria" style="font-size:clamp(2.3rem,5.6vw,4rem)">¿Quieres actuar en En Pie 2027?</h2>
+      <p style="font-size:1.15rem">Buscamos compañías y artistas de circo, clown, teatro de calle, danza, música y espectáculos itinerantes para la próxima edición.</p>
+      <div class="botones"><a class="boton boton-coral" href="/inscripcion">Inscribe tu compañía <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+    <ol class="pasos aparece" style="grid-template-columns:1fr;margin:0">
+      <li><strong>Rellena la ficha</strong> con tu espectáculo y un enlace al vídeo. Tarda unos 10 minutos.</li>
       <li><strong>La revisamos</strong>: el equipo del festival valora todas las propuestas.</li>
       <li><strong>Te llamamos</strong> si tu espectáculo encaja en la programación.</li>
     </ol>
-    <form id="form-inscripcion" class="formulario aparece" action="https://portal.grupolivon.com/publico/inscripciones/enpie" method="post" novalidate>
-  <fieldset><legend><span class="num">1</span> La compañía</legend>
-    <div class="campos">
-      <div class="campo ancho"><label for="f-compania">Nombre artístico, grupo o compañía <span class="req">*</span></label><input id="f-compania" name="compania" type="text" required></div>
-      <div class="campo"><label for="f-procedencia">Procedencia <span class="req">*</span></label><input id="f-procedencia" name="procedencia" type="text" required><small>Comunidad autónoma o país (y la isla, si es de Canarias).</small></div>
-      <div class="campo"><label for="f-municipio">Municipio</label><input id="f-municipio" name="municipio" type="text"></div>
-      <div class="campo"><label for="f-web">Web</label><input id="f-web" name="web" type="url" placeholder="https://"></div>
-      <div class="campo"><label for="f-instagram">Instagram</label><input id="f-instagram" name="instagram" type="text" placeholder="@compania"></div>
-      <div class="campo"><label for="f-otras_redes">Otras redes o enlaces</label><input id="f-otras_redes" name="otras_redes" type="text"></div>
-      <div class="campo"><label for="f-cif">CIF / NIF de quien factura</label><input id="f-cif" name="cif" type="text"><small>Si ya lo tienes claro. Se pedirá al contratar.</small></div>
-    </div></fieldset>
-  <fieldset><legend><span class="num">2</span> Persona de contacto</legend>
-    <div class="campos">
-      <div class="campo"><label for="f-contacto">Nombre y apellidos <span class="req">*</span></label><input id="f-contacto" name="contacto" type="text" required></div>
-      <div class="campo"><label for="f-cargo">Qué haces en la compañía</label><input id="f-cargo" name="cargo" type="text" placeholder="Distribución, dirección, artista…"></div>
-      <div class="campo"><label for="f-email">Correo electrónico <span class="req">*</span></label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
-      <div class="campo"><label for="f-telefono">Teléfono (mejor móvil con WhatsApp) <span class="req">*</span></label><input id="f-telefono" name="telefono" type="tel" required autocomplete="tel" minlength="9" inputmode="tel"></div>
-    </div></fieldset>
-  <fieldset><legend><span class="num">3</span> Tu espectáculo</legend>
-    <p class="ayuda">Puedes presentar hasta dos espectáculos.</p>
-    <div class="espectaculo-bloque"><div class="campos">
-      <div class="campo ancho"><label for="f-titulo">Título del espectáculo <span class="req">*</span></label><input id="f-titulo" name="titulo" type="text" required></div>
-      <div class="campo ancho"><label>Disciplinas <span class="req">*</span></label>
-        <div class="chips" data-max="4" data-grupo="disciplinas" tabindex="-1"><label><input type="checkbox" name="disciplinas" value="Circo"><span>Circo</span></label><label><input type="checkbox" name="disciplinas" value="Clown"><span>Clown</span></label><label><input type="checkbox" name="disciplinas" value="Teatro de calle"><span>Teatro de calle</span></label><label><input type="checkbox" name="disciplinas" value="Teatro gestual"><span>Teatro gestual</span></label><label><input type="checkbox" name="disciplinas" value="Humor"><span>Humor</span></label><label><input type="checkbox" name="disciplinas" value="Danza"><span>Danza</span></label><label><input type="checkbox" name="disciplinas" value="Acrobacia"><span>Acrobacia</span></label><label><input type="checkbox" name="disciplinas" value="Aéreos"><span>Aéreos</span></label><label><input type="checkbox" name="disciplinas" value="Malabares"><span>Malabares</span></label><label><input type="checkbox" name="disciplinas" value="Magia"><span>Magia</span></label><label><input type="checkbox" name="disciplinas" value="Títeres"><span>Títeres</span></label><label><input type="checkbox" name="disciplinas" value="Música"><span>Música</span></label><label><input type="checkbox" name="disciplinas" value="Pasacalles"><span>Pasacalles</span></label><label><input type="checkbox" name="disciplinas" value="Itinerante"><span>Itinerante</span></label><label><input type="checkbox" name="disciplinas" value="Instalación"><span>Instalación</span></label><label><input type="checkbox" name="disciplinas" value="Público familiar"><span>Público familiar</span></label></div>
-        <small>Elige hasta 4. Si no está la tuya, escríbela abajo.</small>
-        <input name="disciplinas_otra" type="text" placeholder="Otra disciplina" style="margin-top:8px" aria-label="Otra disciplina"></div>
-      <div class="campo"><label for="f-edad">Edad recomendada <span class="req">*</span></label><select id="f-edad" name="edad" required><option value="">Elige…</option><option>Todos los públicos</option><option>+3</option><option>+6</option><option>+9</option><option>+12</option><option>+16</option><option>+18</option></select></div>
-      <div class="campo"><label for="f-duracion">Duración (minutos) <span class="req">*</span></label><input id="f-duracion" name="duracion" type="number" required min="5" max="300" inputmode="numeric"></div>
-      <div class="campo"><label for="f-formato">Formato <span class="req">*</span></label><select id="f-formato" name="formato" required><option value="">Elige…</option><option>Fijo (en un espacio)</option><option>Itinerante</option><option>Fijo o itinerante</option><option>Espacio no convencional</option></select></div>
-      <div class="campo"><label for="f-personas">Personas en gira <span class="req">*</span></label><input id="f-personas" name="personas" type="number" required min="1" max="60" inputmode="numeric"><small>Artistas y técnicos que viajan.</small></div>
-      <div class="campo ancho"><label for="f-sinopsis">Sinopsis: qué cuenta el espectáculo <span class="req">*</span></label><textarea id="f-sinopsis" name="sinopsis" required></textarea></div>
-      <div class="campo ancho"><label for="f-descripcion">Descripción: qué va a ver el público <span class="req">*</span></label><textarea id="f-descripcion" name="descripcion" required></textarea></div>
-      <div class="campo ancho"><label for="f-prensa">El espectáculo en dos frases (para prensa) <span class="req">*</span></label><textarea id="f-prensa" name="prensa" required maxlength="600" style="min-height:80px"></textarea></div>
-      <div class="campo"><label for="f-video">Enlace al vídeo <span class="req">*</span></label><input id="f-video" name="video" type="url" required placeholder="https://"><small>YouTube o Vimeo. Si es privado, incluye la contraseña en observaciones.</small></div>
-      <div class="campo"><label for="f-materiales">Enlace a fotos, dosier y rider técnico</label><input id="f-materiales" name="materiales" type="url" placeholder="https://"><small>Carpeta de Drive, Dropbox o WeTransfer. Fotos en alta calidad y sin texto.</small></div>
-      <div class="campo"><label for="f-espacio">Espacio que necesitas</label><input id="f-espacio" name="espacio" type="text"><small>Superficie, tipo de suelo, altura, anclajes…</small></div>
-      <div class="campo"><label for="f-estreno">Año de estreno</label><input id="f-estreno" name="estreno" type="number" min="1980" max="2030" inputmode="numeric"></div>
-      <div class="campo ancho"><label for="f-tecnica">Necesidades técnicas (sonido, luz, toma de corriente…)</label><textarea id="f-tecnica" name="tecnica" style="min-height:80px"></textarea></div>
-    </div></div>
-    <div class="espectaculo-bloque" id="espectaculo-2" hidden><h3>Segundo espectáculo <button type="button" class="quitar" id="quitar-espectaculo">Quitar</button></h3><div class="campos">
-      <div class="campo ancho"><label for="f-titulo2">Título del espectáculo <span class="req">*</span></label><input id="f-titulo2" name="titulo2" type="text" data-req2></div>
-      <div class="campo ancho"><label>Disciplinas <span class="req">*</span></label>
-        <div class="chips" data-max="4" data-grupo="disciplinas2" tabindex="-1"><label><input type="checkbox" name="disciplinas2" value="Circo"><span>Circo</span></label><label><input type="checkbox" name="disciplinas2" value="Clown"><span>Clown</span></label><label><input type="checkbox" name="disciplinas2" value="Teatro de calle"><span>Teatro de calle</span></label><label><input type="checkbox" name="disciplinas2" value="Teatro gestual"><span>Teatro gestual</span></label><label><input type="checkbox" name="disciplinas2" value="Humor"><span>Humor</span></label><label><input type="checkbox" name="disciplinas2" value="Danza"><span>Danza</span></label><label><input type="checkbox" name="disciplinas2" value="Acrobacia"><span>Acrobacia</span></label><label><input type="checkbox" name="disciplinas2" value="Aéreos"><span>Aéreos</span></label><label><input type="checkbox" name="disciplinas2" value="Malabares"><span>Malabares</span></label><label><input type="checkbox" name="disciplinas2" value="Magia"><span>Magia</span></label><label><input type="checkbox" name="disciplinas2" value="Títeres"><span>Títeres</span></label><label><input type="checkbox" name="disciplinas2" value="Música"><span>Música</span></label><label><input type="checkbox" name="disciplinas2" value="Pasacalles"><span>Pasacalles</span></label><label><input type="checkbox" name="disciplinas2" value="Itinerante"><span>Itinerante</span></label><label><input type="checkbox" name="disciplinas2" value="Instalación"><span>Instalación</span></label><label><input type="checkbox" name="disciplinas2" value="Público familiar"><span>Público familiar</span></label></div>
-        <small>Elige hasta 4. Si no está la tuya, escríbela abajo.</small>
-        <input name="disciplinas_otra2" type="text" placeholder="Otra disciplina" style="margin-top:8px" aria-label="Otra disciplina"></div>
-      <div class="campo"><label for="f-edad2">Edad recomendada <span class="req">*</span></label><select id="f-edad2" name="edad2" data-req2><option value="">Elige…</option><option>Todos los públicos</option><option>+3</option><option>+6</option><option>+9</option><option>+12</option><option>+16</option><option>+18</option></select></div>
-      <div class="campo"><label for="f-duracion2">Duración (minutos) <span class="req">*</span></label><input id="f-duracion2" name="duracion2" type="number" data-req2 min="5" max="300" inputmode="numeric"></div>
-      <div class="campo"><label for="f-formato2">Formato <span class="req">*</span></label><select id="f-formato2" name="formato2" data-req2><option value="">Elige…</option><option>Fijo (en un espacio)</option><option>Itinerante</option><option>Fijo o itinerante</option><option>Espacio no convencional</option></select></div>
-      <div class="campo"><label for="f-personas2">Personas en gira <span class="req">*</span></label><input id="f-personas2" name="personas2" type="number" data-req2 min="1" max="60" inputmode="numeric"><small>Artistas y técnicos que viajan.</small></div>
-      <div class="campo ancho"><label for="f-sinopsis2">Sinopsis: qué cuenta el espectáculo <span class="req">*</span></label><textarea id="f-sinopsis2" name="sinopsis2" data-req2></textarea></div>
-      <div class="campo ancho"><label for="f-descripcion2">Descripción: qué va a ver el público <span class="req">*</span></label><textarea id="f-descripcion2" name="descripcion2" data-req2></textarea></div>
-      <div class="campo ancho"><label for="f-prensa2">El espectáculo en dos frases (para prensa) <span class="req">*</span></label><textarea id="f-prensa2" name="prensa2" data-req2 maxlength="600" style="min-height:80px"></textarea></div>
-      <div class="campo"><label for="f-video2">Enlace al vídeo <span class="req">*</span></label><input id="f-video2" name="video2" type="url" data-req2 placeholder="https://"><small>YouTube o Vimeo. Si es privado, incluye la contraseña en observaciones.</small></div>
-      <div class="campo"><label for="f-materiales2">Enlace a fotos, dosier y rider técnico</label><input id="f-materiales2" name="materiales2" type="url" placeholder="https://"><small>Carpeta de Drive, Dropbox o WeTransfer. Fotos en alta calidad y sin texto.</small></div>
-      <div class="campo"><label for="f-espacio2">Espacio que necesitas</label><input id="f-espacio2" name="espacio2" type="text"><small>Superficie, tipo de suelo, altura, anclajes…</small></div>
-      <div class="campo"><label for="f-estreno2">Año de estreno</label><input id="f-estreno2" name="estreno2" type="number" min="1980" max="2030" inputmode="numeric"></div>
-      <div class="campo ancho"><label for="f-tecnica2">Necesidades técnicas (sonido, luz, toma de corriente…)</label><textarea id="f-tecnica2" name="tecnica2" style="min-height:80px"></textarea></div>
-    </div></div>
-    <button type="button" class="boton boton-tinta" id="anadir-espectaculo">+ Añadir otro espectáculo</button>
-  </fieldset>
-  <fieldset><legend><span class="num">4</span> Equipo y caché</legend>
-    <div class="campos">
-      <div class="campo ancho"><label for="f-miembros">Miembros de la compañía</label><textarea id="f-miembros" name="miembros"></textarea><small>Nombre y función de quienes vendrían (artistas, técnicos…). No pongas DNI ni datos de salud: los pediremos solo si se contrata.</small></div>
-      <div class="campo"><label for="f-cache">Caché orientativo</label><input id="f-cache" name="cache" type="text"><small>Por función y, si quieres, por dos funciones. Indica si incluye IGIC/IVA.</small></div>
-      <div class="campo ancho"><label for="f-observaciones">Observaciones</label><textarea id="f-observaciones" name="observaciones"></textarea><small>Cualquier otra cosa que debamos saber: disponibilidad, giras, idiomas, accesibilidad…</small></div>
-    </div></fieldset>
-  <fieldset><legend><span class="num">5</span> Privacidad</legend>
-    <label class="casilla"><input type="checkbox" name="privacidad" required> <span>He leído la <a href="/privacidad.html" target="_blank">política de privacidad</a> y acepto que el Ayuntamiento de Teror trate estos datos para valorar la propuesta y contactar con la compañía. <span class="req">*</span></span></label>
-    <label class="casilla"><input type="checkbox" name="comunicaciones"> <span>Quiero recibir por correo las próximas convocatorias del festival (puedes darte de baja cuando quieras).</span></label>
-  </fieldset>
-  <div class="trampa" aria-hidden="true"><label>No rellenes este campo <input type="text" name="web_empresa" tabindex="-1" autocomplete="off"></label></div>
-  <div class="envio"><button class="boton boton-coral" type="submit">Enviar inscripción <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><span class="estado-envio" role="status" aria-live="polite"></span></div>
-</form>
-<div id="gracias" class="formulario gracias" hidden>
-  <h3>¡Inscripción recibida!</h3>
-  <p>Gracias por querer venir a Teror. El equipo del festival revisa todas las propuestas y se pondrá en contacto con las compañías seleccionadas.</p>
-  <span class="ref"></span>
-</div>
   </div>
 </section>
 
