@@ -334,7 +334,7 @@ def inicio():
 
 <section class="seccion" id="espacios" aria-labelledby="titulo-espacios">
   <div class="contenedor dos-col">
-    <figure class="foto-marco aparece">{img("img/fotos/sacude", "Espectáculo del festival ante el público en una calle de Teror", [1200, 2400], "(max-width:900px) 100vw, 560px")}</figure>
+    <figure class="foto-marco aparece">{img("img/fotos/sacude", "Artista aérea suspendida en el aire durante una función del festival", [1200, 2400], "(max-width:900px) 100vw, 560px")}</figure>
     <div class="aparece"><span class="antetitulo">Un pueblo convertido en escenario</span>
       <h2 id="titulo-espacios" style="font-size:clamp(2.3rem,5vw,3.6rem)">Ocho espacios, cientos de miradas</h2>
       <p>En En Pie el teatro sale a buscarte: las funciones se reparten por las plazas y calles del casco histórico, y algunas no se están quietas.</p>
@@ -372,7 +372,7 @@ def inicio():
       <p>Teror combina historia, arquitectura tradicional y naturaleza a pocos minutos de Las Palmas de Gran Canaria. La Basílica de Nuestra Señora del Pino, sus calles de balcones canarios, sus montañas y su mercado hacen de la Villa el escenario perfecto para un festival de calle.</p>
       <div class="enlaces"><a class="boton boton-turquesa" href="https://turismo.teror.es/" rel="noopener">Turismo de Teror {ICO["flecha"]}</a>
         <a class="boton boton-turquesa" href="https://www.holaislascanarias.com/" rel="noopener">Islas Canarias {ICO["flecha"]}</a></div></div>
-    <figure class="foto-marco aparece">{img("img/fotos/valla-2026", "Cartel del XIII Festival En Pie Teror en una valla de la carretera", [840], "(max-width:900px) 100vw, 560px")}</figure>
+    <figure class="foto-marco aparece">{img("img/fotos/teror", "Calle del casco histórico de Teror", [800, 1400], "(max-width:900px) 100vw, 560px")}</figure>
   </div>
 </section>
 
