@@ -456,7 +456,7 @@ def pagina_programa(anio, ruta, canonica):
     gen = "".join(f'<button type="button" class="filtro filtro-genero" data-genero="{k}" aria-pressed="false">{t}</button>' for k, t in GENEROS if k in usados)
     anios = "".join(f'<a href="/programa/{a}"{" aria-current=\"page\"" if a == anio else ""}>{a}</a>' for a in D.anios_con_programa())
     mapa = "".join(f'''<li><strong>{esc(e["nombre"])}</strong>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query={f'{e["lat"]},{e["lng"]}' if e.get("lat") else esc(e["direccion"]).replace(" ", "+")}" rel="noopener">Cómo llegar {ICO["flecha"]}</a></li>''' for e in espacios if e["id"] != "itinerante")
+      <a href="https://www.google.com/maps/search/?api=1&amp;query={f'{e["lat"]},{e["lng"]}' if e.get("lat") else esc(e.get("direccion") or e["nombre"] + ", Teror").replace(" ", "+")}" rel="noopener">Cómo llegar {ICO["flecha"]}</a></li>''' for e in espacios if e["id"] != "itinerante")
     titulo = f"Programa {anio}"
     cuerpo = f'''
 <section class="portada portada-corta portada-programa" aria-labelledby="titulo-programa">
