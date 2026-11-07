@@ -1,0 +1,9 @@
+# Direcciones de la antigua web de Wix
+/general-6 /#teror 301
+/s-projects-side-by-side /#companias 301
+/compania-galeria /#companias 301
+/companias/* /#companias 301
+/events/* /#companias 301
+/_files/ugd/* /programa/programa-en-pie-teror-2026.pdf 301
+/pol* /privacidad.html 301
+/t*rminos-y-condiciones /aviso-legal.html 301
