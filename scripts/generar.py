@@ -2,17 +2,22 @@
 """Genera las páginas HTML de la web del Festival En Pie Teror.
 
 Uso:  python3 scripts/generar.py
-Los datos (compañías, cifras, espacios, colaboradores) están arriba de este fichero.
+Compañías, espectáculos, funciones, espacios y ediciones salen de data/*.json (se editan desde el portal).
+Textos fijos y colaboradores están en este fichero.
 No edites los .html a mano: se sobrescriben.
 """
 import html
 import json
+import unicodedata
 import pathlib
 import sys
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RAIZ / "scripts"))
 from iconos import ICO  # noqa: E402
+from datos import DIAS_CORTOS, GENEROS, NOMBRE_GENERO, Datos, fecha_larga, fechas_texto  # noqa: E402
+
+D = Datos()
 
 DOMINIO = "https://festivalenpieteror.com"
 FORMULARIO = "https://portal.grupolivon.com/publico/inscripciones/enpie"
@@ -25,38 +30,13 @@ ICO["yt"] = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><pa
 ICO["play"] = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>'
 ICO["pdf"] = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M12 12v6M9 15l3 3 3-3"/></svg>'
 
-# (slug de imagen, compañía, espectáculo, disciplina tal como venía, filtros)
-COMPANIAS = [
-    ("collectif-bislacco", "Collectif Bislacco", "Smooth as Fiasco", "Circo caótico y musical", "circo musica"),
-    ("grupo-puja", "Grupo Puja", "Verne", "Teatro, danza y circo aéreo", "teatro circo"),
-    ("la-cote-folle", "La Côte Folle", "Entre Bous i Vaques", "Circo, portés, funambulismo y danza", "circo teatro"),
-    ("pere-hosta", "Pere Hosta", "Woof", "Clown, humor e impro", "humor"),
-    ("jesus-soria", "Jesús Soria", "Hablo más que salto", "Comedia y acrobacia", "humor circo"),
-    ("joe-farnarier", "Joe Farnarier", "Invisible", "Danza, teatro y acrobacia", "teatro circo"),
-    ("trocos-lucos", "Trocos Lucos", "Tartana", "Báscula y verticales", "circo"),
-    ("circo-akroshcan", "Circo Akroshcan", "A-kabaret", "Circo, varieté, danza y teatro", "circo teatro"),
-    ("el-gordo-y-el-chapa", "El Gordo y el Chapa", "El último hombre bala", "Circo y clown", "circo humor"),
-    ("tadeo-campanotto", "Tadeo Campanotto", "Show de Tadeo", "Malabares, magia y humor", "circo humor"),
-    ("giuseppe-salchichone", "Giuseppe Salchichone", "Los retos de Giuseppe Salchichone", "Clown, malabares y magia", "humor circo"),
-    ("tami-circo", "Tami Circo", "DJTami", "Rueda cyr, clown, malabares y acrobacias", "circo humor"),
-    ("toto-el-payaso", "Totó el Payaso", "El Ring", "Teatro y humor", "humor teatro"),
-    ("el-nino-de-la-hipoteca", "El Niño de la Hipoteca", "En concierto", "Música y humor", "musica humor"),
-    ("andrea-rodriguez-tropico", "Andrea Rodríguez y la Banda del Trópico", "Trópico de Capri", "Música", "musica"),
-    ("aseres", "Aseres", "En concierto", "Música", "musica"),
-    ("perrakos-soundsystem", "Perrakos Soundsystem", "Fiestaka en Teror", "Fiestaka", "musica"),
-    ("enkassette", "Enkassette", "Concierto", "Música", "musica"),
-    ("son-de-la-isla", "Son de la Isla", "Son de la Isla", "Música", "musica"),
-    ("la-dixie-de-en-pie", "La Dixie de En Pie", "Dixieland itinerante", "Música por las calles", "musica"),
-    ("noelia-mederos", "Noelia Mederos", "En concierto", "Canto", "musica"),
-    ("patri-viera", "Patri Viera", "En concierto", "Canto", "musica"),
-    ("risoterapia-islas-canarias", "Risoterapia Islas Canarias", "Taller de risoterapia", "Terapia de la risa (taller)", "talleres"),
-]
-FILTROS = [("todas", "Todas"), ("circo", "Circo"), ("humor", "Clown y humor"), ("teatro", "Teatro y danza"),
-           ("musica", "Música"), ("talleres", "Talleres")]
-CIFRAS = [("26", "compañías y artistas"), ("42", "funciones en tres días"), ("8", "espacios de Teror convertidos en escenario"),
-          ("2", "compañías internacionales"), ("XIII", "ediciones del festival"), ("0 €", "todo gratis y en la calle")]
-ESPACIOS = ["Plaza de Sintes", "Plaza Teresa de Bolívar", "Alameda de Pío XII", "Plaza El Pino", "Bulevar",
-            "Oficinas Municipales", "Sala Polivalente (Antiguo Ayuntamiento)", "Itinerante por las calles"]
+ICO["estrella"] = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17.2l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>'
+ICO["compartir"] = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>'
+ICO["buscar"] = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>'
+ICO["reloj"] = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'
+ICO["papelera"] = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>'
+ICO["atras"] = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>'
+
 COLABORAN = [
     ("cabildo-fundacion-nanino-diaz", "Cabildo de Gran Canaria · Fundación Nanino Díaz Cutillas", "https://cabildo.grancanaria.com/", ""),
     ("islas-canarias", "Islas Canarias", "https://www.holaislascanarias.com/", ""),
@@ -79,6 +59,11 @@ ONDA = ('<div class="rasgado" aria-hidden="true"><svg viewBox="0 0 1440 60" pres
         'L1214 24 L1262 34 L1310 20 L1356 36 L1400 26 L1440 34 L1440 60 L0 60 Z"/></svg></div>')
 
 
+def plano(t):
+    t = unicodedata.normalize("NFD", str(t).lower())
+    return "".join(c for c in t if not unicodedata.combining(c))
+
+
 def esc(t):
     return html.escape(str(t), quote=True)
 
@@ -90,7 +75,7 @@ def img(ruta, alt, anchos, sizes, carga="lazy", prioridad=False, clase=""):
 
 
 def cabecera():
-    items = [("/#companias", "Compañías 2026"), ("/#video", "Vídeo"), ("/#espacios", "Espacios"), ("/#sostenibilidad", "Sostenibilidad"),
+    items = [("/programa", "Programa"), ("/companias", "Compañías"), ("/#video", "Vídeo"), ("/#sostenibilidad", "Sostenibilidad"),
              ("/#teror", "Teror")]
     lis = "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in items)
     return f'''<a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -125,7 +110,7 @@ def pie():
 <script src="/js/main.js" defer></script>'''
 
 
-def pagina(titulo, descripcion, ruta, cuerpo, extra_head="", og="/img/og-en-pie-teror.jpg"):
+def pagina(titulo, descripcion, ruta, cuerpo, extra_head="", og="/img/og-en-pie-teror.jpg", canonica=None):
     return f'''<!doctype html>
 <html lang="es" class="sin-js">
 <head>
@@ -133,7 +118,7 @@ def pagina(titulo, descripcion, ruta, cuerpo, extra_head="", og="/img/og-en-pie-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(titulo)}</title>
 <meta name="description" content="{esc(descripcion)}">
-<link rel="canonical" href="{DOMINIO}{ruta}">
+<link rel="canonical" href="{DOMINIO}{canonica or ruta}">
 <meta name="theme-color" content="#0f2a2e">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Festival En Pie Teror">
@@ -253,20 +238,48 @@ def formulario():
 
 
 # ---------------------------------------------------------------- inicio
+def tarjeta_compania(c, anio=None, sizes="(max-width:720px) 50vw, (max-width:1000px) 33vw, 280px"):
+    """Tarjeta enlazada a la ficha. Con anio, enseña el espectáculo de ese año."""
+    e = next((x for x in c["espectaculos"] if anio in x["anios"]), c["espectaculos"][0] if c["espectaculos"] else {"titulo": "", "disciplinas": []})
+    foto = img(e["imagen"], f"{c['nombre']}, {e['titulo']}", [400, 800], sizes) if e.get("imagen") else f'<span class="sin-foto" aria-hidden="true">{esc(c["nombre"][:1])}</span>'
+    anios = "".join(f"<span>{a}</span>" for a in c["anios"])
+    return f'''<li class="compania aparece" data-tipos="{" ".join(c["generos"])}" data-anios="{" ".join(map(str, c["anios"]))}" data-texto="{esc(plano(c["nombre"] + " " + " ".join(x["titulo"] for x in c["espectaculos"]) + " " + c["procedencia"]))}">
+      <a href="/companias/{c["id"]}">{foto}
+      <div class="compania-cuerpo"><h3>{esc(c["nombre"])}</h3><p class="espectaculo">{esc(e["titulo"])}</p><p class="disciplina">{esc(", ".join(e.get("disciplinas", [])))}</p>
+      <p class="origen">{esc(c["procedencia"])}<span class="anios">{anios}</span></p></div></a></li>'''
+
+
+def botones_generos(con_todas=True):
+    usados = {g for c in D.companias for g in c["generos"]}
+    return (('<button type="button" class="filtro" data-filtro="todas" aria-pressed="true">Todas</button>' if con_todas else "")
+            + "".join(f'<button type="button" class="filtro" data-filtro="{k}" aria-pressed="false">{t}</button>' for k, t in GENEROS if k in usados))
+
+
 def inicio():
-    filtros = "".join(f'<button type="button" class="filtro" data-filtro="{k}" aria-pressed="{"true" if k == "todas" else "false"}">{t}</button>' for k, t in FILTROS)
-    tarjetas = "".join(f'''<li class="compania aparece" data-tipos="{tipos}">
-      {img(f"img/companias/{slug}", f"{nombre}, {esp}", [400, 800], "(max-width:720px) 50vw, (max-width:1000px) 33vw, 280px")}
-      <div class="compania-cuerpo"><h3>{esc(nombre)}</h3><p class="espectaculo">{esc(esp)}</p><p class="disciplina">{esc(disc)}</p></div></li>'''
-                       for slug, nombre, esp, disc, tipos in COMPANIAS)
+    prox = D.proxima()
+    ultimo = D.ultima_con_programa()
+    fs, cs = D.funciones_de(ultimo), D.companias_de(ultimo)
+    dias = D.dias_de(ultimo)
+    ed_ult = D.edicion(ultimo)
+    filtros = botones_generos()
+    tarjetas = "".join(tarjeta_compania(c, ultimo) for c in cs)
+    espacios_usados = [D.por_espacio[i] for i in dict.fromkeys(f["espacio"] for f in fs) if i in D.por_espacio]
+    CIFRAS = [(str(len(cs)), "compañías y artistas"), (str(len(fs)), f"funciones en {len(dias)} días"),
+              (str(len(espacios_usados)), "espacios de Teror convertidos en escenario"), (str(len(D.companias)), f"compañías han pasado por En Pie desde {D.ediciones[0]['anio'] if D.ediciones else ultimo}"),
+              (ed_ult.get("numero") or str(ultimo), "ediciones del festival"), ("0 €", "todo gratis y en la calle")]
     cifras = "".join(f'<li class="cifra aparece"><strong>{a}</strong><span>{b}</span></li>' for a, b in CIFRAS)
-    espacios = "".join(f"<li>{esc(e)}</li>" for e in ESPACIOS)
+    if prox["anio"] > (ultimo or 0):
+        pildora = f'{prox.get("numero", "")} edición · {prox["anio"]} · {esc(prox.get("fechas") or "Fechas muy pronto")}'.strip(" ·")
+        lema_extra = f'La próxima edición será en {prox["anio"]}. Mientras, revive el programa de {ultimo} y prepara tu propuesta.'
+    else:
+        pildora = f'{prox.get("numero", "")} edición · {fechas_texto(dias)}'
+        lema_extra = "Consulta el programa, filtra por día, espacio o género y monta tu propio itinerario."
     ritmos = "".join(f"<span>{r}</span>" for r in ["Circo", "Clown", "Teatro de calle", "Acrobacia", "Danza", "Música", "Humor", "Aéreos", "Pasacalles"])
     logos = "".join(
         (f'<li><a href="{u}" rel="noopener"><img class="{c}" src="/img/logos/{s}.webp" alt="{esc(a)}" loading="lazy"></a></li>' if u
          else f'<li><img class="{c}" src="/img/logos/{s}.webp" alt="{esc(a)}" loading="lazy"></li>') for s, a, u, c in COLABORAN)
-    ld = {"@context": "https://schema.org", "@type": "Festival", "name": "XIII Festival Internacional de Artes en la Calle En Pie Teror",
-          "startDate": "2026-08-28", "endDate": "2026-08-30", "isAccessibleForFree": True,
+    ld = {"@context": "https://schema.org", "@type": "Festival", "name": f"{ed_ult.get('numero', '')} Festival Internacional de Artes en la Calle En Pie Teror".strip(),
+          "startDate": dias[0].isoformat(), "endDate": dias[-1].isoformat(), "isAccessibleForFree": True,
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled",
           "location": {"@type": "Place", "name": "Casco histórico de Teror",
                        "address": {"@type": "PostalAddress", "addressLocality": "Teror", "postalCode": "35330", "addressRegion": "Las Palmas", "addressCountry": "ES"}},
@@ -282,12 +295,12 @@ def inicio():
   <figure class="portada-foto">{img("img/fotos/puja-asteroide", "Artista de teatro aéreo de Grupo Puja suspendida sobre el público en las calles de Teror", [900, 1600, 2400], "100vw", carga="eager", prioridad=True)}</figure>
   <div class="contenedor">
     <img class="portada-logo" src="/img/logos/enpie-blanco.webp" alt="En Pie, Festival de Arte en la Calle" width="230" height="141">
-    <p class="pildora">XIII edición · 28, 29 y 30 de agosto de 2026 · ¡Gracias por llenar las calles!</p>
+    <p class="pildora">{pildora}</p>
     <h1 class="titular" id="titulo-portada">Teror se pone <em>en pie</em></h1>
-    <p class="portada-lema">Festival Internacional de Artes en la Calle. Circo, clown, teatro de calle, danza y música por las plazas y rincones del casco de Teror, en Gran Canaria. Gratis y para todos los públicos.</p>
+    <p class="portada-lema">Festival Internacional de Artes en la Calle. Circo, clown, teatro de calle, danza y música por las plazas y rincones del casco de Teror, en Gran Canaria. Gratis y para todos los públicos. {lema_extra}</p>
     <div class="botones">
       <a class="boton boton-coral" href="/inscripcion">Inscribe tu compañía · {EDICION_CONVOCATORIA} {ICO["flecha"]}</a>
-      <a class="boton boton-claro" href="#companias">Compañías 2026</a>
+      <a class="boton boton-claro" href="/programa">Programa {ultimo}</a>
       <a class="boton boton-claro" href="#video">{ICO["play"]} Ver el vídeo</a>
     </div>
   </div>
@@ -298,7 +311,7 @@ def inicio():
 
 <section class="seccion" aria-labelledby="titulo-cifras">
   <div class="contenedor">
-    <div class="cabecera aparece"><span class="antetitulo">Así fue 2026</span>
+    <div class="cabecera aparece"><span class="antetitulo">Así fue {ultimo}</span>
       <h2 id="titulo-cifras">Tres días en los que <span class="subrayado">la calle fue el escenario</span></h2>
       <p>Compañías de Canarias, de la península y de fuera de España llenaron plazas, calles y rincones de la Villa con espectáculos para todos los públicos, sin entradas y a la vuelta de cada esquina.</p></div>
     <ul class="cifras">{cifras}</ul>
@@ -307,12 +320,14 @@ def inicio():
 
 <section class="seccion papel" id="companias" aria-labelledby="titulo-companias">
   <div class="contenedor">
-    <div class="cabecera aparece"><span class="antetitulo">Compañías y artistas 2026</span>
+    <div class="cabecera aparece"><span class="antetitulo">Compañías y artistas {ultimo}</span>
       <h2 id="titulo-companias">Quién llenó Teror de magia</h2>
       <p>Circo, teatro de calle, humor, teatro gestual, clown, acrobacias y mucha música.</p></div>
     <div class="filtros" role="group" aria-label="Filtrar por disciplina">{filtros}</div>
     <ul class="companias">{tarjetas}</ul>
-    <div class="botones" style="margin-top:32px"><a class="boton boton-tinta" href="/programa/programa-en-pie-teror-2026.pdf">{ICO["pdf"]} Programa 2026 en PDF</a></div>
+    <div class="botones" style="margin-top:32px"><a class="boton boton-coral" href="/programa">{ICO["reloj"]} Programa {ultimo} por horas</a>
+      <a class="boton boton-tinta" href="/companias">Todas las compañías desde {D.ediciones[0]["anio"]}</a>
+      {f'<a class="boton boton-claro-tinta" href="/programa/programa-en-pie-teror-2026.pdf">{ICO["pdf"]} PDF 2026</a>' if ultimo == 2026 else ""}</div>
   </div>
 </section>
 
@@ -323,8 +338,8 @@ def inicio():
       <p>Las compañías de esta edición, en un vídeo. Para más, en nuestro canal de YouTube.</p>
       <div class="botones"><a class="boton boton-claro" href="{YOUTUBE}" rel="noopener">{ICO["yt"]} Canal de YouTube</a></div></div>
     <div class="aparece">
-      <div class="video" data-video="{VIDEO_ID}" data-titulo="Vídeo promocional del XIII Festival En Pie Teror">
-        {img("img/fotos/video-promo", "Vídeo promocional del XIII Festival En Pie Teror", [800, 1280], "(max-width:900px) 100vw, 560px")}
+      <div class="video" data-video="{VIDEO_ID}" data-titulo="Vídeo promocional del Festival En Pie Teror">
+        {img("img/fotos/video-promo", "Vídeo promocional del Festival En Pie Teror", [800, 1280], "(max-width:900px) 100vw, 560px")}
         <button type="button" aria-label="Reproducir el vídeo"><span>{ICO["play"]}</span></button>
       </div>
       <p class="nota-video">Al pulsar se carga el reproductor de YouTube en su modo sin cookies.</p>
@@ -336,9 +351,9 @@ def inicio():
   <div class="contenedor dos-col">
     <figure class="foto-marco aparece">{img("img/fotos/sacude", "Artista aérea suspendida en el aire durante una función del festival", [1200, 2400], "(max-width:900px) 100vw, 560px")}</figure>
     <div class="aparece"><span class="antetitulo">Un pueblo convertido en escenario</span>
-      <h2 id="titulo-espacios" style="font-size:clamp(2.3rem,5vw,3.6rem)">Ocho espacios, cientos de miradas</h2>
+      <h2 id="titulo-espacios" style="font-size:clamp(2.3rem,5vw,3.6rem)">{len(espacios_usados)} espacios, cientos de miradas</h2>
       <p>En En Pie el teatro sale a buscarte: las funciones se reparten por las plazas y calles del casco histórico, y algunas no se están quietas.</p>
-      <ul class="espacios" style="--c:var(--noche)">{"".join(f'<li style="background:#fff;border-color:var(--noche);color:var(--noche)">{esc(e)}</li>' for e in ESPACIOS)}</ul></div>
+      <ul class="espacios" style="--c:var(--noche)">{"".join(f'<li style="background:#fff;border-color:var(--noche);color:var(--noche)">{esc(e["nombre"])}</li>' for e in espacios_usados)}</ul></div>
   </div>
 </section>
 
@@ -383,8 +398,217 @@ def inicio():
   </div>
 </section>'''
     return pagina("Festival En Pie Teror · Festival Internacional de Artes en la Calle",
-                  "Circo, clown, teatro de calle, danza y música en las calles de Teror (Gran Canaria). XIII edición, 28-30 de agosto de 2026. Convocatoria de compañías 2027 abierta.",
+                  f"Circo, clown, teatro de calle, danza y música en las calles de Teror (Gran Canaria). Programa {ultimo}, archivo de compañías y convocatoria {EDICION_CONVOCATORIA} abierta.",
                   "/", cuerpo, extra_head=f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n')
+
+
+# ---------------------------------------------------------------- programa
+def hora(dt):
+    return f"{dt:%H:%M}"
+
+
+def chips_generos(gs):
+    return "".join(f'<span class="etiqueta etiqueta-{g}">{esc(NOMBRE_GENERO.get(g, g))}</span>' for g in gs)
+
+
+def tarjeta_funcion(f):
+    c, e, esp = f["c"], f["e"], f["esp"]
+    lugar = esp["nombre"] + (f" · {f['nota']}" if f.get("nota") else "")
+    meta = [lugar] + ([f"{e['duracion']} min"] if e.get("duracion") else []) + ([e["edad"]] if e.get("edad") else [])
+    texto = plano(" ".join([c["nombre"], e.get("titulo", ""), lugar, " ".join(e.get("disciplinas", [])), c.get("procedencia", "")]))
+    foto = img(e["imagen"], "", [400], "96px") if e.get("imagen") else '<span class="sin-foto" aria-hidden="true"></span>'
+    return f'''<li class="funcion" id="f-{f["id"]}" data-id="{f["id"]}" data-dia="{f["dia"].isoformat()}" data-espacio="{esp["id"]}" data-compania="{c["id"]}"
+ data-generos="{" ".join(e.get("generos", []))}" data-inicio="{f["inicio_dt"]:%Y-%m-%dT%H:%M}" data-fin="{f["fin_dt"]:%Y-%m-%dT%H:%M}"
+ data-titulo="{esc(c["nombre"] + " · " + e.get("titulo", ""))}" data-lugar="{esc(lugar)}" data-url="/companias/{c["id"]}" data-texto="{esc(texto)}">
+  <time class="funcion-hora" datetime="{f["inicio_dt"]:%Y-%m-%dT%H:%M}">{hora(f["inicio_dt"])}<small>{hora(f["fin_dt"])}</small></time>
+  <a class="funcion-foto" href="/companias/{c["id"]}" tabindex="-1" aria-hidden="true">{foto}</a>
+  <div class="funcion-cuerpo">
+    <a class="funcion-compania" href="/companias/{c["id"]}">{esc(c["nombre"])}</a>
+    <span class="funcion-titulo">{esc(e.get("titulo", ""))}</span>
+    <span class="funcion-meta">{ICO["pin"]}<span>{" · ".join(esc(m) for m in meta)}</span></span>
+    <span class="etiquetas">{chips_generos(e.get("generos", []))}</span>
+  </div>
+  <button class="estrella" type="button" aria-pressed="false" title="Añadir a mi itinerario"><span class="visualmente-oculto">Añadir a mi itinerario: {esc(c["nombre"])}, {hora(f["inicio_dt"])}</span>{ICO["estrella"]}</button>
+</li>'''
+
+
+def pagina_programa(anio, ruta, canonica):
+    ed = D.edicion(anio)
+    fs = D.funciones_de(anio)
+    dias = D.dias_de(anio)
+    cs = D.companias_de(anio)
+    espacios = [D.por_espacio[i] for i in dict.fromkeys(f["espacio"] for f in sorted(fs, key=lambda f: f["espacio"])) if i in D.por_espacio]
+    espacios.sort(key=lambda e: [x["id"] for x in D.espacios].index(e["id"]))
+    usados = {g for f in fs for g in f["e"].get("generos", [])}
+    bloques = "".join(f'''<section class="dia" data-dia="{d.isoformat()}" aria-labelledby="dia-{d.isoformat()}">
+      <h2 class="dia-titulo" id="dia-{d.isoformat()}">{fecha_larga(d).capitalize()}</h2>
+      <ol class="funciones">{"".join(tarjeta_funcion(f) for f in fs if f["dia"] == d)}</ol></section>''' for d in dias)
+    botones_dia = '<button type="button" class="filtro" data-dia="" aria-pressed="true">Todos los días</button>' + "".join(
+        f'<button type="button" class="filtro" data-dia="{d.isoformat()}" aria-pressed="false">{DIAS_CORTOS[d.weekday()]} {d.day}</button>' for d in dias)
+    ops_esp = "".join(f'<option value="{e["id"]}">{esc(e["nombre"])}</option>' for e in espacios)
+    ops_cia = "".join(f'<option value="{c["id"]}">{esc(c["nombre"])}</option>' for c in cs)
+    gen = "".join(f'<button type="button" class="filtro filtro-genero" data-genero="{k}" aria-pressed="false">{t}</button>' for k, t in GENEROS if k in usados)
+    anios = "".join(f'<a href="/programa/{a}"{" aria-current=\"page\"" if a == anio else ""}>{a}</a>' for a in D.anios_con_programa())
+    mapa = "".join(f'''<li><strong>{esc(e["nombre"])}</strong>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query={f'{e["lat"]},{e["lng"]}' if e.get("lat") else esc(e["direccion"]).replace(" ", "+")}" rel="noopener">Cómo llegar {ICO["flecha"]}</a></li>''' for e in espacios if e["id"] != "itinerante")
+    titulo = f"Programa {anio}"
+    cuerpo = f'''
+<section class="portada portada-corta portada-programa" aria-labelledby="titulo-programa">
+  <figure class="portada-foto">{img("img/fotos/puja-asteroide", "", [900, 1600], "100vw", carga="eager", prioridad=True)}</figure>
+  <div class="contenedor">
+    <p class="pildora">{esc(ed.get("numero", ""))} edición · {fechas_texto(dias)}</p>
+    <h1 class="titular" id="titulo-programa">{titulo}</h1>
+    <p class="portada-lema">{len(fs)} funciones de {len(cs)} compañías en {len(espacios)} espacios de Teror. Gratis y en la calle. Filtra por día, espacio, compañía o género y marca con la estrella lo que no te quieres perder: así montas <strong>tu propio itinerario</strong>.</p>
+    <nav class="anios-programa" aria-label="Otras ediciones">{anios}</nav>
+  </div>
+  {ONDA}
+</section>
+<section class="seccion programa" data-anio="{anio}">
+  <div class="contenedor">
+    <form class="barra-filtros" role="search" onsubmit="return false">
+      <div class="barra-fila">
+        <label class="buscador"><span class="visualmente-oculto">Buscar</span>{ICO["buscar"]}<input type="search" id="p-q" placeholder="Busca compañía, espectáculo, espacio…" autocomplete="off"></label>
+        <label class="selector"><span>Espacio</span><select id="p-espacio"><option value="">Todos los espacios</option>{ops_esp}</select></label>
+        <label class="selector"><span>Compañía</span><select id="p-compania"><option value="">Todas las compañías</option>{ops_cia}</select></label>
+      </div>
+      <div class="barra-fila" role="group" aria-label="Día">{botones_dia}</div>
+      <div class="barra-fila" role="group" aria-label="Género">{gen}</div>
+    </form>
+    <div class="barra-estado">
+      <div class="vistas" role="tablist" aria-label="Vista">
+        <button type="button" role="tab" id="tab-programa" aria-selected="true" aria-controls="vista-programa">Programa</button>
+        <button type="button" role="tab" id="tab-itinerario" aria-selected="false" aria-controls="vista-itinerario">{ICO["estrella"]} Mi itinerario <span class="contador" id="contador-itinerario">0</span></button>
+      </div>
+      <p class="resultado"><span role="status" aria-live="polite" id="p-cuenta">{len(fs)} funciones</span> <button type="button" class="limpiar" id="p-limpiar" hidden>Quitar filtros</button></p>
+    </div>
+    <div id="vista-programa" role="tabpanel" aria-labelledby="tab-programa">
+      {bloques}
+      <p class="vacio" id="p-vacio" hidden>No hay funciones con esos filtros. <button type="button" class="limpiar" data-limpiar>Quitar filtros</button></p>
+    </div>
+    <div id="vista-itinerario" role="tabpanel" aria-labelledby="tab-itinerario" hidden>
+      <div class="aviso-compartido" id="it-compartido" hidden><p>Te han pasado un itinerario con <strong id="it-compartido-n"></strong> funciones.</p>
+        <button type="button" class="boton boton-coral" id="it-guardar">Guardarlo como mi itinerario</button></div>
+      <div class="itinerario-acciones" id="it-acciones" hidden>
+        <button type="button" class="boton boton-tinta" id="it-compartir">{ICO["compartir"]} Compartir</button>
+        <button type="button" class="boton boton-tinta" id="it-calendario">{ICO["cal"]} Añadir al calendario</button>
+        <button type="button" class="boton boton-claro-tinta" id="it-vaciar">{ICO["papelera"]} Vaciar</button>
+        <span class="estado-it" id="it-estado" role="status" aria-live="polite"></span>
+      </div>
+      <div id="it-lista"></div>
+      <div class="vacio" id="it-vacio"><p><strong>Tu itinerario está vacío.</strong></p><p>Pulsa la estrella {ICO["estrella"]} de las funciones que quieras ver y aquí te las ordenamos por hora, con aviso si dos se pisan.</p></div>
+      <p class="nota-it">Tu itinerario se guarda solo en este navegador. Para tenerlo en otro móvil, usa «Compartir».</p>
+    </div>
+  </div>
+</section>
+<section class="seccion papel" aria-labelledby="titulo-mapa">
+  <div class="contenedor">
+    <div class="cabecera"><span class="antetitulo">Los espacios</span><h2 id="titulo-mapa">Dónde está cada escenario</h2>
+      <p>Todo está a pocos minutos a pie por el casco histórico de Teror.</p></div>
+    <ul class="lista-espacios">{mapa}</ul>
+  </div>
+</section>'''
+    return pagina(f"{titulo} · Festival En Pie Teror", f"Programa {anio} del Festival En Pie Teror: {len(fs)} funciones de circo, clown, teatro de calle y música. Horarios, espacios y tu propio itinerario.",
+                  ruta, cuerpo, canonica=canonica)
+
+
+# ---------------------------------------------------------------- compañías
+def pagina_companias():
+    anios = D.anios_con_programa()
+    botones_anio = '<button type="button" class="filtro" data-anio="" aria-pressed="true">Todos los años</button>' + "".join(
+        f'<button type="button" class="filtro" data-anio="{a}" aria-pressed="false">{a}</button>' for a in anios)
+    tarjetas = "".join(tarjeta_compania(c) for c in D.companias if c["anios"])
+    cuerpo = f'''
+<section class="portada portada-corta" aria-labelledby="titulo-archivo">
+  <figure class="portada-foto">{img("img/fotos/sacude", "", [1200, 2400], "100vw", carga="eager", prioridad=True)}</figure>
+  <div class="contenedor">
+    <p class="pildora">{len(D.companias)} compañías · {", ".join(map(str, sorted(anios)))}</p>
+    <h1 class="titular" id="titulo-archivo">Quién ha pasado por En Pie</h1>
+    <p class="portada-lema">El archivo de compañías y artistas del festival: sus espectáculos, vídeos y las funciones que hicieron en Teror.</p>
+  </div>
+  {ONDA}
+</section>
+<section class="seccion archivo">
+  <div class="contenedor">
+    <form class="barra-filtros" role="search" onsubmit="return false">
+      <div class="barra-fila"><label class="buscador"><span class="visualmente-oculto">Buscar</span>{ICO["buscar"]}<input type="search" id="a-q" placeholder="Busca por nombre, espectáculo o procedencia…" autocomplete="off"></label></div>
+      <div class="barra-fila" role="group" aria-label="Edición">{botones_anio}</div>
+      <div class="barra-fila" role="group" aria-label="Género">{botones_generos()}</div>
+    </form>
+    <p class="resultado"><span role="status" aria-live="polite" id="a-cuenta">{len(D.companias)} compañías</span></p>
+    <ul class="companias" id="archivo">{tarjetas}</ul>
+    <p class="vacio" id="a-vacio" hidden>Ninguna compañía con esos filtros.</p>
+  </div>
+</section>'''
+    return pagina("Compañías y artistas · Festival En Pie Teror", "Archivo de compañías y artistas que han actuado en el Festival En Pie Teror: espectáculos, vídeos y funciones.",
+                  "/companias", cuerpo)
+
+
+def video_html(v, titulo, poster):
+    if not v:
+        return ""
+    if v["tipo"] in ("youtube", "vimeo"):
+        fondo = img(poster, f"Vídeo de {titulo}", [800], "(max-width:900px) 100vw, 640px") if poster else ""
+        return f'''<div class="video" data-video="{esc(v["id"])}" data-tipo="{v["tipo"]}" data-titulo="Vídeo: {esc(titulo)}">{fondo}
+          <button type="button" aria-label="Reproducir el vídeo de {esc(titulo)}"><span>{ICO["play"]}</span></button></div>
+        <p class="nota-video">Al pulsar se carga el reproductor de {"YouTube en su modo sin cookies" if v["tipo"] == "youtube" else "Vimeo"}. <a href="{esc(v["url"])}" rel="noopener">Verlo en {"YouTube" if v["tipo"] == "youtube" else "Vimeo"}</a></p>'''
+    return f'<p><a class="boton boton-tinta" href="{esc(v["url"])}" rel="noopener">{ICO["play"]} Ver el vídeo</a></p>'
+
+
+def parrafos(t):
+    return "".join(f"<p>{esc(p).replace(chr(10), '<br>')}</p>" for p in (t or "").split("\n\n") if p.strip())
+
+
+def pagina_compania(c, anterior, siguiente):
+    portada = c["espectaculos"][0]["imagen"] if c["espectaculos"] else c["imagen"]
+    anios = "".join(f'<a href="/programa/{a}">{a}</a>' for a in c["anios"])
+    bloques = []
+    for e in c["espectaculos"]:
+        fs = [f for f in c["funciones"] if f["espectaculo"] == e["id"]]
+        lista = "".join(f'''<li><a href="/programa/{f["edicion"]}#f-{f["id"]}"><strong>{f["edicion"]}</strong> · {fecha_larga(f["dia"])} · {hora(f["inicio_dt"])}</a>
+          <span>{esc(f["esp"]["nombre"])}{" · " + esc(f["nota"]) if f.get("nota") else ""}</span></li>''' for f in fs)
+        datos = [x for x in [e.get("edad"), f'{e["duracion"]} minutos' if e.get("duracion") else None] if x]
+        bloques.append(f'''<article class="espectaculo-ficha aparece" id="{e["id"]}">
+      <div class="espectaculo-texto">
+        <span class="antetitulo">{" · ".join(map(str, e["anios"]))}</span>
+        <h2>{esc(e["titulo"])}</h2>
+        <p class="disciplinas">{"".join(f"<span>{esc(d)}</span>" for d in e.get("disciplinas", []))}</p>
+        {f'<p class="frase">{esc(e["frase"])}</p>' if e.get("frase") else ""}
+        <ul class="datos-espectaculo">{"".join(f"<li>{esc(d)}</li>" for d in datos)}</ul>
+        {f'<h3>De qué va</h3>{parrafos(e["sinopsis"])}' if e.get("sinopsis") else ""}
+        {f'<h3>Qué vas a ver</h3>{parrafos(e["descripcion"])}' if e.get("descripcion") else ""}
+      </div>
+      <div class="espectaculo-lado">
+        {video_html(e.get("video"), e["titulo"], e.get("imagen")) or (img(e["imagen"], f'{c["nombre"]}, {e["titulo"]}', [400, 800], "(max-width:900px) 100vw, 480px", clase="foto-espectaculo") if e.get("imagen") and e["imagen"] != portada else "")}
+        {f'<h3>Funciones en En Pie</h3><ul class="funciones-ficha">{lista}</ul>' if lista else ""}
+      </div>
+    </article>''')
+    redes = "".join(f'<a class="boton boton-claro" href="{esc(u)}" rel="noopener">{t}</a>' for u, t in [(c.get("web"), "Web"), (c.get("instagram"), "Instagram")] if u)
+    nav = (f'<a href="/companias/{anterior["id"]}" rel="prev">{ICO["atras"]} {esc(anterior["nombre"])}</a>' if anterior else "<span></span>") + \
+          (f'<a href="/companias/{siguiente["id"]}" rel="next">{esc(siguiente["nombre"])} {ICO["flecha"]}</a>' if siguiente else "<span></span>")
+    ld = {"@context": "https://schema.org", "@type": "PerformingGroup", "name": c["nombre"], "url": f"{DOMINIO}/companias/{c['id']}"}
+    if portada:
+        ld["image"] = f"{DOMINIO}/{portada}-800.webp"
+    desc = (c["espectaculos"][0].get("frase") or c["espectaculos"][0].get("sinopsis") or "")[:180] if c["espectaculos"] else ""
+    cuerpo = f'''
+<section class="ficha-portada" aria-labelledby="titulo-ficha">
+  <div class="contenedor ficha-grid">
+    <div class="ficha-foto">{img(portada, c["nombre"], [400, 800], "(max-width:900px) 100vw, 520px", carga="eager", prioridad=True) if portada else '<span class="sin-foto"></span>'}</div>
+    <div class="ficha-texto">
+      <a class="volver" href="/companias">{ICO["atras"]} Todas las compañías</a>
+      <span class="antetitulo">{esc(c["procedencia"])}</span>
+      <h1 id="titulo-ficha">{esc(c["nombre"])}</h1>
+      <p class="ficha-espectaculos">{" · ".join(esc(e["titulo"]) for e in c["espectaculos"])}</p>
+      <p class="etiquetas">{chips_generos(c["generos"])}</p>
+      <p class="ficha-anios">En En Pie: {anios}</p>
+      {f'<div class="botones">{redes}</div>' if redes else ""}
+    </div>
+  </div>
+</section>
+<section class="seccion ficha-cuerpo"><div class="contenedor">{"".join(bloques)}
+  <nav class="ficha-nav" aria-label="Otras compañías">{nav}</nav></div></section>'''
+    return pagina(f"{c['nombre']} · Festival En Pie Teror", desc or f"{c['nombre']} en el Festival En Pie Teror.", f"/companias/{c['id']}", cuerpo,
+                  extra_head=f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>\n',
+                  og=f"/{portada}-800.webp" if portada else "/img/og-en-pie-teror.jpg")
 
 
 # ---------------------------------------------------------------- legales
@@ -481,6 +705,25 @@ def pagina_inscripcion():
                   "/inscripcion", cuerpo)
 
 
+def redirecciones():
+    """_redirects: direcciones de la antigua web de Wix -> nueva web."""
+    import urllib.parse
+    lineas = ["# Generado por scripts/generar.py: no editar a mano", "# Direcciones de la antigua web de Wix",
+              "/general-6 /#teror 301", "/s-projects-side-by-side /companias 301", "/compania-galeria /companias 301",
+              "/compania-galeria/* /companias 301", "/companias-y-artistas-y-horarios /programa 301", "/companias-y-artistas-y-horarios/* /programa 301",
+              "/events/* /programa 301", "/_files/ugd/* /programa/programa-en-pie-teror-2026.pdf 301",
+              "/pol* /privacidad.html 301", "/t*rminos-y-condiciones /aviso-legal.html 301"]
+    p = RAIZ / "data/redirecciones-wix.json"
+    if p.exists():
+        vistos = set()
+        for viejo, nuevo in json.loads(p.read_text(encoding="utf-8")).items():
+            for forma in (urllib.parse.quote(viejo, safe="-'()._~"), viejo):
+                if forma not in vistos and " " not in forma:
+                    vistos.add(forma)
+                    lineas.append(f"/companias/{forma} /companias/{nuevo} 301")
+    return "\n".join(lineas) + "\n"
+
+
 def escribir(ruta, texto):
     p = RAIZ / ruta
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -494,11 +737,30 @@ def main():
     escribir("privacidad.html", legal("privacidad", "Política de privacidad", "Cómo trata el Ayuntamiento de Teror los datos de las inscripciones de compañías y de los correos.", PRIVACIDAD))
     escribir("cookies.html", legal("cookies", "Política de cookies", "Uso de cookies en la web del Festival En Pie Teror.", COOKIES))
     escribir("404.html", no_encontrada())
-    urls = ["/", "/inscripcion", "/aviso-legal.html", "/privacidad.html", "/cookies.html"]
+    urls = ["/", "/inscripcion", "/programa", "/companias", "/aviso-legal.html", "/privacidad.html", "/cookies.html"]
+    ultimo = D.ultima_con_programa()
+    for a in D.anios_con_programa():
+        escribir(f"programa/{a}.html", pagina_programa(a, f"/programa/{a}", f"/programa/{a}"))
+        urls.append(f"/programa/{a}")
+    if ultimo:
+        escribir("programa/index.html", pagina_programa(ultimo, "/programa", f"/programa/{ultimo}"))
+    escribir("companias/index.html", pagina_companias())
+    con = [c for c in D.companias if c["anios"]]
+    for i, c in enumerate(con):
+        escribir(f"companias/{c['id']}.html", pagina_compania(c, con[i - 1] if i else None, con[i + 1] if i + 1 < len(con) else None))
+        urls.append(f"/companias/{c['id']}")
+    # quitar fichas de compañías que ya no existen
+    for viejo in (RAIZ / "companias").glob("*.html"):
+        if viejo.stem != "index" and viejo.stem not in {c["id"] for c in con}:
+            viejo.unlink()
+    for viejo in (RAIZ / "programa").glob("*.html"):
+        if viejo.stem != "index" and not (viejo.stem.isdigit() and int(viejo.stem) in D.anios_con_programa()):
+            viejo.unlink()
     escribir("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
              + "\n".join(f"  <url><loc>{DOMINIO}{u}</loc></url>" for u in urls) + "\n</urlset>\n")
     escribir("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {DOMINIO}/sitemap.xml\n")
-    print("Generadas 5 páginas")
+    escribir("_redirects", redirecciones())
+    print(f"Generadas {len(urls) + 1} páginas")
 
 
 if __name__ == "__main__":

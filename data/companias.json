@@ -1,0 +1,2354 @@
+[
+ {
+  "id": "101-brass-band",
+  "nombre": "101 Brass Band",
+  "procedencia": "Tenerife",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "musica",
+    "titulo": "Música",
+    "disciplinas": [
+     "Música",
+     "Calle",
+     "Brass Band"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 45,
+    "sinopsis": "Un espectáculo de música itinerante, para sentir en primera línea la versatilidad de esta banda y la potencia de su “sopladera”, que te sumergirá en un viaje emocionante a través de diferentes géneros y estilos musicales, que te mantendrán en movimiento de principio a fin.",
+    "descripcion": "Pinceladas de Marching Band americana, grandes éxitos del pop internacional y ritmos vibrantes de la cumbia, abarcan este espectáculo de la 101 Brass Band, un show versátil que está diseñado para adaptarse a cualquier tipo de superficie.\na evolución de la banda, impulsada por la inquietud musical y la curiosidad de sus once componentes, garantiza que cada concierto sea una experiencia única y memorable. La 101 Brass Band te invita a unirte a ellos en un viaje musical inolvidable donde la música, el ritmo y el baile se unen en perfecta armonía.\n¿Te dejarás llevar por el dinamismo y la pasión de este formato?",
+    "frase": "Un espectáculo de música itinerante, para sentir en primera línea la versatilidad de esta banda y la potencia de su “sopladera”, que te sumergirá en un viaje emocionante a través de diferentes géneros y estilos musicales, que te mantendrán en movimiento de principio a fin.",
+    "video": {
+     "tipo": "youtube",
+     "id": "XJBVlpRv0HE",
+     "url": "https://www.youtube.com/watch?v=XJBVlpRv0HE"
+    },
+    "imagen_wix": "0171ea_9d0323d1d482440cae0ed1d4431d6a1d~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_9d0323d1d482440cae0ed1d4431d6a1d~mv2.jpg"
+ },
+ {
+  "id": "agua-del-chorro",
+  "nombre": "Agua del Chorro",
+  "procedencia": "Tenerife",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "llegaron-los-pibes",
+    "titulo": "Llegaron los pibes",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "Concierto musical del grupo Agua del Chorro",
+    "descripcion": "Agua del Chorro es una banda canaria fundada en 2022 y conformada por 7 amigos del norte de Tenerife con el objetivo de fabricar y compartir canciones propias baaadas en la cultura y la identidad canaria. Todo ello, impulsado por el deseo de cultivar tremendos tenderetes entre las gentes del archipiélago y sus actuales festivales, verbenas y eventos de variada índole.\nA veces son rumba, otras reggae, pasan de puntillas por la samba, son hip hop en algunos casos, puede que sean cumbia de vez en cuando, incluso salsa o son. Pero siempre, siempre, son ellos mismos y su particular forma de comunicar y expresar lo que sienten.\nAgua del Chorro es algo fresco y auténtico, la esencia de lo que son llevada a la tarima, tal y como si no estuvieran sobre ella.",
+    "frase": "Agua del Chorro es una banda canaria fundada en 2022 y conformada por 7 amigos del norte de Tenerife con el objetivo de fabricar y compartir canciones propias basadas en la cultura y la identidad canaria. Todo ello, impulsado por el deseo de cultivar tremendos tenderetes entre las gentes del archipiélago y sus actuales festivales, verbenas y eventos de variada éndole.\nA veces son rumba, otras reggae, pasan de puntillas por la samba, son hip hop en algunos casos, puede que sean cumbia de vez en cuando, incluso salsa o son. Pero siempre, siempre, son ellos mismos y su particular forma de comunicar y expresar lo que sienten.\nAgua del Chorro es algo fresco y auténtico, la esencia de lo que son llevada a la tarima, tal y como si no estuvieran sobre ella.",
+    "video": {
+     "tipo": "youtube",
+     "id": "9WW_5STVHUI",
+     "url": "https://www.youtube.com/watch?v=9WW_5STVHUI"
+    },
+    "imagen_wix": "0171ea_c622e657ea514978a259427a5d988974~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_c622e657ea514978a259427a5d988974~mv2.jpeg"
+ },
+ {
+  "id": "anartistas",
+  "nombre": "Anartistas",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "el-rey-leoncio",
+    "titulo": "El Rey Leoncio",
+    "disciplinas": [
+     "Teatro",
+     "Musical",
+     "Parodia",
+     "Comedia"
+    ],
+    "generos": [
+     "humor",
+     "teatro",
+     "musica"
+    ],
+    "edad": "+16",
+    "duracion": 70,
+    "sinopsis": "Kimba, heredero de la corona hispaniola, huye tras un confuso incidente con su padre, Don Juan Mufacha I, y se adentra en territorios prohibidos como Catalunya, acompañado por Simón y Lumba. En su viaje, descubrirá un mundo lleno de contradicciones, donde tendrá que enfrentarse a su pasado, a su identidad y al absurdo de las estructuras de poder que lo rodean.",
+    "descripcion": "El espectador verá una parodia atrevida y divertida que reinventa El Rey León con un enfoque provocador y actual. A través del humor físico, la máscara y una puesta en escena desenfadada, la obra presenta personajes extremos y situaciones absurdas que cuestionan con ironía el poder, la identidad y las tensiones sociales, todo desde una mirada crítica pero sin solemnidad.",
+    "frase": "El Rey Leoncio es una comedia irreverente que parodia El Rey León con humor ácido y mucho ingenio. Un espectáculo provocador que cuestiona con ironía temas como el poder, la identidad y la sociedad actual.",
+    "video": {
+     "tipo": "youtube",
+     "id": "krMyqKm9ipI",
+     "url": "https://www.youtube.com/watch?v=krMyqKm9ipI"
+    },
+    "imagen_wix": "0171ea_150e5bf0711d417d9c14584936006290~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_150e5bf0711d417d9c14584936006290~mv2.jpg"
+ },
+ {
+  "id": "andrea-rodriguez-y-la-banda-del-tropico",
+  "nombre": "Andrea Rodríguez y la Banda del Trópico",
+  "procedencia": "Tenerife",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "tropico-de-capri",
+    "titulo": "Trópico de Capri",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "La convivencia de los sonidos de raíz entre Canarias y Latinoamérica con el Trópico como espacio de convivencia.",
+    "descripcion": "Espectáculo musical con 12 músicos en directo, con temas de autoría propia que mezcla los sonido de raíz de Canarias con los sonidos de raíz de Latinoamérca, un hermanamiento musical a través del trópico que es el espacio de convivencia entre ambas regiones.",
+    "frase": "Andrea Rodríguez y la Banda del Trópico proponen un repertorio de autoría propia, donde fusionan los sonidos de raíz de Canarias con los sonidos de raíz de Latinoamérica en un espectáculo vibrante y tropical.",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://www.instagram.com/reel/DLmzXoKINRw/?igsh=eWt3ZmpreWo4cHpq"
+    },
+    "imagen_wix": "0171ea_f4ad17e7c2cf40fbad26a7a25d3a9f31~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_f4ad17e7c2cf40fbad26a7a25d3a9f31~mv2.jpeg"
+ },
+ {
+  "id": "aseres",
+  "nombre": "Aseres",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "aseres-en-concierto",
+    "titulo": "Aseres en concierto",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "CONCIERTO MUSICA LATINA",
+    "descripcion": "CONCIERTO MUSICA LATINA",
+    "frase": "CONCIERTO MUSICA LATINA",
+    "video": {
+     "tipo": "youtube",
+     "id": "0MveG0j2V5Q",
+     "url": "https://www.youtube.com/watch?v=0MveG0j2V5Q"
+    },
+    "imagen_wix": "0171ea_77560c04597041a2a10f527061f2b7e5~mv2.jpg"
+   },
+   {
+    "id": "vida-plena",
+    "titulo": "Vida Plena",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "Concierto musical con Canciones propias",
+    "descripcion": "Concierto musical con mucha energía",
+    "frase": "VIDA PLENA",
+    "video": {
+     "tipo": "youtube",
+     "id": "0MveG0j2V5Q",
+     "url": "https://www.youtube.com/watch?v=0MveG0j2V5Q"
+    },
+    "imagen_wix": "0171ea_10a570eff9834de4909206e5bf443b6e~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_77560c04597041a2a10f527061f2b7e5~mv2.jpg"
+ },
+ {
+  "id": "biphasic",
+  "nombre": "Biphasic",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "artistas-esther-suarez-y-luis-merino",
+    "titulo": "Artistas: Esther Suárez y Luis Merino",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "Luis Merino y Esther Suárez le dan una vuelta a clásicos de toda la vida.",
+    "descripcion": "\"Biphasic es la unión de dos músicos profesionales que seleccionan clásicos de los 80 en adelante para\ntransformarlos en algo fresco con un toque de jazz, soul, funk y rock\"",
+    "frase": "\"Biphasic es un dúo que selecciona temas de siempre para transformarlos en algo diferente. Con la ayuda\ndel loopstation, Luis Merino va creando capas para que suene como una banda, por medio de armonías,\npercusión,y bajo.\"",
+    "video": {
+     "tipo": "youtube",
+     "id": "i2efpGb5zEU",
+     "url": "https://www.youtube.com/watch?v=i2efpGb5zEU"
+    },
+    "imagen_wix": "0171ea_4946f7047e774c3f8e81524e95164316~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_4946f7047e774c3f8e81524e95164316~mv2.jpg"
+ },
+ {
+  "id": "bolina-titeres",
+  "nombre": "Bolina Títeres",
+  "procedencia": "Tenerife",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "las-jirafas-de-colores",
+    "titulo": "Las Jirafas de Colores",
+    "disciplinas": [
+     "Teatro de calle itinerante con títeres gigantes"
+    ],
+    "generos": [
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": "Las jirafas de colores pasean por la ciudad en familia, recorriendo las calles con sus pasos elegantes y llenos de color y delicadeza. Papá y mamá jirafas, enseñan a su cría a convivir en este nuevo mundo alejado de la selva donde tienen su hogar y a compartir con sus nuevos amigos y amigas sus aventuras transmitiendo respeto y admiración por los animales.",
+    "descripcion": "El espectáculo \"Las Jirafas de colores\" muestra en un recorrido la forma de habitad de estos animales, su majestuosidad y la elegancia que los caracteriza mientras comparten con el público su ingenuidad y ternura.",
+    "frase": "La majestuosidad de África con los Títeres gigantes de Bolina.\nTíteres gigantes para transmitir la importancia del amor a los animales.",
+    "video": {
+     "tipo": "youtube",
+     "id": "gmXG3l5SPlc",
+     "url": "https://www.youtube.com/watch?v=gmXG3l5SPlc"
+    },
+    "imagen_wix": "0171ea_8708ae5934d94aa18d59aa15f8279004~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_8708ae5934d94aa18d59aa15f8279004~mv2.jpg"
+ },
+ {
+  "id": "botproject",
+  "nombre": "BotProject",
+  "procedencia": "Comunidad Valenciana",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "rec-on-struccion",
+    "titulo": "REC.on (strucción)",
+    "disciplinas": [
+     "Circo (Trampolín)"
+    ],
+    "generos": [
+     "circo"
+    ],
+    "edad": "+3",
+    "duracion": 40,
+    "sinopsis": "ingravidez más cercano al cielo que a la tierra.",
+    "descripcion": "En clave de humor y de celebración, dos acróbatas se embarcan en un viaje de transformación personal. Poco a poco, estos cambios se traducen en una alteración del espacio escénico que da lugar a su reconstrucción individual. Los personajes de Lucas y Max se articulan en un (des)montaje de contraposiciones y (des)encuentros. El uno, motivado por un afán de superación constante y, el otro, por la búsqueda de conformidad, estabilidad y equilibrio. Estas dos inercias desencadenan una serie situaciones extrañantes a la vez que poéticas a raíz de sus crisis de edad. Desde la disciplina de trampolín/cama elástica, exploran sus miedos y deseos ante el paso del tiempo y el deterioro del cuerpo. En un juego de espejos a la vez cómico y dramático, Lucas y Max extrapolan al espectador/a sus (in)adaptaciones a un nuevo ciclo de vida.",
+    "frase": "Espectáculos de cama elástica en el que los interpretes, entre salto y salto van creando un estados de ingravidez con situaciones cómicas y locas, más cerca del cielo que de la tierra.",
+    "video": {
+     "tipo": "youtube",
+     "id": "WJTf5fKPP2c",
+     "url": "https://www.youtube.com/watch?v=WJTf5fKPP2c"
+    },
+    "imagen_wix": "0171ea_3dec176d18734cfa9e61b4d213d58dbc~mv2.jpg"
+   },
+   {
+    "id": "collage",
+    "titulo": "Collage",
+    "disciplinas": [
+     "Circo (Trampolín)"
+    ],
+    "generos": [
+     "circo"
+    ],
+    "edad": "+3",
+    "duracion": 40,
+    "sinopsis": "Tres artistas suspendidos en el aire se disponen a tirarse a la piscina con la seriedad y el rigor que dicta el guión. En un primer momento todo sale como estaba previsto, pero pronto una ansia de rebelión se apoderará de los acróbatas de esta historia poniendo en peligro la integridad de la obra. Entre salto y salto la regidora luchará por imponer el guión pero los acróbatas siguen sus propias reglas creando situaciones cómicas y locas con el objetivo de crear su propio espectáculo. Todas estas peripecias ocurrirán en un estado de",
+    "descripcion": "Ofrece una alegoría de las crisis de la mediana edad, de la vejez y del estigma social que la rodea, al mismo tiempo que desnuda los miedos que acompañan al desarrollo de las capacidades del artista. Desde la curiosidad, los personajes se exponen a y exponen los límites. Trampolín y acróbatas se funden, y desdibujan sus fronteras en la búsqueda de las arritmias, del riesgo. Objetos y sujetos se trastornan para reencontrar(se) con la fragilidad de (sus) cuerpos, siempre en proceso de envejecimiento y en relación con los otros. En definitiva, la risa, lo extraño en lo cotidiano y las reflexiones sobre la finitud se entrelazan con la creación circense para explorar la condición humana.",
+    "frase": "Espectáculos de cama elástica en el que los interpretes, entre salto y salto van creando un estados de ingravidez con situaciones cómicas y locas, más cerca del cielo que de la tierra.",
+    "video": {
+     "tipo": "youtube",
+     "id": "1-rzYAkUs0k",
+     "url": "https://www.youtube.com/watch?v=1-rzYAkUs0k"
+    },
+    "imagen_wix": "0171ea_8d87afa133db4cc2b00bfd08eb4c3452~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_8d87afa133db4cc2b00bfd08eb4c3452~mv2.jpg"
+ },
+ {
+  "id": "bucraa-circus",
+  "nombre": "Bucraá Circus",
+  "procedencia": "Cataluña",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "el-gran-final",
+    "titulo": "El Gran Final",
+    "disciplinas": [
+     "Clown y teatro gestual"
+    ],
+    "generos": [
+     "humor",
+     "teatro"
+    ],
+    "edad": "+3",
+    "duracion": 50,
+    "sinopsis": "\"El Gran Final\" es una tragicomedia que basa su esencia en el reencuentro de\ndos payasos que tuvieron que separarse hace muchos años a consecuencia del\nestallido de una guerra civil. Esta guerra les interrumpe la última función, justo\nantes de su gran acto final. El conflicto los obliga a tomar caminos separados y\nno tener contacto el uno con el otro.\nAhora, después de más de 30 años, infinitas etapas, una lucha diaria y\nconstante por la supervivencia y un cuerpo envejecido, se reencuentran y\ndeciden terminar su \"Gran Final\".\nUn homenaje a uno de los oficios más bonitos y generosos del mundo.\nEl oficio de ser payaso.\nSentir para crear un diálogo con el espectador desde las emociones,\ndonde sobran las palabras. Un imaginario colectivo que payasos de\ntodos los tiempos nos han dejado en la memoria.",
+    "descripcion": "Un espectáculo de clown y teatro gestual que nos sumerge en la nostalgia de\nun mundo pasado y particular\nCon su estética y su belleza poética nos atrapa mediante la capacidad de\njuego e improvisación de sus personajes. Una historia de amor y guerra\ncoronada por un “Gran Final” que no se puede desvelar y que merece la pena\nvivir!",
+    "frase": "Un homenaje a uno de los oficios más bonitos y generosos del mundo. El oficio de ser payaso. Sentir para crear un diálogo con el espectador desde las emociones,\ndonde sobran las palabras",
+    "video": {
+     "tipo": "youtube",
+     "id": "FX_PDw5_E0Q",
+     "url": "https://www.youtube.com/watch?v=FX_PDw5_E0Q"
+    },
+    "imagen_wix": "0171ea_56a3b3adf6594f71ae845f5a4e592409~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_56a3b3adf6594f71ae845f5a4e592409~mv2.jpg"
+ },
+ {
+  "id": "chichirito",
+  "nombre": "Chichirito",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "taller-de-risoterapia",
+    "titulo": "Taller de risoterapia",
+    "disciplinas": [
+     "Taller de Risoterapia"
+    ],
+    "generos": [
+     "talleres"
+    ],
+    "edad": "+18",
+    "duracion": 60,
+    "sinopsis": "Raúl Pérez, educador de calle, actor y risoterapeuta conmás de 25 años de experiencia en el sector delespectáculo y la animación socio-educativa.",
+    "descripcion": "La meta de esta sesión de risoterapia es fomentar la generación de emociones positivas, fundamentales para la construcción de una buena calidad de vida.\nEn primer lugar, la risoterapia busca reducir el estrés y la ansiedad.\nEn segundo lugar, a través de la risa, los individuos pueden aprender a ver las situaciones adversas desde una perspectiva más positiva y, por lo tanto, manejar mejor los desafíos.\nFinalmente, un objetivo crucial es promover la conectividad social.\nEstá más que demostrado los beneficios de la risoterapia en varios dominios de la salud y el bienestar.",
+    "frase": "La meta de esta sesión de risoterapia es fomentar la generación de emociones positivas, fundamentales para la construcción de una buena calidad de vida.",
+    "video": null,
+    "imagen_wix": "0171ea_9de8bbf3289c40f99ac9d81d811f6224~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_9de8bbf3289c40f99ac9d81d811f6224~mv2.jpg"
+ },
+ {
+  "id": "suso-imbernon",
+  "nombre": "Cía. Suso Imbernón",
+  "procedencia": "Comunidad Valenciana",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "paco-panjabi-profesor-de-yoga",
+    "titulo": "Paco Panjabi (Profesor de Yoga)",
+    "disciplinas": [
+     "Clown",
+     "Humor",
+     "Magia",
+     "Fuego"
+    ],
+    "generos": [
+     "humor",
+     "magia"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": "Un profesor de Yoga charlatán y vago va a dar una clase pero una serie de problemas le obligan a salir alpaso con ejercicios sin sentido. Sorprendentemente acaba haciendo cosas increíbles como saltar sobrecristales o mantener posturas de acroyoga imposibles.",
+    "descripcion": "El vídeo está grabado en sala pero el show está concebido para calle: hay mucha interacción con elpúblico. El humor se produce del choque con un personaje que está absolutamente alejado de la armoníaque se le supone a un profesor de yoga. Malhumorado, fuera de forma y mete patas parece incapaz dehacer nada de provecho cuando lo vemos arder por un accidente con una vela. Sin embargo, poco a poconos va sorprendiendo por ejemplo cuando logra que un vaso levite sin darse cuenta. Y él mismo acabasorprendido al lograr saltar sobre cristales y hacer una levitación imposible encima de esterillas de yoga.",
+    "frase": "Posiblemente el peor profesor de yoga del mundo, acaba haciendo cosas increíbles como saltar sobrecristales o realizar posturas de Acroyoga imposibles.",
+    "video": {
+     "tipo": "youtube",
+     "id": "yV25jNgrowg",
+     "url": "https://www.youtube.com/watch?v=yV25jNgrowg"
+    },
+    "imagen_wix": "0171ea_43731f7a89a54d2a9313017dfc63c5f1~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_43731f7a89a54d2a9313017dfc63c5f1~mv2.jpg"
+ },
+ {
+  "id": "circanario-aime-morales",
+  "nombre": "Circanario / Aimé Morales",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "ai-moko",
+    "titulo": "Ai´moko",
+    "disciplinas": [
+     "Rueda Cyr",
+     "Payaso y danza"
+    ],
+    "generos": [
+     "circo",
+     "humor",
+     "teatro"
+    ],
+    "edad": "+9",
+    "duracion": 30,
+    "sinopsis": "AI'MOKO es un espectáculo unipersonal creado en 2013 que combina clown, danza y circo. La obra presenta a un ser nacido como un pensamiento, emergiendo en el momento en que se lucha contra una idea propia. AI'MOKO es una entidad que no sabe quién es ni hacia dónde va; simplemente sabe que debe hacer algo, aunque no sepa exactamente qué. Esta mezcla de incertidumbre y creatividad se traduce en una performance llena de ingenio y movimiento.",
+    "descripcion": "Introducción del personaje:\n\nEl espectáculo comienza con la entrada del personaje principal, AI'MOKO, quien desde el primer momento capta la atención del público con su vestuario distintivo y maquillaje expresivo que destaca su naturaleza de clown y artista de circo.\nElementos de clown:\n\nAI'MOKO interactúa con el público a través de movimientos cómicos y gestos exagerados. La actuación incluye humor visual y situaciones cómicas que involucran al personaje tratando de entender su entorno y su propósito.\nActuaciones de danza:\n\nLa danza se integra en la narrativa, con movimientos fluidos y expresivos que reflejan la lucha interna y el viaje emocional de AI'MOKO. La coreografía es un elemento clave que conecta las diferentes partes del espectáculo.\nAcrobacias con la rueda Cyr:\n\nAI'MOKO realiza impresionantes acrobacias con la rueda Cyr. El público verá giros y maniobras enérgicas que muestran la destreza y control del artista sobre este aparato circense. Estos momentos son espectaculares y visualmente impactantes.\nNarrativa visual:\n\nLa historia de AI'MOKO se desarrolla sin necesidad de palabras, a través de la combinación de movimientos corporales, expresiones faciales y la interacción con los elementos circenses. La narrativa gira en torno al autodescubrimiento y la creatividad, representando la lucha del personaje con sus propias ideas y pensamientos.\nInteracción con el público:\n\nAI'MOKO rompe la cuarta pared en varias ocasiones, interactuando directamente con el público, creando un ambiente íntimo y participativo. Estas interacciones añaden un toque personal y único a cada presentación.\nTransiciones suaves:\n\nLas transiciones entre las diferentes partes del espectáculo son fluidas, manteniendo al público inmerso en la experiencia. La música y los efectos sonoros acompañan estas transiciones, mejorando la atmósfera y la narrativa.\nFinal emotivo:\n\nEl espectáculo concluye con una secuencia emotiva que resume el viaje del personaje. AI'MOKO deja una impresión duradera en el público, invitándolos a reflexionar sobre la naturaleza de la creatividad y el autodescubrimiento.\nExperiencia general:\nEl público experimentará un espectáculo visualmente atractivo y emocionalmente resonante, lleno de humor, movimiento y destreza circense. AI'MOKO ofrece una mezcla única de entretenimiento y arte, creando una experiencia memorable para espectadores de todas las edades.",
+    "frase": "AI'MOKO ha sido galardonado con prestigiosos premios, como la Medalla de Oro en el Festival Mondial du Cirque de Demain y el Elefante de Bronce en el Noukolin Circus de Moscú. Estos reconocimientos destacan la excelencia artística de Aimé Morales y su habilidad para conectar con el público a través de su creatividad y talento.\n\nEl galardonado espectáculo AI'MOKO, creado y protagonizado por Aimé Morales, llega a [lugar del evento] este [fecha del evento]. Este fascinante show unipersonal, que ha cautivado audiencias en más de 300 presentaciones alrededor del mundo, combina elementos de clown, danza y circo para ofrecer una experiencia única y emocionalmente resonante.\n\nAI'MOKO ha sido presentado en importantes festivales y convenciones en Japón, Taiwán, China, Brasil, Colombia, Australia, Bélgica, Francia, Alemania y España, entre otros. Este año, el espectáculo continuará su gira en México y Noruega, llevando su mensaje de autodescubrimiento y creatividad a audiencias internacionales.",
+    "video": {
+     "tipo": "youtube",
+     "id": "KSqYekubnnQ",
+     "url": "https://www.youtube.com/watch?v=KSqYekubnnQ"
+    },
+    "imagen_wix": "0171ea_9a53db762bfb4e7a99e93b976f57a1a7~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_9a53db762bfb4e7a99e93b976f57a1a7~mv2.jpg"
+ },
+ {
+  "id": "circo-akroshcan",
+  "nombre": "Circo Akroshcan",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "a-kabaret",
+    "titulo": "A-kabaret",
+    "disciplinas": [
+     "Circo",
+     "Varieté",
+     "Danza y Teatro"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": "\"A-kabaret es una experiencia única que transporta al espectador de manera sutil desde la realidad cotidiana a un universo fascinante donde el cabaret se encuentra con la magia del circo.\n\nEste espectáculo, apto para todo tipo de público, presenta una rica variedad de disciplinas artísticas, que incluyen danza, teatro, música, acrobacias, malabares, equilibrismo,acrobacia aérea y coctelería.\"",
+    "descripcion": "\"Su labor, dignificada a través del arte, se entrelaza con\nelementos de tragedia, simpatía, conquista y humor,brindando al público una perspectiva única sobre laimportancia y el valor del servicio.\n\nMás allá de la destreza técnica de sus artistas, A-kabaret rinde homenaje a la figura del camarero y la camarera,esos profesionales cuyo trabajo silencioso y constante esesencial para crear experiencias memorables.\"",
+    "frase": "A-kabaret es un espectáculo multidisciplinar para todos los públicos que fusiona el cabaret y el circo para rendir homenaje a la figura del camarero y la camarera mediante danza, teatro, música, acrobacias y coctelería escénica. Con una puesta en escena llena de humor, emoción y virtuosismo, transforma el servicio en una experiencia artística original que invita al público a descubrir el valor de una profesión esencial.",
+    "video": {
+     "tipo": "youtube",
+     "id": "HY11NwFj2u4",
+     "url": "https://www.youtube.com/watch?v=HY11NwFj2u4"
+    },
+    "imagen_wix": "0171ea_6d73601d77814b749c2189c943bf31b0~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_6d73601d77814b749c2189c943bf31b0~mv2.jpeg"
+ },
+ {
+  "id": "collectif-bislacco",
+  "nombre": "Collectif Bislacco",
+  "procedencia": "Toulouse (Francia)",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "smooth-as-fiasco",
+    "titulo": "Smooth as Fiasco",
+    "disciplinas": [
+     "Circo caótico y musical"
+    ],
+    "generos": [
+     "circo",
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 70,
+    "sinopsis": "En un día embarrado, en lo profundo de un pantano, un grupo de gente se reúne para celebrar.\nLas ceremonias son extrañas y festivas, divertidas y patéticas.\nTodos en el mismo fango, del que surgen diferentes relaciones, emociones y conflictos. Hay quienes necesitan expresarse a toda costa y otros empantanados en sus propios pensamientos.\nA menudo desbordados por los acontecimientos, los personajes crean un retablo caótico y burlesco.\nCada uno de ellos se deja llevar por sus propias fiebres, y dejarlas salir parece ser el único remedio para evitar hundirse colectivamente en este lodo espeso y pegajoso.\nUn autoritario sensible, un desconsolado por nada, un\nrisueño compulsivo, un cupido desesperado, un amante atormentado, todos comparten el mismo objetivo: emerger de la tierra blanda en la que se ahogan.\nCelebrar o hundirse su lema para\nmantenerse a flote... para siempre.",
+    "descripcion": "Smooth as Fiasco es un espectáculo de circo con una gran variedad de disciplinas (malabares, acrobacia, rueda cyr, mástil chino, telas), en el que toda la música es tocada en directo por los 10 artistas en escena.\n\nCada personaje está impulsado por una profunda obsesión\nque guía sus pasos. Los temperamentos marcados de\nunos chocan con las imprevisibles extravagancias de otros.\n\nAsí, las insólitas ceremonias que allí tienen lugar vacilan y luchan por mantenerse en pie, transformándose poco a poco en escenas a la vez caóticas y burlescas.\n\nEstos seres, a menudo ajenos a los códigos sociales, dejan aflorar de repente sus emociones más intensas. Entre extraños rituales y almas atormentadas, este grupo marginal y nómada teje un frágil equilibrio, suspendido entre el orden y el caos.\n\nSe trata de un espectáculo generoso y enérgico que cuestiona la relación con el mundo de una juventud a veces desencantada, a menudo hilarante, quizá profundamente conmocionada y, sin duda, ruidosa; una juventud que se enfrenta a un universo cuyos códigos aún no domina por completo y que está decidida a no dejarse engañar... ¡sin antes montar una buena fiesta!",
+    "frase": "Un extraño grupo llega a festejar sin razón, creando a través del circo, la música y el juego teatral un espectáculo lleno de energía y a menudo caótico\nFestejar o hundirse es su lema",
+    "video": {
+     "tipo": "youtube",
+     "id": "o-5i_xYCzNI",
+     "url": "https://www.youtube.com/watch?v=o-5i_xYCzNI"
+    },
+    "imagen_wix": "0171ea_7dc5d56645e744889c6d6d7999ede50a~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_7dc5d56645e744889c6d6d7999ede50a~mv2.jpg"
+ },
+ {
+  "id": "cris-clown",
+  "nombre": "Cris Clown",
+  "procedencia": "Cataluña",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "home",
+    "titulo": "Home",
+    "disciplinas": [
+     "Clown"
+    ],
+    "generos": [
+     "humor"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 40,
+    "sinopsis": "En una casa miserable, una pareja vive su penosa rutina. Drama al servicio de la comedia.\nRisa de la buena, de la sonora, de la que cura.\nUn espectáculo trepidante, emocionante, hilarante.",
+    "descripcion": "HOME es un espectáculo para compartir risas.\nRisas de verdad, de las que nos remueven por dentro y nos hacen sentir a gusto. Una casa en plena calle, donde dos personajes nos abren las puertas a su intimidad. Descubrimos su drama, su soledad y su forma de sobrevivir a ella.",
+    "frase": "HOME es un espectáculo para compartir risas.\nRisas de verdad, de las que nos remueven por dentro y nos hacen sentir a gusto.",
+    "video": {
+     "tipo": "youtube",
+     "id": "-E2PF_B-dW0",
+     "url": "https://www.youtube.com/watch?v=-E2PF_B-dW0"
+    },
+    "imagen_wix": "0171ea_de322d6d75cb4b28a978232d279bcc0b~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_de322d6d75cb4b28a978232d279bcc0b~mv2.jpg"
+ },
+ {
+  "id": "eddy-eighty",
+  "nombre": "Eddy Eighty",
+  "procedencia": "Comunidad Valenciana",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "the-power-of-the-80-s",
+    "titulo": "The power of the 80's",
+    "disciplinas": [
+     "Humor",
+     "Amor y circo"
+    ],
+    "generos": [
+     "circo",
+     "humor"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "El cambio es posible:“Sólo tenemos que volver atrás y escuchar lo que nos dijeron los 80's”De padre domador de focas y madre costurera, Eddy Eighty se crió viajando y desde jovencito siempretuvo un sueño:Llevar la música de los 80 al mundo del circo.A lo largo de esta entrañable historia nuestro protagonista con técnicas como los equilibrios, malabares,verticales, danza... sorprenderá al público creando un ambiente de humor, amor y participación.",
+    "descripcion": "\"A lo largo de esta entrañable historia nuestro protagonista con técnicas como los equilibrios, malabares,\nverticales, danza... sorprenderá al público creando un ambiente de humor, amor y participación.\"",
+    "frase": "\"Entrañable historia de amor, humor y circo con mucha música de los 80's. Eddy Eighty desata su locura\nochentera en un show lleno de ritmo y participación.\"",
+    "video": {
+     "tipo": "youtube",
+     "id": "UnBNMuhwsGw",
+     "url": "https://www.youtube.com/watch?v=UnBNMuhwsGw"
+    },
+    "imagen_wix": "0171ea_ddef8f21889d45079ac8444169265c9a~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_ddef8f21889d45079ac8444169265c9a~mv2.jpg"
+ },
+ {
+  "id": "el-gordo-y-el-chapa",
+  "nombre": "El Gordo y el Chapa",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "el-ultimo-hombre-bala",
+    "titulo": "El último hombre bala",
+    "disciplinas": [
+     "Circo",
+     "Clown"
+    ],
+    "generos": [
+     "circo",
+     "humor"
+    ],
+    "edad": "+3",
+    "duracion": 45,
+    "sinopsis": "Dos personajes se presentan como los creadores del\nespectáculo más asombroso del siglo. Prometen magia, acrobacias y un final inolvidable: ¡el lanzamiento del Hombre Bala! Pero no todo sale como esperaban.\nEntre errores, malentendidos y delirantes preparativos, el caos se apodera del escenario mientras el reloj avanza hacia el gran final.\nUna comedia sin palabras, apta para todos los públicos y todas las edades, que hará reír a carcajadas hasta el último segundo.",
+    "descripcion": "un delirante espectáculo de humor absurdo, magia cómica y torpes acrobacias. Creado por Jacobo Santiago y Rayco Marrero, el show culmina con el épico lanzamiento del último hombre bala y está diseñado para todos los públicos y edades",
+    "frase": "Es un espectáculo lleno de adrenalina en el que la valentía, la precisión y el humor se combinan para sorprender al público. Con un lanzamiento espectacular y una puesta en escena emocionante, ofrece una experiencia divertida e inolvidable para toda la familia",
+    "video": {
+     "tipo": "youtube",
+     "id": "172eDBXm1gs",
+     "url": "https://www.youtube.com/watch?v=172eDBXm1gs"
+    },
+    "imagen_wix": "0171ea_f5d6dd51175a4b6b907b0e92bb277113~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_f5d6dd51175a4b6b907b0e92bb277113~mv2.jpeg"
+ },
+ {
+  "id": "el-nino-de-la-hipoteca",
+  "nombre": "El Niño de la Hipoteca",
+  "procedencia": "Barcelona",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "el-nino-de-la-hipoteca",
+    "titulo": "El Niño de la Hipoteca",
+    "disciplinas": [
+     "Música",
+     "Humor"
+    ],
+    "generos": [
+     "humor",
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 75,
+    "sinopsis": "Un repaso de la discografía de el niño de la hipoteca con breves discursos narrativos entre canción y canción",
+    "descripcion": "Un repaso de la discografía de el niño de la hipoteca con breves discursos narrativos entre canción y canción",
+    "frase": "Un repaso de toda la discografía del Niño de la Hipoteca",
+    "video": {
+     "tipo": "youtube",
+     "id": "svYXIL8Qt8E",
+     "url": "https://www.youtube.com/watch?v=svYXIL8Qt8E"
+    },
+    "imagen_wix": "0171ea_0aca7cb68f6d4da2a61b78eef9c37797~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_0aca7cb68f6d4da2a61b78eef9c37797~mv2.jpg"
+ },
+ {
+  "id": "enkassette",
+  "nombre": "Enkassette",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "concierto-banda-enkassette",
+    "titulo": "Concierto banda Enkassette",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 75,
+    "sinopsis": "Banda de música la cual toca diferentes estilos, como reggae, ska, rock, cumbia. Hay temas propios, versiones y adaptaciones. Se han grabado dos maquetas (Hijos de la maldad y Tropicalya) \"pronunciado tropicalia\". Dentro del espectáculo se habla de la vida cotidiana,  canción protesta, defensa de los derechos y libertades, además de concienciación de la conservación de nuestro medio natural y la cultura e idiosincrasia de las islas.",
+    "descripcion": "Una fiesta fusión,  con un toque ecléctico. Es un espectáculo hecho básicamente para que la gente se divierta y pase un buen rato, por medio de canciones donde se festeja la vida. Con mensajes de conciencia social, medio ambiental, mestizaje  y amor a las islas Canarias.",
+    "frase": "Fiesta fusión",
+    "video": {
+     "tipo": "youtube",
+     "id": "p_iblpGRZYc",
+     "url": "https://www.youtube.com/watch?v=p_iblpGRZYc"
+    },
+    "imagen_wix": "0171ea_aef3709e06fd420cb942da3a4a62779f~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_aef3709e06fd420cb942da3a4a62779f~mv2.jpg"
+ },
+ {
+  "id": "entropias-imposibles",
+  "nombre": "Entropías Imposibles",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "clicka-el-duende-que-suena-cuentos",
+    "titulo": "Clicka El Duende que Sueña Cuentos",
+    "disciplinas": [
+     "Teatro",
+     "Clown",
+     "Narración oral"
+    ],
+    "generos": [
+     "humor",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "Desde muy pequeñita Clicka empezó a soñar cuentos. A veces con los ojos cerrados y muchas otras veces con los ojos abiertos.\nEsta divertida duende, nos descubrirá mil historias que guarda en su especial biblioteca y en lo más profundo de su “duende” corazón.",
+    "descripcion": "Un espectáculo divertido participativo, con muchas risas y con historias que les harán SOÑAR CON LOS OJOS ABIERTOS.\nUN MEZCLA DE CLOW, NARRACIÓN ORAL Y TEATRO QUE ATRAPARÁ A TODA LA FAMILIA.\nSE DESCUBRE EL GRAN SECRETO DE QUE HAY DUENDES, VIVIENDO ENTRE NOSOTROS LOS HUMANOS.",
+    "frase": "Un espectáculo divertido, participativo, con muchas risas y con historias que les harán SOÑAR, CON LOS OJOS ABIERTOS.",
+    "video": {
+     "tipo": "youtube",
+     "id": "pgegIsNNSRc",
+     "url": "https://www.youtube.com/watch?v=pgegIsNNSRc"
+    },
+    "imagen_wix": "0171ea_7b41c3d6956f4d2a834f156be5eaf14a~mv2.jpg"
+   },
+   {
+    "id": "el-gran-kamishibai",
+    "titulo": "El Gran Kamishibai",
+    "disciplinas": [
+     "Narración oral",
+     "Teatro"
+    ],
+    "generos": [
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 30,
+    "sinopsis": "El kamishibai es un arte milenario Japonés basado en la Narración Oral y en la transmisión de conocimientos y tradiciones.\nAantiguamente en japón se decía que la cultura del kamishibai es algo que fomenta la paz y la felicidad en los niños y en todo aquel que es capaz de impregnarse de su magia. soñaremos acompañando un hermoso cuento que nos regalará las semillas de la paz.",
+    "descripcion": "Se recibe al público como los auténticos kamisibaias o gaitos (cuenteros Japoneses).\nCon música, olores y percusión típica japonesa.\nY como no puede ser de otra manera el público asistente, hará su pequeño ritual para dar gracias al gran teatro de papel para que se abra y nos deleite con sus hermosas historias.\n-LOS INTRUSOS--- ( nuestro cuento)\nEste hermoso cuento, nos habla sobre la migración por la que han pasado todos los pueblos del mundo. La historia que hará soñar y disfrutar a pequeños y grandes, nos llevará a construir un mundo mejor sembrando en nuestros hogares y nuestros corazones las semillas de la Paz.\nJugando con dos finales, con una reflexión colectiva y con la participación directa del público, nos convertiremos en auténticos maestro@s de este gran arte milenario.",
+    "frase": "Historias vividas, soñadas, reales o inventadas, que miradas desde la ventana de esta maravilla Japonesa, conseguirá transportarnos a lejanos mundos, donde grandes y pequeños jugarán en familia a SOÑAR CON LOS OJOS ABIERTOS!",
+    "video": null,
+    "imagen_wix": "0171ea_9a7e8b105f754804a61bb93b8bd77e52~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_9a7e8b105f754804a61bb93b8bd77e52~mv2.jpg"
+ },
+ {
+  "id": "escuela-de-calor",
+  "nombre": "Escuela de Calor",
+  "procedencia": "Tenerife",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "escuela-de-calor-concierto",
+    "titulo": "Escuela de Calor (concierto)",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "Escuela de Calor se erige como una potente banda de rock originaria de Tenerife, nacida en 2010 y destinada a resonar con fuerza a lo largo y ancho de la escena musical. Recorren las islas, cautivando a audiencias en innumerables conciertos y eventos de diversa índole.",
+    "descripcion": "Su repertorio se erige como un homenaje a los mejores temas de la historia de habla hispana, aquellas melodías que son la banda sonora de nuestras vidas. Entre ellas, destacan éxitos de artistas icónicos como Maná, Danza Invisible, El Chaval de la Peca, Los Coquillos, Duncan Dhu, Los Secretos, Seguridad Social, Radio Futura, Miguel Ríos, El Último de la Fila, Los Ronaldos, Los Rebeldes, Jarabe de Palo, MClan, Antonio Vega, La Unión, Tam Tam Go, Santana, Alaska y Dinarama, Los Rodríguez, Antonio Flores, Loquillo, La Guardia, Andrés Calamaro, La Frontera, La Unión, Palmera, Pistones y Celtas Cortos.",
+    "frase": "La pasión por la música se traduce en cada actuación en vivo, donde buscan no solo entretener al público, sino también hacerlos partícipes de la experiencia. Cuidamos con esmero la calidad del sonido de la banda, asegurándonos de que sea compacto y resonante. Los directos de Escuela de Calor tienen como objetivo principal proporcionar una experiencia musical inolvidable, donde la diversión y la conexión con el público son la máxima prioridad",
+    "video": {
+     "tipo": "youtube",
+     "id": "KTU0B3ksIsA",
+     "url": "https://www.youtube.com/watch?v=KTU0B3ksIsA"
+    },
+    "imagen_wix": "0171ea_5f4ccc2c86f8448fb2d251f5f90daeb5~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_5f4ccc2c86f8448fb2d251f5f90daeb5~mv2.jpeg"
+ },
+ {
+  "id": "escuela-de-circo-msb",
+  "nombre": "Escuela de Circo MSB",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "circoteca",
+    "titulo": "Circoteca",
+    "disciplinas": [
+     "Taller"
+    ],
+    "generos": [
+     "circo",
+     "talleres"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 180,
+    "sinopsis": "Circo Creativo es un programa formativo de circo itinerante e inclusivo.\nTalleres de malabares, acrobacias, telas aéreas y equilibrios para todas las edades.",
+    "descripcion": "El espectador va a experimentar en los zancos, colgarse en las telas aéreas y jugar con el plato chino. Una actividad para realizar en familia, sin límites de edad.",
+    "frase": "Talleres de circo creativo\nMalabares, acrobacias y equilibrios para disfrutar en familia",
+    "video": {
+     "tipo": "youtube",
+     "id": "YyMLKl8GsIY",
+     "url": "https://www.youtube.com/watch?v=YyMLKl8GsIY"
+    },
+    "imagen_wix": "0171ea_78c9d3183954443db2d9fe0d0d9b985e~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_78c9d3183954443db2d9fe0d0d9b985e~mv2.jpg"
+ },
+ {
+  "id": "eventi-verticali",
+  "nombre": "eVenti Verticali",
+  "procedencia": "Italia",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "cubo",
+    "titulo": "Cubo",
+    "disciplinas": [
+     "Danza vertical",
+     "Danza aérea"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 40,
+    "sinopsis": "Cubo, un Volumen en Vuelo.\nEs un escenario tridimensional suspendido.\nEs un juego de cuerpos, luces y sombras que se funden en las modulaciones cromáticas de la estructura.\nCubo es una gran máquina teatral puesta a disposición para la danza vertical y las acrobacias aéreas, creando varios planos y formas para bailar en el espacio. Un espectáculo que se desarrolla en tres dimensiones donde la técnica, la danza y las acrobacias se mezclan con la arquitectura y el espacio.",
+    "descripcion": "Bailarines, acróbatas y performers se moverán dentro de una espectacular estructura elevada por una grúa, transformando la geometría del cubo en una criatura viva y cambiante, inmersa en un torbellino de luces, sombras y sonidos.\nCon la dirección de Andrea Piallini y la música original de Riccardo Esposito, Cubo es mucho más que un espectáculo: es un viaje poético en tres dimensiones, un himno a la ligereza, a la libertad y a la belleza que se eleva sobre nuestras cabezas.",
+    "frase": "Cubo es un espectáculo aéreo donde cuerpo, luz y sonido transforman una estructura suspendida en una experiencia poética en movimiento.",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://www.youtube.com/playlist?list=PLm-64XZjpFEJVzgeBm_OxXkac5lW48web"
+    },
+    "imagen_wix": "0171ea_7664a8bf09fd4363963fd246b13c1da5~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_7664a8bf09fd4363963fd246b13c1da5~mv2.jpg"
+ },
+ {
+  "id": "fran-baraja",
+  "nombre": "Fran Baraja",
+  "procedencia": "Tenerife",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "disculpen-mi-desorden",
+    "titulo": "¡Disculpen mi desorden!",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "Fran Baraja hace un recorrido por los sonidos tradicionales y populares de Canarias, con letras afiladas y ritmos vertiginosos que harán que no pares de bailar.",
+    "descripcion": "Música canaria del siglo XXI, un concierto divertido que mezcla nuestra música con humor, con composiciones propias que hablan de nuestra idiosincrasia con un punto de vista muy particular.",
+    "frase": "Del timple al beat.\nEl folclore canario, como nunca lo habías sentido.",
+    "video": {
+     "tipo": "youtube",
+     "id": "f7f6Vl0gwMc",
+     "url": "https://www.youtube.com/watch?v=f7f6Vl0gwMc"
+    },
+    "imagen_wix": "0171ea_8ef3e339b809411cae3b332be59630c2~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_8ef3e339b809411cae3b332be59630c2~mv2.jpg"
+ },
+ {
+  "id": "giuseppe-salchichone",
+  "nombre": "Giuseppe Salchichone",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "los-retos-de-giuseppe-salchichone",
+    "titulo": "Los Retos de Giuseppe Salchichone",
+    "disciplinas": [
+     "Clown",
+     "Malabares",
+     "Magia"
+    ],
+    "generos": [
+     "circo",
+     "humor",
+     "magia"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "Giuseppe salchichone nos trae un espectáculo participativo, donde intenta superar diferentes retos con la ayuda del público.",
+    "descripcion": "Espectáculo familiar muy participativo, donde el público será protagonista de de los retos que le propondrá el peculiar y carismático payaso Giuseppe Salchichone",
+    "frase": "Espectáculo de clown, ideal para compartir en familia. La diversión y la participación están aseguradas. ¿Te lo vas a perder?",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://studio.youtube.com/video/r-2WWbX8xMs/edit"
+    },
+    "imagen_wix": "0171ea_4c7fca43fb84461087f9cbd829d51284~mv2.png"
+   }
+  ],
+  "imagen_wix": "0171ea_4c7fca43fb84461087f9cbd829d51284~mv2.png"
+ },
+ {
+  "id": "grupo-puja",
+  "nombre": "Grupo Puja",
+  "procedencia": "Madrid · Argentina",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "asteroide-b612-el-principito",
+    "titulo": "Asteroide B612 (El Principito)",
+    "disciplinas": [
+     "Teatro",
+     "Circo",
+     "Danza"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 40,
+    "sinopsis": "Libre versión de \"el principito\" de Saint-Exupery situada en el propio asteroide.",
+    "descripcion": "como es la vida de el principito en su planeta y lo que pasa cuando él viaja hasta la tierra y se encuentra a un aviador en apuros. Un espectáculo mágico",
+    "frase": "Nuestra versión de \"el principito\" de Saint-Exupery donde el protagonista es el propio asteroide.",
+    "video": {
+     "tipo": "youtube",
+     "id": "aXlnz-mOfc8",
+     "url": "https://www.youtube.com/watch?v=aXlnz-mOfc8"
+    },
+    "imagen_wix": "0171ea_54598e0c27d945b6acac4b1fd5d17598~mv2.jpg"
+   },
+   {
+    "id": "verne",
+    "titulo": "Verne",
+    "disciplinas": [
+     "Teatro",
+     "Danza",
+     "Circo"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 45,
+    "sinopsis": "Toda la obra de Julio Verne representada a través de las máquinas que él ideó para viajar donde el hombre nunca antes había viajado. Verne es protagonista de su propia historia en globo, submarino o cohete.",
+    "descripcion": "La fantasía de Julio Verne se representa a 40 metros de altura donde sus máquinas nos llevan al fondo del mar, al centro de la tierra o al espacio exterior",
+    "frase": "Los viajes extraordinarios de Julio Verne.",
+    "video": {
+     "tipo": "youtube",
+     "id": "8CIiO8FC6cw",
+     "url": "https://www.youtube.com/watch?v=8CIiO8FC6cw"
+    },
+    "imagen_wix": "0171ea_8c944f60c23a4d4d8d784db8e4ace9cc~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_8c944f60c23a4d4d8d784db8e4ace9cc~mv2.jpg"
+ },
+ {
+  "id": "jesus-soria",
+  "nombre": "Jesús Soria",
+  "procedencia": "Granada",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "hablo-mas-que-salto",
+    "titulo": "Hablo más que salto",
+    "disciplinas": [
+     "Comedia y acrobacia"
+    ],
+    "generos": [
+     "circo",
+     "humor"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 45,
+    "sinopsis": "Un espectáculo único e interactivo que combina humor, acrobacia y conexión real con el público.",
+    "descripcion": "Jesús Soria presenta un show que va más allá de la acrobacia. Con más de 10 años de experiencia en escenarios de todo el mundo, cada actuación es una experiencia única donde el público se convierte en protagonista.",
+    "frase": "Un show con impacto real, emoción y presencia en redes capaz de transformar cualquier evento.",
+    "video": {
+     "tipo": "youtube",
+     "id": "8Aw4oXeqYBI",
+     "url": "https://www.youtube.com/watch?v=8Aw4oXeqYBI"
+    },
+    "imagen_wix": "0171ea_2656c8de928149bc84ea4ce118adcad6~mv2.webp"
+   }
+  ],
+  "imagen_wix": "0171ea_2656c8de928149bc84ea4ce118adcad6~mv2.webp"
+ },
+ {
+  "id": "joe-farnarier",
+  "nombre": "Joe Farnarier",
+  "procedencia": "Cataluña",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "invisible",
+    "titulo": "Invisible",
+    "disciplinas": [
+     "Danza",
+     "Teatro",
+     "Acrobacia"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 25,
+    "sinopsis": "Invisible es un espectáculo que mezcla danza, teatro y acrobacia para explorar qué significa habitar el cuerpo, el espacio y el tiempo. Una propuesta directa que traduce en movimiento aquellos procesos internos que no se pueden explicar con palabras",
+    "descripcion": "Solo de danza, teatro y acrobacia",
+    "frase": "«Invisible» es un espectáculo de danza, teatro y acrobacia. Un diálogo entre el cuerpo, el espacio y el tiempo.",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://drive.google.com/file/d/1tO_H0txo_-KCByo_S0ttrBE8mqslnht7/view?usp=sharing"
+    },
+    "imagen_wix": "0171ea_2fc548a929804168bc0b74e443972a4e~mv2.png"
+   }
+  ],
+  "imagen_wix": "0171ea_2fc548a929804168bc0b74e443972a4e~mv2.png"
+ },
+ {
+  "id": "la-boina-de-fito",
+  "nombre": "La Boina de Fito",
+  "procedencia": "Canarias",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "la-boina-de-fito-concierto",
+    "titulo": "La Boina de Fito (concierto)",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 80,
+    "sinopsis": "Noventa minutos vibrantes de concierto en directo compuesto por el repertorio de Fito & Fitipaldis que hará corear al público las míticas canciones del artista.",
+    "descripcion": "Fito & Fitipaldis es una banda española de rock liderada por Adolfo \"Fito\" Cabrales, exmiembro del grupo de rock Platero y Tú. La banda se formó en 1998, y desde entonces ha destacado por su estilo musical que mezcla rock, blues, soul, y pop, con letras que exploran temas cotidianos, emociones profundas y experiencias de vida. Las canciones de Fito & Fitipaldis suelen tener un tono introspectivo y melancólico, con una fuerte influencia del rock clásico, pero también incorporan elementos de otros géneros, lo que les ha permitido atraer a un público diverso.\n\nFito Cabrales es conocido por su característica voz rasgada y su habilidad para conectar con el público a través de sus letras sinceras y directas. A lo largo de los años, Fito & Fitipaldis ha lanzado varios álbumes de éxito, entre los que destacan \"A puerta cerrada\", \"Por la boca vive el pez\", y \"Huyendo conmigo de mí\". Su música ha logrado conquistar tanto a la crítica como al público, convirtiendo a la banda en uno de los referentes del rock español contemporáneo.\n\nEl tributo a Fito & Fitipaldis suele ser un homenaje a su trayectoria y legado en la música, destacando la capacidad de la banda para evolucionar sin perder su esencia. Los tributos pueden incluir versiones de sus canciones más icónicas interpretadas por otros artistas o bandas, así como conciertos en los que se repasa su discografía. Estos eventos son una celebración de la influencia y el impacto que Fito & Fitipaldis ha tenido en la escena musical española.",
+    "frase": "La Boina de Fito es un grupo tributo que rinde homenaje a Fito & Fitipaldis, capturando la esencia y energía de la banda original. Con una interpretación fiel tanto en lo musical como en lo emocional, La Boina de Fito recrea los temas más emblemáticos de Fito & Fitipaldis, ofreciendo al público una experiencia cercana a los conciertos de la banda. Su dedicación y respeto por la música de Fito Cabrales hacen de La Boina de Fito una referencia destacada en el circuito de tributos a este icónico grupo de rock español.",
+    "video": {
+     "tipo": "youtube",
+     "id": "wharpM_5D0w",
+     "url": "https://www.youtube.com/watch?v=wharpM_5D0w"
+    },
+    "imagen_wix": "0171ea_9209218d749a4576b3f06722f6ea9d80~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_9209218d749a4576b3f06722f6ea9d80~mv2.jpeg"
+ },
+ {
+  "id": "la-chorimurga",
+  "nombre": "La Chorimurga",
+  "procedencia": "Canarias",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "bar-beria",
+    "titulo": "Bar-Bería",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "+12",
+    "duracion": 60,
+    "sinopsis": "La Chorimurga de Teror evoluciona. Esta vez ha decidido convertir un antiguo bar en ruinas en un próspero negocio de belleza. ¡Pide cita! No te quedes sin tu hueco.",
+    "descripcion": "Espectáculo musical con un estilo  carnavalero muy peculiar. Desde un punto de vista crítico, a la vez que divertido, hacemos un recorrido sobre la actualidad más candente.",
+    "frase": "La Bar - Bería de la Chorimurga de Teror no cierra en vacaciones.",
+    "video": {
+     "tipo": "youtube",
+     "id": "Mzpz1LM3egE",
+     "url": "https://www.youtube.com/watch?v=Mzpz1LM3egE"
+    },
+    "imagen_wix": "0171ea_d55e8f131a314f92b5fde745b28c6f6d~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_d55e8f131a314f92b5fde745b28c6f6d~mv2.jpeg"
+ },
+ {
+  "id": "la-cote-folle",
+  "nombre": "La Côte Folle",
+  "procedencia": "Francia",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "entre-bous-i-vaques-entre-bueyes-y-vacas",
+    "titulo": "Entre Bous I Vaques (Entre Bueyes y Vacas)",
+    "disciplinas": [
+     "Circo",
+     "Portés acrobáticos",
+     "Funambulismo",
+     "Danza"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "En una casa, pequeñas señales que anuncian una lenta desaparición: la vida se desvía, los recuerdos se resquebrajan. ¿Qué queda de nosotros cuando la memoria nos abandona? ¿cómo afecta a quien todavía recuerda?\n\nLa Côte Folle explora físicamente el sostener, la ayuda mutua, y de cómo el olvido impacta los cuerpos. Cinco acróbatas investigan, a través del mano a mano y el movimiento, la relación con un espacio compartido y un objeto común: un andamio que se convierte en puente hacia la sala de estar de la abuela.\n\nUna propuesta de calle y para todos los públicos.\n\nUn viaje a través de los recuerdos de un cerebro en ruinas, entre sensibilidad y humor.\n\nPorque olvidar nunca debería ser sinónimo de desaparecer.",
+    "descripcion": "Una mujer con Alzheimer desaparece de su casa. Tres días más tarde, la encuentran a veinte kilómetros, en un campo, en medio de las vacas.\n\nAl principio es casi nada, pequeños olvidos discretos que, sin embargo, marcan el inicio de una lenta y profunda desaparición. La vida cotidiana se descarrila, los recuerdos se desmoronan y los puntos de referencia se distorsionan.\n¿Qué queda de nosotros cuando la memoria se borra? ¿Cómo afecta el olvido a quienes sostienen y acompañan? ¿Y cómo acompañar hasta el final significa, a veces, llegar al agotamiento, olvidándose de una misma?\nCon estas preguntas, La Côte Folle explora, a través de los portes acrobáticos y el movimiento, la capacidad de cuidar, de ayudarse mutuamente y de sostener incluso lo\ninsoportable. Durante el tiempo de un espectáculo, cinco acróbatas se instalan en el espacio público con un andamio que adopta la forma de escenario, de casa familiar o de aparato de circo.\nUna propuesta de calle, accesible a todas y todos. Un viaje a través de los recuerdos de un cerebro en ruinas, entre sensibilidad y humor.\n\n“Entre bous i vaques” habla de la lucha por sostener a una persona que inevitablemente olvidará.\n\nPorque envejecer nunca debería ser sinónimo de desaparecer.",
+    "frase": "¿Qué queda de nosotros cuando la memoria se desvanece? Entre Bous i Vaques es un espectáculo de circo poético en el que cinco abuelas del territorio comparten escena con cinco acróbatas, explorando el Alzheimer, la vejez y el poder de los vínculos que nos sostienen.",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://drive.google.com/file/d/1Q9mU5AzXiL99jQF_wBf9E2Htuug5Rv19/view?usp=drive_link"
+    },
+    "imagen_wix": "0171ea_00f7792a37cf4df2abe6dd99ad3282b5~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_00f7792a37cf4df2abe6dd99ad3282b5~mv2.jpg"
+ },
+ {
+  "id": "la-dixie-de-en-pie",
+  "nombre": "La Dixie de En Pie",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "dixieland",
+    "titulo": "Dixieland",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": "\"La Dixie de En Pie nace expresamente para esta XIII edición: cinco músicos canarios que vienen de disciplinas distintas —del folclore a la banda de música, del jazz a la orquesta— y que se juntan por primera vez para tocar en la calle.\n\nMetales, viento y percusión, sin amplificación y sin escenario. Su espacio es el empedrado, la esquina, la cola de la próxima función. Aparecen sin avisar, levantan un corrillo, ponen a la gente a moverse y arrancan calle abajo con el público detrás.\n\nMás que un concierto, son el motor del festival: el sonido que llena el hueco entre espectáculos, el que avisa de que algo está a punto de empezar y el que convierte el camino de la Plaza de Sintes a la Alameda en parte del propio programa. En Teror, del 28 al 30 de agosto, si la oyes venir, ya sabes hacia dónde ir.\"",
+    "descripcion": "Cinco músicos canarios de disciplinas distintas se unen para crear La Dixie de En Pie: metales, ritmo y calle. Sin escenario y sin horario fijo. Si la oyes venir, síguela.",
+    "frase": "La Dixie de En Pie · Itinerante · Cinco músicos canarios recorriendo el pueblo para no dejar a nadie quieto.",
+    "video": null,
+    "imagen_wix": "0171ea_acf833d521984119a7e495be9e71370b~mv2.png"
+   }
+  ],
+  "imagen_wix": "0171ea_acf833d521984119a7e495be9e71370b~mv2.png"
+ },
+ {
+  "id": "la-gata-japonesa",
+  "nombre": "La Gata Japonesa",
+  "procedencia": "Madrid",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "el-showroom-de-paipai-rouge",
+    "titulo": "El showroom de Paipai Rouge",
+    "disciplinas": [
+     "Magia",
+     "Quick change",
+     "Bottle Walking"
+    ],
+    "generos": [
+     "magia"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 45,
+    "sinopsis": "\"Paipai Rouge sale a las calles a promocionar las maravillas de su tienda de antigüedades y, por\nsupuesto, a salvar el mundo.\nPara ello ha preparado un showroom de lo más espectacular, con una selección de los artículos\nmás destacados de su tienda y una serie de espectaculares demostraciones.\nAl comprar una antigüedad se adquiere una porción de tiempo pasado y el privilegio de seguir\nescribiendo su historia. Adéntrense en este viaje a través de vidas anónimas de tiempos antiguos.\nReutilicen, reciclen, compren en la tienda de antigüedades y… salven a las focas\"",
+    "descripcion": "\"Paipai Rouge es un espectáculo unipersonal de circo interactivo que aúna magia, equilibrios, comedia\nfísica y grandes dosis de humor absurdo\"",
+    "frase": "\"Paipai presenta una subasta de antigüedades muy particular. Los objetos antiguos serán la puerta a\nhistorias pasadas por las que viajaremos a través del humor absurdo, la magia, el circo y muchas otras\nsorpresas.\"",
+    "video": {
+     "tipo": "youtube",
+     "id": "03vi0McT0S0",
+     "url": "https://www.youtube.com/watch?v=03vi0McT0S0"
+    },
+    "imagen_wix": "0171ea_c03f5572dfa8481290a2154dc29f49a4~mv2.jpg"
+   },
+   {
+    "id": "voa",
+    "titulo": "Voa!",
+    "disciplinas": [
+     "Teatro gestual",
+     "Magia",
+     "Acrobacia"
+    ],
+    "generos": [
+     "circo",
+     "teatro",
+     "magia"
+    ],
+    "edad": "+6",
+    "duracion": 50,
+    "sinopsis": "¿Cuando dejaste de ver la vida con los ojos de un niño?\n¿Cuando tus manos dejaron de moverse libres creando mundos, para seguir guiones que ya no entienden? Concedetelo. ¡Juguemos!\nVolvamos a la inocencia, como una marioneta, movida por los hilos de la ilusión.\nEspectáculo de teatro gestual, donde un espectador incurre en el espacio escénico y se atreve a danzar, jugar, reir, imaginar y rozar el límite del absurdo, se atreve a ser niño.",
+    "descripcion": "Voa! es un espectáculo unipersonal de teatro gestual, magia y acrobacia, en el que el artista nos invita a recuperar nuestra inocencia, volver a creer en la magia y recuperar el entusiasmo por el juego y la imaginación.",
+    "frase": "Voa! invita a volver a jugar con la inocencia de un niño a través de la magia, la acrobacia y el teatro gestual.",
+    "video": {
+     "tipo": "youtube",
+     "id": "GEeICfUHiAY",
+     "url": "https://www.youtube.com/watch?v=GEeICfUHiAY"
+    },
+    "imagen_wix": "0171ea_18f0f14271314299adc56f360cd2caf5~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_18f0f14271314299adc56f360cd2caf5~mv2.jpg"
+ },
+ {
+  "id": "la-godot-escenica",
+  "nombre": "La Godot Escénica",
+  "procedencia": "Canarias",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "hipatia-y-el-asteroide-b-612",
+    "titulo": "Hipatia y el asteroide B-612",
+    "disciplinas": [
+     "Teatro"
+    ],
+    "generos": [
+     "teatro"
+    ],
+    "edad": "+6",
+    "duracion": 50,
+    "sinopsis": "Tras el anuncio de la mayor lluvia de estrellas de todos los tiempos, una pequeña\naspirante a astrónoma, coge su telescopio y se dirige a la montaña más alta que\nle permita disfrutar de este gran fenómeno de la naturaleza, del que pretende\ninspirarse también para crear su primer libro de poesía científica, una idea que le\nronda por la cabeza desde hace tiempo. Cuando coloca su ojo ante el objetivo\ndirigido directamente al cielo, se extraña al comprobar que no se ve ni una sola\nestrella. El cielo es un auténtico desierto. No, espera, parece que a lo lejos puede\nverse una… Al mirar con más detenimiento, se percata de que no es una estrella,\nsino un pequeño asteroide repleto de unos extraños árboles… Parecen baobabs.\nTambién hay rosas, un sinfín de pequeñas rosas… No se lo puede creer… Un\nasteroide, baobabs, rosas… Parece la historia de El Principito, de Antoine du\nSaint-Exupéry. En ese momento, aparece, entre árboles y rosas, una pequeña\nfigura humana… Nuestro querido Principito. Y así es cómo comienza una gran\naventura, donde nuestra protagonista, ayudada por los conocimientos y la\nsensibilidad de El Principito, emprende un viaje por el planeta Tierra, con el fin de\naveriguar qué está pasando para que las estrellas hayan desaparecido…",
+    "descripcion": "Hipatia y el asteroide B-612 es un espectáculo donde hablaremos de ciencia y literatura para tratar el cuidado del medioambiente",
+    "frase": "Una obra sobre ARTE, CIENCIA, MEDIO AMBIENTE a través del teatro.\n\nLa cultura como forma de transmitir valores sostenibles con el entorno que nos rodea.",
+    "video": {
+     "tipo": "youtube",
+     "id": "j88iwd09AlY",
+     "url": "https://www.youtube.com/watch?v=j88iwd09AlY"
+    },
+    "imagen_wix": "0171ea_8d3461a1527a42b98646510014d1e47c~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_8d3461a1527a42b98646510014d1e47c~mv2.jpeg"
+ },
+ {
+  "id": "la-suerte-de-mi-vida",
+  "nombre": "La Suerte de mi Vida",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "tributo-a-el-canto-del-loco",
+    "titulo": "Tributo a El Canto del Loco",
+    "disciplinas": [
+     "Música en directo"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "La Suerte de Mi Vida es un tributo a El Canto del Loco que recupera la fuerza, el sonido y la emoción de una de las bandas más influyentes del pop-rock español. Un espectáculo de 90 minutos que revive los himnos que marcaron a toda una generación con una interpretación fiel y una puesta en escena llena de energía.",
+    "descripcion": "El público vivirá una auténtica experiencia de concierto, con un repertorio formado por los grandes éxitos de El Canto del Loco, interpretados con rigor musical y una gran conexión con la audiencia. Un espectáculo pensado para cantar cada canción, emocionarse y disfrutar desde el primer acorde hasta el último.",
+    "frase": "La Suerte de Mi Vida devuelve a los escenarios la esencia de El Canto del Loco. Los grandes éxitos de la banda madrileña interpretados con fidelidad y pasión. Un viaje directo a la mejor época del pop-rock español.",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://drive.google.com/file/d/1eDS3w1y_wr9gZEwdeACn5uBsC3Pw4XoT/view?usp=drivesdk"
+    },
+    "imagen_wix": "0171ea_953a847762394f2b989e256cc0eebc95~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_953a847762394f2b989e256cc0eebc95~mv2.jpeg"
+ },
+ {
+  "id": "levi-y-estrella",
+  "nombre": "Levi y Estrella",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "entre-el-cielo-y-la-tierra",
+    "titulo": "Entre el Cielo y la Tierra",
+    "disciplinas": [
+     "Acrobacia aérea"
+    ],
+    "generos": [
+     "circo"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 40,
+    "sinopsis": "Suspendida entre el cielo y la tierra, una esfera flotante se convierte en el centro sagrado de un ritual escénico donde la música, la danza y la acrobacia se entrelazan en un diálogo sin palabras.\nEste no es solo un espectáculo: es una invocación al asombro, un encuentro entre los elementos, entre lo visible y lo intangible.\nDesde Gran Canaria, Levi y Estrella, artistas que entienden el movimiento como una forma de poesía, se unen a un cuerpo de baile, acróbatas y músicos también nacidos de esta tierra volcánica y luminosa, para crear una obra que respira el pulso de lo ancestral y lo contemporáneo.",
+    "descripcion": "Una esfera aérea se convierte en el corazón flotante de un ritual donde la música, la danza y la acrobacia se entrelazan.\nLevi y Estrella, artistas de Gran Canaria, junto a un cuerpo de baile, acróbatas y músicos también nacidos de esta tierra, crean una pieza donde el sonido vibra en el aire y los cuerpos dialogan entre el suelo y el cielo.\nEste número es una fusión: tierra y aire, ritmo y movimiento, peso y vuelo. Un lenguaje nuevo que estrenamos por primera vez con ilusión, vértigo y el deseo profundo de que algo mágico suceda... entre nosotros y quienes nos miran.",
+    "frase": "Un estreno que no solo se mira, se siente.\nUn ritual en movimiento. Un puente hacia lo invisible. Una celebración del arte que nos eleva.",
+    "video": null,
+    "imagen_wix": "0171ea_d17b0a30d5c54c44ba33d08d0a3821b5~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_d17b0a30d5c54c44ba33d08d0a3821b5~mv2.jpg"
+ },
+ {
+  "id": "maite-guevara",
+  "nombre": "Maite Guevara",
+  "procedencia": "País Vasco",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "que-buen-dia",
+    "titulo": "¡Qué buen día!",
+    "disciplinas": [
+     "Clown"
+    ],
+    "generos": [
+     "humor"
+    ],
+    "edad": "+6",
+    "duracion": 60,
+    "sinopsis": "Llueva, nieve o granice... para Martina siempre puede ser un buen día. Martina viene hoy a demostrarnos que quien sueña y abre bien los ojos puede ver un mundo de posibilidades infinitas. Un espectáculo de clown para personas con ganas de pasarlo bien de todas las edades: abstenerse aburridas, tramposas y las que no tenga ganas de jugar o imaginar. Si no hemos venido a jugar, a qué demonios hemos venido?Llueva, nieve o granice... para Martina siempre puede ser un buen día. Martina viene hoy a demostrarnos que quien sueña y abre bien los ojos puede ver un mundo de posibilidades infinitas. Un espectáculo de clown para personas con ganas de pasarlo bien de todas las edades: abstenerse aburridas, tramposas y las que no tenga ganas de jugar o imaginar. Si no hemos venido a jugar, a qué demonios hemos venido?",
+    "descripcion": "Un espectáculo de calle en el que Martina transforma un sencillo encuentro con el público en una experiencia participativa llena de humor, juego e imaginación. Con pocos elementos escénicos y una gran capacidad para improvisar y crear complicidad, invita a espectadores de todas las edades a formar parte de un universo donde todo es posible.",
+    "frase": "Una entrañable y divertida propuesta que celebra el poder del juego y la imaginación. Martina convierte cualquier imprevisto en una oportunidad para reír, compartir y descubrir que siempre puede ser un buen día.",
+    "video": {
+     "tipo": "youtube",
+     "id": "ZfSQt9MoZ88",
+     "url": "https://www.youtube.com/watch?v=ZfSQt9MoZ88"
+    },
+    "imagen_wix": "0171ea_d2b8c69f378d46c084d1c2ff4853f262~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_d2b8c69f378d46c084d1c2ff4853f262~mv2.jpeg"
+ },
+ {
+  "id": "mario-comaneci",
+  "nombre": "Mario Comaneci",
+  "procedencia": "Granada",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "ad-limitum",
+    "titulo": "Ad Límitum",
+    "disciplinas": [
+     "Mástil Chino",
+     "Música en vivo y diábolos"
+    ],
+    "generos": [
+     "circo",
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "Un personaje que de improviso se propone resolver un espectáculo musical transitando varios estilos, desde el clásico al Rock and Roll, su viaje recorre todos los espacios y posiciones para tocar como ningún músico lo haría. A través de la técnica más antigua del circo, el mástil chino, se generan situaciones e instrumentos que formarán parte de la banda sonora de Ad Límitum.",
+    "descripcion": "Un músico poco habituado a la\nrealidad, instrumentos que\ncobran vida y locura circense.\nUn mástil, diábolos, pianos y otros\ninstrumentos originales que\ngeneran música en vivo, e\nimágenes inusuales y comicas.\n\nTodo ello aliñado con una buena\ndosis de adrenalina.",
+    "frase": "Ad Límitum, la música en vivo del actor Mario Comaneci. Un regalo musical y acrobático a través de la técnica más antigua del circo, el mástil chino.",
+    "video": {
+     "tipo": "youtube",
+     "id": "qOhXGrLVxbE",
+     "url": "https://www.youtube.com/watch?v=qOhXGrLVxbE"
+    },
+    "imagen_wix": "0171ea_16a619feab7d432e8474601f94b4fe03~mv2.png"
+   }
+  ],
+  "imagen_wix": "0171ea_16a619feab7d432e8474601f94b4fe03~mv2.png"
+ },
+ {
+  "id": "motion-house",
+  "nombre": "Motion House",
+  "procedencia": "Reino Unido",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "captive",
+    "titulo": "Captive",
+    "disciplinas": [
+     "Danza",
+     "Circo"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 25,
+    "sinopsis": "Inspirado en el poema El Pantera de Rainer Maria Rilke, este poderoso y emotivo espectáculo al aire libre explora las nociones de cautiverio. Extremadamente físico, Captive es una emocionante combinación de danza y acrobacias con una narrativa dinámica que explora las relaciones humanas en cautiverio.",
+    "descripcion": "El espectador verá a cuatro intérpretes utilizando una emocionante combinación de danza, acrobacias y trabajo aéreo dentro de una gran jaula.",
+    "frase": "Inspirado en el poema El Pantera de Rainer Maria Rilke, este espectáculo al aire libre, cargado de emoción, explora lo que significa estar cautivo. Desorientados y conmocionados, los intérpretes utilizan su destreza e instinto para sobrevivir en esta pieza tan atlética como emotiva.",
+    "video": {
+     "tipo": "youtube",
+     "id": "NNhgRkro8tU",
+     "url": "https://www.youtube.com/watch?v=NNhgRkro8tU"
+    },
+    "imagen_wix": "0171ea_df91f5700c804ceb963b575b673821ae~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_df91f5700c804ceb963b575b673821ae~mv2.jpg"
+ },
+ {
+  "id": "noelia-mederos",
+  "nombre": "Noelia Mederos",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "noelia-mederos",
+    "titulo": "Noelia Mederos",
+    "disciplinas": [
+     "Canto"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": "Canto músicas y versiones animadas para dinamizar la calle.",
+    "descripcion": "Canto músicas y versiones animadas para dinamizar la calle.",
+    "frase": "Vamos a cantar juntos para recordar y celebrar",
+    "video": null,
+    "imagen_wix": "0171ea_7918fdecb1de4ace99756ee46d69b4d9~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_7918fdecb1de4ace99756ee46d69b4d9~mv2.jpeg"
+ },
+ {
+  "id": "orain-bi",
+  "nombre": "Orain Bi",
+  "procedencia": "País Vasco",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "mute",
+    "titulo": "Mute",
+    "disciplinas": [
+     "Circo",
+     "Teatro clown"
+    ],
+    "generos": [
+     "circo",
+     "humor",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "Tercera persona del singular del imperativo del verbo MUTAR: Cambiar el aspecto, la naturaleza, el estado etc. de una persona, un animal o una cosa\n\n“…y un día el pasado volvió a nuestras vidas y nos hizo reencontrarnos con todo\naquello que sentimos nuestro. Volvimos a vernos en nuestro teatro, todo cubierto por el polvo que delataba el paso de los años, y mientras revivíamos nuestros números de circo transformados a esta nueva vida, se produjo la magia de sentir que nosotros ¡mutábamos al unísono!!!”\nLa mutación es una constante. Que no solo muten los bichos. Mutemos las estructuras y también nosotras, las personas, para seguir avanzando, para llegar más lejos, más alto; ¡el más difícil todavía!!!",
+    "descripcion": "\"MUTE\" es un espectáculo de circo para calle, dirigido a todos los públicos, en clave de humor, con momentos poéticos, divertidos y sorprendentes.\nAdemás de una historia muy tierna el espectador podrá apreciar diferentes disciplinas circenses como equilibrios mano-mano, en pareja, malabares y la disciplina estrella la \"percha acrobática\"",
+    "frase": "“Una propuesta original, amable y cuidada, que atrapa al público por su limpieza en las emociones, la sencillez y su cuidada elaboración en el desarrollo de la historia\" Jurado Umore Azoka 2022",
+    "video": {
+     "tipo": "youtube",
+     "id": "UdfeMribIV0",
+     "url": "https://www.youtube.com/watch?v=UdfeMribIV0"
+    },
+    "imagen_wix": "0171ea_76ea0ec1aeb0423ea84dbc49e4f43b63~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_76ea0ec1aeb0423ea84dbc49e4f43b63~mv2.jpg"
+ },
+ {
+  "id": "patri-viera",
+  "nombre": "Patri Viera",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "patri-viera",
+    "titulo": "Patri Viera",
+    "disciplinas": [
+     "Canto"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 45,
+    "sinopsis": "Un recorrido musical que combina canciones originales de Patri Viera con versiones muy conocidas, creando un espectáculo cercano, dinámico y participativo en el que el público canta, se emociona y descubre su música.",
+    "descripcion": "Un concierto cercano que combina canciones originales con versiones de grandes éxitos para crear una experiencia dinámica, participativa y pensada para disfrutar en directo.",
+    "frase": "Máss que un concierto, una celebraciónn compartida.",
+    "video": {
+     "tipo": "youtube",
+     "id": "Ajd9keznUe4",
+     "url": "https://www.youtube.com/watch?v=Ajd9keznUe4"
+    },
+    "imagen_wix": "0171ea_6a1abc1fcf6f42bfa5604af88d47e396~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_6a1abc1fcf6f42bfa5604af88d47e396~mv2.jpeg"
+ },
+ {
+  "id": "payasos-rebambaramba",
+  "nombre": "Payasos Rebambaramba",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "rebambaramba-el-retorno",
+    "titulo": "Rebambaramba, El retorno",
+    "disciplinas": [
+     "Clown"
+    ],
+    "generos": [
+     "humor"
+    ],
+    "edad": "+6",
+    "duracion": 60,
+    "sinopsis": "Herederos de la más pura tradición de payasos, Pancracio y Telón forman un dúo de lo más particular que nos hará reír y disfrutar de lo lindo con una renovada y cuidada puesta en\nescena, así como sus inteligentes diálogos, que provocarán disparatadas situaciones que se suelen resolver con la perdida de algunas piezas dentales de Telón. Aunque hay admitir que Telón pone también de su parte.",
+    "descripcion": "Un espectáculo de payasos para toda la familia que combina el humor, la tradición, la música y la magia para crear un ambiente de diversión, ilusión y sorpresa.",
+    "frase": "La Rebambaramba ya ha llegado a tu ciudad con Telón y con Pancracio risas nuevas a diario, son payasos de verdad.",
+    "video": {
+     "tipo": "youtube",
+     "id": "EzrYW156WQ0",
+     "url": "https://www.youtube.com/watch?v=EzrYW156WQ0"
+    },
+    "imagen_wix": "0171ea_211a3198bfc14cebb43feac69e06b5df~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_211a3198bfc14cebb43feac69e06b5df~mv2.jpg"
+ },
+ {
+  "id": "pere-hosta",
+  "nombre": "Pere Hosta",
+  "procedencia": "Cataluña",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "woof",
+    "titulo": "Woof",
+    "disciplinas": [
+     "Clown",
+     "Humor",
+     "Impro"
+    ],
+    "generos": [
+     "humor"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 40,
+    "sinopsis": "Visualizar los pensamientos humanos que atribuimos a los perros... Eso es lo que representa WooF, a través de la mirada de un payaso.\nTodos y todas hemos hablado alguna vez con un perro, esperando su respuesta. Y siempre nos ha contestado lo que queríamos oír: ¡un sí!\nEl payaso también dice sí a todo.\nEl perro es el animal más fiel.\nEl payaso es leal a su público.\n¡Todo por su público!",
+    "descripcion": "Un espectáculo interactivo que busca la emoción y la risa...\nPara terminar diciendo: ¡Guauuu!",
+    "frase": "Hacer visibles los pensamientos que atribuimos a los perros a través de la mirada de un payaso. El animal más fiel a su público.",
+    "video": {
+     "tipo": "youtube",
+     "id": "24QdDhAFnmw",
+     "url": "https://www.youtube.com/watch?v=24QdDhAFnmw"
+    },
+    "imagen_wix": "0171ea_0885e260d2f848a7aaa397ad7c41f456~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_0885e260d2f848a7aaa397ad7c41f456~mv2.jpg"
+ },
+ {
+  "id": "perrakos-soundsystem",
+  "nombre": "Perrakos Soundsystem",
+  "procedencia": "Valencia",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "perrakos-sound-system",
+    "titulo": "Perrakos Sound System",
+    "disciplinas": [
+     "Fiesta Perraka",
+     "Rave verbena"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "+18",
+    "duracion": 180,
+    "sinopsis": "Los famosos DJ ́s Jhonny y Jimmy Perrako, en mitad de sus mega-giras llenando estadios, aparecen por sorpresa en festivales creando noches inolvidables de humor y locura. Perrakos es una fiesta-espectáculo en la que se mezclan todo tipo de estilos musicales y donde el público se involucra a través del “escenario abierto”. Habrá FIESTAKA!!",
+    "descripcion": "Perrakos Sound System es una fiesta-espectáculo en la que se mezclan todo tipo de estilos musicales como ska, techno, rumba, música clásica, rock, drum&bass, 80 ́s,... Pero esto sólo es la mitad del show...\n“Perrakos somos tod@s!”.\nLa otra mitad es el público que se involucra a través del “escenario abierto”, disfrazándose, y participando en momentos míticos como los concursos de coreografías, campeonato de soultrain, air-guitar,... Consiguiendo que la gente pierda el sentido del ridículo, bucee en sus recuerdos más profundos y lo dé todo en la pista de baile.\n“Nadie debería morirse sin experimentar una fiesta Perraka” (Georgi Dann).\nEn definitiva Los Perrakos son los creadores de en un género nuevo en el que se mezclan dj ́s, personajes y juegos. Toda la música va acompañada de proyecciones y vídeclips que Jhonny y Jimmy bailan como los que más, consiguiendo transmitir a la gente una energía desbordante de fiestaka, amor, lujuría y risas.",
+    "frase": "Los Perrakos son los creadores de La Ravena (una mezcla entre una Rave y una Verbena). Como dijo Georgi Dann: “Nadie debería morirse sin experimentar una fiesta Perraka”",
+    "video": {
+     "tipo": "vimeo",
+     "id": "418323127",
+     "url": "https://vimeo.com/418323127"
+    },
+    "imagen_wix": "0171ea_c42c18c1d4f34b0ebf422b29e51a3388~mv2.jpg"
+   },
+   {
+    "id": "fiestaka-en-teror",
+    "titulo": "Fiestaka en Teror",
+    "disciplinas": [
+     "Fiestaka"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "+18",
+    "duracion": 180,
+    "sinopsis": "Los famosos DJ´s Jhonny y Jimmy Perrako, en mitad de sus mega-giras llenando estadios, aparecen por sorpresa en festivales creando noches inolvidables de humor y locura. Perrakos es una fiesta-espectáculo en la que se mezclan todo tipo de estilos musicales y donde el público  se involucra a través del “escenario abierto”. Habrá FIESTAKA!!",
+    "descripcion": "El espectador va a venir a una fiesta donde va a bailar, divertirse y pasarlo en grande.",
+    "frase": "Fiesta inolvidable llena de humor, baile y locura!! Teror será Perraka!!",
+    "video": {
+     "tipo": "youtube",
+     "id": "WaJO4-WScfY",
+     "url": "https://www.youtube.com/watch?v=WaJO4-WScfY"
+    },
+    "imagen_wix": "0171ea_c42c18c1d4f34b0ebf422b29e51a3388~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_c42c18c1d4f34b0ebf422b29e51a3388~mv2.jpg"
+ },
+ {
+  "id": "quique-montoya",
+  "nombre": "Quique Montoya",
+  "procedencia": "Comunidad Valenciana",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "tornillo-magic-clown",
+    "titulo": "Tornillo Magic Clown",
+    "disciplinas": [
+     "Clown",
+     "Magia",
+     "Humor",
+     "Flow"
+    ],
+    "generos": [
+     "humor",
+     "magia"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 55,
+    "sinopsis": "Tornillo Magic Clown combina con audacia, magia y humor. Con un lenguaje urbano muestra que todas las personas tienen algo especial.",
+    "descripcion": "Un payaso rapero que hace juegos de magia con la ayuda del público.",
+    "frase": "Tornillo Magic Clown llega a la ciudad, dispuesto a desplegar todo su mágico flow y hacer que saques el tuyo.\n¿Todavía piensas que los payasos son sólo para niños?\nEso es que no conoces a Tornillo.",
+    "video": {
+     "tipo": "youtube",
+     "id": "tkgct3V3pb4",
+     "url": "https://www.youtube.com/watch?v=tkgct3V3pb4"
+    },
+    "imagen_wix": "0171ea_08b09a2d14534e9288e9097e1cb17a4f~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_08b09a2d14534e9288e9097e1cb17a4f~mv2.jpg"
+ },
+ {
+  "id": "rafaelillo-clown",
+  "nombre": "Rafaelillo Clown",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "viajando-con-la-imaginacion",
+    "titulo": "Viajando con la Imaginación",
+    "disciplinas": [
+     "Teatro Danza Música"
+    ],
+    "generos": [
+     "teatro",
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 45,
+    "sinopsis": "\"Rafa del Pino crea piezas de teatro musical para introducir al público familiar, en una aventura por el\nmundo de la imaginación y les descubre la esencia del teatro clown de la mano del más estrafalario\npersonaje llamado Rafaelillo Clown.\"",
+    "descripcion": "\"Espectáculo de payaso musical lleno de Teatro y Danza en el que Rafaelillo Clown regala a la audiencia\nsorprendentes momentos y les descubre que la\nimaginación es muy importante para el desarrollo de los sentidos.\"",
+    "frase": "\"Rafaelillo Clown regala a las familias un espectáculo de payaso lleno de Teatro, Danza y Música, donde el\npúblico es el protagonista.\n1\"",
+    "video": {
+     "tipo": "youtube",
+     "id": "ekdPJ6n6sKo",
+     "url": "https://www.youtube.com/watch?v=ekdPJ6n6sKo"
+    },
+    "imagen_wix": "0171ea_3f50a88548ad490c85e54de19ea8ea0a~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_3f50a88548ad490c85e54de19ea8ea0a~mv2.jpg"
+ },
+ {
+  "id": "raul-perez",
+  "nombre": "Raúl Pérez",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "taller-de-risoterapia",
+    "titulo": "Taller de risoterapia",
+    "disciplinas": [
+     "Risoterapia"
+    ],
+    "generos": [
+     "talleres"
+    ],
+    "edad": "+18",
+    "duracion": 90,
+    "sinopsis": "Sesión de risoterapia para crear una buena relación con uno mismos y con los demás.",
+    "descripcion": "Sesión de risoterapia donde trataremos ejercicios de risa y dinámicas de grupo.",
+    "frase": "Los objetivos principales son fomentar la generación de emociones positivas y promover la conectividad social.",
+    "video": null,
+    "imagen_wix": "0171ea_3954e8cca48449a2be23fc3c6ab9b01c~mv2.jpeg"
+   },
+   {
+    "id": "risoterapia",
+    "titulo": "Risoterapia",
+    "disciplinas": [
+     "Risoterapia"
+    ],
+    "generos": [
+     "talleres"
+    ],
+    "edad": "+18",
+    "duracion": 90,
+    "sinopsis": "Sesión de risoterapia para crear una buena relación con uno mismos y con los demás.",
+    "descripcion": "Sesión de risoterapia donde trataremos ejercicios de risa y dinámicas de grupo.",
+    "frase": "Los objetivos principales son fomentar la generación de emociones positivas y promover la conectividad social.",
+    "video": {
+     "tipo": "youtube",
+     "id": "1or1LL99ohA",
+     "url": "https://www.youtube.com/watch?v=1or1LL99ohA"
+    },
+    "imagen_wix": "0171ea_3954e8cca48449a2be23fc3c6ab9b01c~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_3954e8cca48449a2be23fc3c6ab9b01c~mv2.jpeg"
+ },
+ {
+  "id": "risoterapia-islas-canarias",
+  "nombre": "Risoterapia Islas Canarias",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "risoterapia",
+    "titulo": "Risoterapia",
+    "disciplinas": [
+     "Terapia de la risa"
+    ],
+    "generos": [
+     "talleres"
+    ],
+    "edad": "+18",
+    "duracion": 60,
+    "sinopsis": "Sesión de risoterapia a cargo de Raúl - Chichirito",
+    "descripcion": "Dinámicas grupales para fomentar la paz mundial a través de la risa y el acercamiento humano.",
+    "frase": "Generar  paz interior para compartirla con otras personas",
+    "video": null,
+    "imagen_wix": "0171ea_90649a6c58af4a2f96b1301687be702a~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_90649a6c58af4a2f96b1301687be702a~mv2.jpg"
+ },
+ {
+  "id": "sacude",
+  "nombre": "Sacude",
+  "procedencia": "Barcelona",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "donde-te-miro-y-me-veo",
+    "titulo": "Donde Te Miro y Me Veo",
+    "disciplinas": [
+     "Danza vertical"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 20,
+    "sinopsis": "Nos reconocemos en otra mirada que no es nuestra, en un reflejo, una imagen.\nDos gotas que descienden, que se siguen la una a la otra, que se unen creando un río de movimiento continuo, que fluye, se evapora, desaparece y vuelve a empezar.",
+    "descripcion": "Espectáculo de danza vertical.\nPara esta propuesta Sacude, se imbuye en la investigación de un cuerpo concreto y poético, sin género, que va más allá del péndulo y la acrobacia propia de la danza vertical.\nQueremos que el espectador viaje a través de la mirada que comparten las bailarinas en su danza, de la misma manera que lo haría en su reflejo en un vidrio, contemplando las olas del mar o el goteo de la lluvia.\nDos cuerpos femeninos que humanizan la belleza delicada y la fuerza que posee una gota de agua en todo su viaje.",
+    "frase": "Espectáculo de danza vertical de Sacude.\nGotas que descienden, que se siguen la una a la otra, que se unen creando un río de movimiento continuo, que fluye, se evapora, desaparece y vuelve a empezar.",
+    "video": {
+     "tipo": "vimeo",
+     "id": "837370514",
+     "url": "https://vimeo.com/837370514"
+    },
+    "imagen_wix": "0171ea_4ebac2d6d711472a92f29be809f6582a~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_4ebac2d6d711472a92f29be809f6582a~mv2.jpg"
+ },
+ {
+  "id": "son-de-la-isla",
+  "nombre": "Son de la Isla",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "son-de-la-isla",
+    "titulo": "Son de la Isla",
+    "disciplinas": [
+     "Musical"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "Son de la Isla es un grupo musical canario nacido en 2023 con el propósito de convertir cada actuación en una auténtica celebración. Con un repertorio dinámico y cercano, fusiona los grandes éxitos del pop, la música latina, el merengue, la cumbia, el reguetón y otros ritmos bailables que conectan con públicos de todas las edades.",
+    "descripcion": "\"El espectador de Son de la Isla no viene solo a escuchar canciones; viene a vivir una fiesta. Desde el primer acorde encontrará un espectáculo lleno de energía, interacción con el público y un repertorio que une generaciones. Cantará los grandes éxitos de ayer y de hoy, bailará ritmos latinos, pop, merengue, cumbia y reguetón, y disfrutará de una puesta en escena cercana, elegante y muy dinámica.\n\nCada actuación está pensada para que el público se convierta en protagonista: momentos para cantar a coro, bailar sin parar y compartir emociones. Son de la Isla transmite alegría, buen ambiente y la esencia de las fiestas canarias, creando recuerdos que permanecen mucho después de que termine el concierto.\n\nCon Son de la Isla no se asiste a un concierto; se vive una experiencia donde la música une, emociona y hace celebrar la vida.\"",
+    "frase": "Son de la Isla ofrece un espectáculo vibrante donde la música, la energía y la conexión con el público convierten cada actuación en una auténtica fiesta. Un recorrido por los grandes éxitos de todos los tiempos, con ritmos que invitan a cantar, bailar y disfrutar de principio a fin.",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://www.instagram.com/son.delaisla?igsh=MW45MHQwbnJmOGRiMw=="
+    },
+    "imagen_wix": "0171ea_b3af8b3636e54c0c9562110150c5d587~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_b3af8b3636e54c0c9562110150c5d587~mv2.jpg"
+ },
+ {
+  "id": "tadeo-campanotto",
+  "nombre": "Tadeo Campanotto",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "show-de-tadeo",
+    "titulo": "Show de Tadeo",
+    "disciplinas": [
+     "Malabares",
+     "Magia",
+     "Humor"
+    ],
+    "generos": [
+     "circo",
+     "humor",
+     "magia"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "Desde los rincones más lejanos del mundo llega Tadeo, un payaso viajero y malabarista sin igual, dispuesto a darlo todo sobre el escenario. Con una mezcla de humor, nostalgia y técnica circense, nos presenta “El Campeón Mundial del Trompo”, un espectáculo que revive el espíritu del juego tradicional a través del arte del trompo, los malabares, el clown y su inseparable monociclo jirafa.",
+    "descripcion": "Desde los rincones más lejanos del mundo llega Tadeo, un payaso viajero y malabarista sin igual, dispuesto a darlo todo sobre el escenario. Con una mezcla de humor, nostalgia y técnica circense, nos presenta “El Campeón Mundial del Trompo”, un espectáculo que revive el espíritu del juego tradicional a través del arte del trompo, los malabares, el clown y su inseparable monociclo jirafa.",
+    "frase": "Un espectáculo de circo y humor que convierte el trompo en el gran protagonista de una aventura llena de destreza, juego y emoción. Tadeo combina clown, malabares y monociclo jirafa en una propuesta original, familiar y sorprendente.",
+    "video": {
+     "tipo": "youtube",
+     "id": "jbvCUK_p3Nc",
+     "url": "https://www.youtube.com/watch?v=jbvCUK_p3Nc"
+    },
+    "imagen_wix": "0171ea_718ab3e787494566850e5f6ac7ec738f~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_718ab3e787494566850e5f6ac7ec738f~mv2.jpg"
+ },
+ {
+  "id": "tami-circo",
+  "nombre": "Tami Circo",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "djtami",
+    "titulo": "DJTami",
+    "disciplinas": [
+     "Rueda cyr",
+     "Clown",
+     "Malabares",
+     "Acrobacias"
+    ],
+    "generos": [
+     "circo",
+     "humor"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "\"Espectáculo familiar cargado de sorpresas con técnicas de circo, danza y... ¡Magia!\nLa payasa DJTami les invita a un viaje sobre la evolución de los formatos de grabación musical ¡Desde la era analógica hasta la más digital!\"",
+    "descripcion": "A través del circo, la payasa DjTami les conduce por un viaje sobre la evolución de los formatos de grabación musical, con técnica de rueda cyr, hula hoop, danza, acrobacias, magia  y... ¡Algunas sorpresas más!",
+    "frase": "La payasa DjTami les muestra la evolución de los formatos de grabación musical, a través de un viaje dinámico, cargado de humor y de técnicas de circo.",
+    "video": {
+     "tipo": "youtube",
+     "id": "rUQXqfFOh8E",
+     "url": "https://www.youtube.com/watch?v=rUQXqfFOh8E"
+    },
+    "imagen_wix": "0171ea_c6526b1fe4c74fb28e7bae05cfd16699~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_c6526b1fe4c74fb28e7bae05cfd16699~mv2.jpeg"
+ },
+ {
+  "id": "tataband",
+  "nombre": "Tataband",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "tataband",
+    "titulo": "Tataband",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": ".... Un viaje por la festividad",
+    "descripcion": "Concierto música",
+    "frase": "La fiesta con valores",
+    "video": {
+     "tipo": "youtube",
+     "id": "YkMj_I1hnXI",
+     "url": "https://www.youtube.com/watch?v=YkMj_I1hnXI"
+    },
+    "imagen_wix": "0171ea_dcb05f424a0040fe813a64c19e156a0a~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_dcb05f424a0040fe813a64c19e156a0a~mv2.jpg"
+ },
+ {
+  "id": "the-circus-troupe",
+  "nombre": "The Circus Troupé",
+  "procedencia": "Chile · Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "pasacalle-circus",
+    "titulo": "Pasacalle circus",
+    "disciplinas": [
+     "Acrobacias",
+     "Zancos",
+     "Malabares"
+    ],
+    "generos": [
+     "circo"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": "Zancudos de pasacalle dinamizadores y con trajes muy vistosos y originales",
+    "descripcion": "Teatro visual de circo sobre zancos [dinamizacion]",
+    "frase": "Zancudos circenses",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://www.instagram.com/tcircustroupe?igsh=cW9pMHQxaGN3OGR1"
+    },
+    "imagen_wix": "0171ea_488d4c650d664fb99018007ef8981963~mv2.jpg"
+   },
+   {
+    "id": "el-gran-chispita",
+    "titulo": "El Gran Chispita",
+    "disciplinas": [
+     "Clown",
+     "Circo",
+     "Teatro"
+    ],
+    "generos": [
+     "circo",
+     "humor",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 45,
+    "sinopsis": "\"Un clown que recorre el mundo recopilando distintas disciplinas del circo, de las cuales cuenta la historia\nde cada lugar que visita\"",
+    "descripcion": "Una puesta en escena de circo teatro donde disfrutaran del circo de una manera natural con la perfeccióny la imperfección de un payaso que intenta jugar a través de las diferentes disciplinas del circo comomalabares , magia , equilibrios y algunos juegos participativos donde el público tmb forma parte delespectáculo",
+    "frase": "la sonrisa el idioma universal",
+    "video": null,
+    "imagen_wix": "0171ea_a02f02c6a61d44128c3d00ff5f0d1ec6~mv2.jpeg"
+   },
+   {
+    "id": "circopatas",
+    "titulo": "Circópatas",
+    "disciplinas": [
+     "Circo",
+     "Teatro"
+    ],
+    "generos": [
+     "circo",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 45,
+    "sinopsis": "3 personajes que se escapan del psiquiátrico en busca de un escenario para contarle al público sus alucinaciones entre tanta locura circopatias y circopatologias intentan mostrarle al público que todos están a 1 paso de la risa y el abismo",
+    "descripcion": "Un desplante de tecnicas de clown y bufon , en las cuales resaltan habilidades circenses como numero de latigo, numero de bicicleta saltando coches con fuego , numero de fakir , monociclo jirafa y camisa de fuerza , equilibrios , malabares y mucha locura",
+    "frase": "El loco mundo de los payasos",
+    "video": {
+     "tipo": "youtube",
+     "id": "HYCKrRz2d4o",
+     "url": "https://www.youtube.com/watch?v=HYCKrRz2d4o"
+    },
+    "imagen_wix": "0171ea_162efce1de4047c4a7d0c24e4904c447~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_162efce1de4047c4a7d0c24e4904c447~mv2.jpg"
+ },
+ {
+  "id": "the-plunger-dixie-band",
+  "nombre": "The Plunger Dixie Band",
+  "procedencia": "Fuerteventura",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "the-plunger-dixie-band",
+    "titulo": "The Plunger Dixie Band",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "The Plunger Dixie Band es una banda dixie formada en Fuerteventura que nos trae los sonidos del hot-jazz y el swing de Nueva Orleans.",
+    "descripcion": "Formada por siete músicos provenientes de la escena jazzística y swing de la\nisla, The Plunger Dixie Band nos ofrece un sonido lleno de ritmo, expresividad e\nimprovisación.\n\nUna formación puramente acústica basada en instrumentos de viento (trompeta,\nclarinete, saxo tenor y trombón) acompañados por banjo, tuba o contrabajo y\npercusión. Con un repertorio de clásicos de la música dixie como: When the\nsaints go marching in, Hello Dolly, Down by the riverside, Bill Bailey, etc.",
+    "frase": "Hot-jazz y el swing de Nueva Orleans a través de clásicos de la música Dixie.\n\n7 músicos de Fuerteventura que nos harán volar a una época dorada a través de sonidos llenos de ritmos, expresividad e improvisación.",
+    "video": {
+     "tipo": "enlace",
+     "url": "https://fb.watch/tQwI7hVchH/"
+    },
+    "imagen_wix": "0171ea_208e837ec5c744e08537433d0af51765~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_208e837ec5c744e08537433d0af51765~mv2.jpg"
+ },
+ {
+  "id": "tio-matt",
+  "nombre": "Tío Matt",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "tio-matt-concierto",
+    "titulo": "Tío Matt (concierto)",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "Grupo de versiones que ponen  a disposición del público un buen número de canciones de todos los tiempos y estilos (español e inglés) para hacer un espectáculo a la altura de los presentes.",
+    "descripcion": "Versiones de canciones muy conocidas de todos los tiempos. El grupo cuenta con la premisa de que el público no va a escucharles, sino que es la banda la que ha venido a entretenerlos a ellos.",
+    "frase": "Tío Matt nace con la única intención de hacerte saltar, cantar bailar y reír.\nAunque no todo a la vez, ni tampoco por ese orden obligatoriamente.",
+    "video": {
+     "tipo": "youtube",
+     "id": "JfiL7Mq0H0M",
+     "url": "https://www.youtube.com/watch?v=JfiL7Mq0H0M"
+    },
+    "imagen_wix": "0171ea_25a656007f1e4c158ff9777c9d07ea8b~mv2.png"
+   }
+  ],
+  "imagen_wix": "0171ea_25a656007f1e4c158ff9777c9d07ea8b~mv2.png"
+ },
+ {
+  "id": "titiriclown",
+  "nombre": "Titiriclown",
+  "procedencia": "Canarias",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "cuantos-cuentos",
+    "titulo": "¡Cuántos Cuentos!",
+    "disciplinas": [
+     "Teatro de Títeres"
+    ],
+    "generos": [
+     "teatro"
+    ],
+    "edad": "+3",
+    "duracion": 60,
+    "sinopsis": "Acrobacias, equilibrios, saltos que desafían la gravedad, manipulación de objetos y altas dosis de ingenio y humor conforman el Collage perfecto. Un espectáculo de cama elástica para todos los públicos presentado por la compañía valenciano-catalana BotProject.",
+    "descripcion": "El público se encontrará con el teatrito de títeres para manipulación oculta de títeres. Comienza en el jardín de Alicia.En este hay telón que se abre para adentrarnos en el país de las maravillas, luego el lugar de los cuentos y el palacio de Oz. Títeres de guante y bocones de varilla. Efectos, muchos efectos y utilería para mantener la sorpresa en el espectáculo. Ambientado con música.",
+    "frase": "Alicia de las Maravillas, en el país de los cuentos, quiere saber a qué saben las nubes.\nEsto es lo que sucede en esta ocurrencia, en la que el público irá desenredando cuantos cuentos hay relacionados.",
+    "video": {
+     "tipo": "youtube",
+     "id": "cX5jDh5JOuI",
+     "url": "https://www.youtube.com/watch?v=cX5jDh5JOuI"
+    },
+    "imagen_wix": "0171ea_452f1870ecc640c689d1800501e65285~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_452f1870ecc640c689d1800501e65285~mv2.jpg"
+ },
+ {
+  "id": "toni-bob",
+  "nombre": "Toni Bob",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "toni-bob",
+    "titulo": "Toni Bob",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 120,
+    "sinopsis": "Show musical",
+    "descripcion": "Un show como\nDJ & Speaker animador para eventos multitudinarios",
+    "frase": "Un show único bajo una experiencia única!!!",
+    "video": {
+     "tipo": "youtube",
+     "id": "mXS5HPKBHk0",
+     "url": "https://www.youtube.com/watch?v=mXS5HPKBHk0"
+    },
+    "imagen_wix": "0171ea_9f00e2d406204baa98af0babe022cc9b~mv2.png"
+   }
+  ],
+  "imagen_wix": "0171ea_9f00e2d406204baa98af0babe022cc9b~mv2.png"
+ },
+ {
+  "id": "toto-el-payaso",
+  "nombre": "Totó el Payaso",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "el-ring",
+    "titulo": "El Ring",
+    "disciplinas": [
+     "Teatro",
+     "Humor"
+    ],
+    "generos": [
+     "humor",
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "El RING es el espectáculo mas alocado y desenfrenado de Totó el Payaso, una explosión de diversión que convertir la calle o plaza en un autentico ring donde se sucederá un combate real de boxeo entre dos\npesos pesados, por supuesto todo en clave clown y con el juego norma inapelable, un espectáculos donde el humor marcará el ganador.\nUn espectáculo absurdo, divertido, muy participativo y altamente marchoso. Un espectáculo que dejará a\ngrandes y pequeños con ganas de más, porque la diversión en este espectáculos alcance a todas las\nedades y para que la velada sea única.\nUna calle + Un ring + Dos Boxeadores + Un Juez= Un combate de alta intensidad\nMuchas risas y grandes carcajadas\nEstos son los ingredientes, para que Totó lleve a cabo este nuevo espectáculo de calle, donde todo el\npúblico podrá disfrutar independientemente su edad, su raza o su idioma del lenguaje universal del clown,\ndel boxeo y como no del \"boxeo clownnado\"",
+    "descripcion": "El RING es el espectáculo mas alocado y desenfrenado de Totó el Payaso, una explosión de diversión que convertir la calle o plaza en un autentico ring donde se sucederá un combate real de boxeo entre dos\npesos pesados, por supuesto todo en clave clown y con el juego norma inapelable, un espectáculos donde el humor marcará el ganador.\nUn espectáculo absurdo, divertido, muy participativo y altamente marchoso. Un espectáculo que dejará a\ngrandes y pequeños con ganas de más, porque la diversión en este espectáculos alcance a todas las\nedades y para que la velada sea única.\nUna calle + Un ring + Dos Boxeadores + Un Juez= Un combate de alta intensidad\nMuchas risas y grandes carcajadas\nEstos son los ingredientes, para que Totó lleve a cabo este nuevo espectáculo de calle, donde todo el\npúblico podrá disfrutar independientemente su edad, su raza o su idioma del lenguaje universal del clown,\ndel boxeo y como no del \"boxeo clownnado\"",
+    "frase": "El RING es el espectáculo mas alocado y desenfrenado de Totó el Payaso, una explosión de diversión\nque convertirá la calle o plaza en un\nautentico ring",
+    "video": {
+     "tipo": "youtube",
+     "id": "aiuRR1NAsSg",
+     "url": "https://www.youtube.com/watch?v=aiuRR1NAsSg"
+    },
+    "imagen_wix": "0171ea_5c7d06cd18b64c879c2390e4c259438e~mv2.jpeg"
+   }
+  ],
+  "imagen_wix": "0171ea_5c7d06cd18b64c879c2390e4c259438e~mv2.jpeg"
+ },
+ {
+  "id": "trocos-lucos",
+  "nombre": "Trocos Lucos",
+  "procedencia": "Madrid",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "tartana",
+    "titulo": "Tartana",
+    "disciplinas": [
+     "Báscula y verticales"
+    ],
+    "generos": [
+     "circo"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 50,
+    "sinopsis": "\"Tartana es una creación original de Trocos Lucos, un espectáculo de carácter desenfadado y un alto nivel técnico en las principales técnicas circenses: la báscula coreana y los equilibrios sobre manos.\n\nLa dramaturgia se desarrolla a partir de una investigación acrobática sobre el uso de una furgoneta como elemento escénico y como soporte desde y hacia el que saltar con la báscula. Los tres artistas en escena crean y deshacen conflictos cómicos a raíz de sus peculiares personalidades, acercándose al público desde situaciones tan absurdas como cotidianas y mostrando su lado más humano.\n\nLa tensión entre el riesgo de la altura acrobática y la inocencia de los juegos mantienen el ritmo y el argumento de este espectáculo, un viaje en el que puedes encontrarte desde un buzo aleteando por el aire hasta una pelea donde la mejor arma es atarse bien los cordones de las botas.\"\n\nLa dramaturgia se desarrolla a partir de una investigación acrobática sobre el uso de una furgoneta como elemento escénico y como soporte desde y hacia el que saltar con la báscula. Los tres artistas en escena crean y deshacen conflictos cómicos a raíz de sus peculiares personalidades, acercándose al público desde situaciones tan absurdas como cotidianas y mostrando su lado más humano.\n\nLa tensión entre el riesgo de la altura acrobática y la inocencia de los juegos mantienen el ritmo y el argumento de este espectáculo, un viaje en el que puedes encontrarte desde un buzo aleteando por el aire hasta una pelea donde la mejor arma es atarse bien los cordones de las botas.",
+    "descripcion": "Tartana es una propuesta con material innovador a nivel escénico y técnico, en el que podrás disfrutar de la precisión y la seguridad de una impresionante técnica de circo, un espectáculo con el que sentirte vivo, movido por la sensación de no saber si contener el aliento o contener la risa.",
+    "frase": "Acrobacia a gran altura.\nHumor a pie de calle",
+    "video": {
+     "tipo": "youtube",
+     "id": "ijGTR8E-CzA",
+     "url": "https://www.youtube.com/watch?v=ijGTR8E-CzA"
+    },
+    "imagen_wix": "0171ea_87ad8dd7830c49a19708b3123c76bf50~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_87ad8dd7830c49a19708b3123c76bf50~mv2.jpg"
+ },
+ {
+  "id": "ultima-llave",
+  "nombre": "Última Llave",
+  "procedencia": "Gran Canaria",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "ultima-llave-concierto",
+    "titulo": "Última Llave (concierto)",
+    "disciplinas": [
+     "Música"
+    ],
+    "generos": [
+     "musica"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 90,
+    "sinopsis": "Formado por los guitarristas Adrián Marrero y Enrique Pérez y el batería Javi Ramírez, Última Llave toma su sello de identidad con la voz de Beatriz Pérez, interpretando temas con un estilo propio dentro del pop. Sus enérgicos directos, sus cuidadas composiciones y la versatilidad y frescura de la voz de Beatriz han servido para cautivar al público allá donde van.",
+    "descripcion": "Pop en español con una frescura inigualable. Interpretarán toda su discografía y versiones de canciones que todo el mundo reconocerá.",
+    "frase": "Formado por los guitarristas Adrián Marrero y Enrique Pérez y el batería Javi Ramírez, Última Llave toma su sello de identidad con la voz de Beatriz Pérez, interpretando temas con un estilo propio dentro del pop.",
+    "video": {
+     "tipo": "youtube",
+     "id": "vpap4a-v54g",
+     "url": "https://www.youtube.com/watch?v=vpap4a-v54g"
+    },
+    "imagen_wix": "0171ea_daab4eb274c747af8c4ad8162d24e697~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_daab4eb274c747af8c4ad8162d24e697~mv2.jpg"
+ },
+ {
+  "id": "vol-e-temps",
+  "nombre": "Vol'e Temps",
+  "procedencia": "Andalucía",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "distans",
+    "titulo": "DistanS",
+    "disciplinas": [
+     "Acrobacias",
+     "Cuerda floja",
+     "Malabares",
+     "Teatro humor"
+    ],
+    "generos": [
+     "circo",
+     "humor",
+     "teatro"
+    ],
+    "edad": "+3",
+    "duracion": 50,
+    "sinopsis": "Un pacto, un código secreto, una cápsula del tiempo, una promesa…Dentro de 20 años en el mismo sitio a la misma hora. La vieja casa del árbol donde dos amigos compartían sus tardes de ocio entre juegos, risas, fantasías y complicidad.\nEl tiempo pasa y la distancia es inevitable pero no tiene que Un pacto, un código secreto, una cápsula del tiempo, una promesa…Dentro de 20 años en el mismo sitio a la misma hora. La vieja casa del árbol donde dos amigos compartían sus tardes de ocio entre juegos, risas, fantasías y complicidad.\nEl tiempo pasa y la distancia es inevitable pero no tiene que suponer el olvido. Como decía la canción, 20 años no es nada…Y dos personajes que encontraron la manera de poder seguir juntos en la distancia aunque la vida les lleve por caminos diferentes.\nDistanS habla de amistad: los recuerdos que siguen vivos en nuestros corazones a pesar de los años.\nHabla de la fragilidad del ser humano, de la ruptura, la soledad, y del amor capaz de regenerar y reconstruir nuestras relaciones con los demás. Un viaje a través de las emociones en un espacio visual y sonoro que envuelve las escenas de circo acrobático y teatro gestual que conforman un espectáculo orgánico, sensible y divertido. Con este espectáculo, la compañía ahonda en las emociones que son capaces de generar el riesgo de las disciplinas circenses y la interpretación teatral. Portes acrobáticos, acrobacias dinámicas, cuerda floja, malabares musicales, música en directo, barra fija, slapstick, teatro gestual, son las herramientas que apoyadas por la dramaturgia conforman una historia cercana y emocionante capaz de conmover a todos los públicos y transmitir valores necesarios para una sociedad actual.\nsuponer el olvido. Como decía la canción, 20 años no es nada…Y dos personajes que encontraron la manera de poder seguir juntos en la distancia aunque la vida les lleve por caminos diferentes.\nDistanS habla de amistad: los recuerdos que siguen vivos en nuestros corazones a pesar de los años.\nHabla de la fragilidad del ser humano, de la ruptura, la soledad, y del amor capaz de regenerar y reconstruir nuestras relaciones con los demás. Un viaje a través de las emociones en un espacio visual y sonoro que envuelve las escenas de circo acrobático y teatro gestual que conforman un espectáculo orgánico, sensible y divertido. Con este espectáculo, la compañía ahonda en las emociones que son capaces de generar el riesgo de las disciplinas circenses y la interpretación teatral. Portes acrobáticos, acrobacias dinámicas, cuerda floja, malabares musicales, música en directo, barra fija, slapstick, teatro gestual, son las herramientas que apoyadas por la dramaturgia conforman una historia cercana y emocionante capaz de conmover a todos los públicos y transmitir valores necesarios para una sociedad actual.",
+    "descripcion": "Acróbatas, malabaristas, trapecistas, equilibristas… los dos artistas de esta compañía española son ante todo actores que juegan con todo su talento para sorprender y emocionar.\n\nEl circo se reinventa. Es híbrido. El encuentro con el teatro gestual. Como en este espectáculo donde la performance no se busca para ella misma, sino que se realiza al servicio del mensaje y se basa en él.\n\nUn relato atravesado por el humor que evoca la relación con el otro y la amistad. Los juegos, las risas, la complicidad. El tiempo que pasa y la vida que separa. Los recuerdos que permanecen y el vínculo que sobrevive.",
+    "frase": "Esta historia, a la vez sensible y orgánica, es una bella mezcla de humor, acrobacias y teatro gestual. Cautivará a toda la familia mientras hace viajar a través de una multitud de emociones. ¡Déjense llevar en este viaje donde la amistad está en el corazón del espectáculo!",
+    "video": {
+     "tipo": "youtube",
+     "id": "ZAamG6Dm5TI",
+     "url": "https://www.youtube.com/watch?v=ZAamG6Dm5TI"
+    },
+    "imagen_wix": "0171ea_3900658104d44f45b5ae7e4fca561b07~mv2.jpg"
+   },
+   {
+    "id": "extrana-sinfonia",
+    "titulo": "Extraña sinfonía",
+    "disciplinas": [
+     "Acrobacias en patines",
+     "Malabares músicales",
+     "Música",
+     "Humor"
+    ],
+    "generos": [
+     "circo",
+     "humor",
+     "musica"
+    ],
+    "edad": "+9",
+    "duracion": 30,
+    "sinopsis": "Es la unión de la música y los patines de toda la vida, reutilizados  y transformados de manera orgánica para complementar el circo.\nDos personajes elegantemente excéntricos presentan un extravagante concierto: El sonido envolvente del clarinete acompañado con una técnica propia creada con malabares de pelotas de ping-pong en rebotes  con ollas y paelleras recicladas: una forma especial de hacer percusión.",
+    "descripcion": "Una balada hipnótica y diferente, con aires urbanos, que va paseando por una puesta en escena sencillamente estética y visual. Un concierto que va degenerando hacía una bella locura,  la no convencional,  no conformista, la que hace que a pesar de que todo va mal...todo sigue yendo sobre rueda,  mientras el humano sigue inventando y soñando para dar poesía al mundo.\nEste trabajo es la búsqueda de los cuerpos circenses que se adaptan a conceptos diferentes y nuevos que cambian o  alteran  la realización de las acrobacias en suelo y los portes acrobáticos. Transmitiendo la fragilidad del humano  frente a nuevos parámetros, desafiando al  riesgo del desequilibrio de los patines, la complejidad al nivel técnico del cambio de los apoyos y fundamentos básicos, establecidos, en las disciplinas acrobáticas ,como las impulsiones, las recepciones y  el peso sumado, entre otras.\nHumor y sensibilidad se dan de la mano, para vivir este camino, recorriendo diferentes sentidos, mientras los componentes de vol'e Temps siguen su camino hacia su esencia en su relación y complicidad en escena.",
+    "frase": "Humor y sensibilidad se dan de la mano, para vivir este camino, recorriendo diferentes sentidos, mientras los componentes de Vol'e Temps siguen su camino hacia su esencia en su relación y complicidad en escena.",
+    "video": {
+     "tipo": "youtube",
+     "id": "Th-DZna_2a0",
+     "url": "https://www.youtube.com/watch?v=Th-DZna_2a0"
+    },
+    "imagen_wix": "0171ea_00f65b70693d4e26b672d26b24ccc03c~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_00f65b70693d4e26b672d26b24ccc03c~mv2.jpg"
+ },
+ {
+  "id": "wilbur",
+  "nombre": "Wilbur",
+  "procedencia": "Madrid",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "piensa-en-wilbur",
+    "titulo": "Piensa en Wilbur",
+    "disciplinas": [
+     "Humor",
+     "Comedia"
+    ],
+    "generos": [
+     "humor"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": "‘Piensa en Wilbur’ es un espectáculo plagado de acrobacias, humor, y riesgo, mucho riesgo: la única manera en la que Wilbur sabe vivir. Con una técnica y un físico fuera de lo común, creará situaciones imposibles que dejarán al público anonadado. Acompañado de sus amigos inseparables: Contractura, Tirón y Desgarro nos demostrará que la acrobacia no es solo un deporte. Un espectáculo que impactará en el público (literalmente).",
+    "descripcion": "Piensa en Wilbur' es un espectáculo plagado de acrobacias, humor y riesgo, mucho riesgo: la única manera en la que Wilbur sabe vivir.\n\nCon una técnica y un físico fuera de lo común, creará situaciones imposibles que dejarán al público anonadado.",
+    "frase": "Con una técnica y un físico fuera de lo común, creará situaciones imposibles que dejarán al público anonadado.",
+    "video": {
+     "tipo": "youtube",
+     "id": "ni_U0JQXbAM",
+     "url": "https://www.youtube.com/watch?v=ni_U0JQXbAM"
+    },
+    "imagen_wix": "0171ea_75b9db5dd55846989b4c4205ecf8f50e~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_75b9db5dd55846989b4c4205ecf8f50e~mv2.jpg"
+ },
+ {
+  "id": "zurrunka-teatro-y-la-semilla-voladora",
+  "nombre": "Zurrunka Teatro y La Semilla Voladora",
+  "procedencia": "País Vasco",
+  "imagen": "",
+  "web": "",
+  "instagram": "",
+  "espectaculos": [
+   {
+    "id": "birakolore",
+    "titulo": "Birakolore",
+    "disciplinas": [
+     "Títere corporal",
+     "Itinerante",
+     "Participativo"
+    ],
+    "generos": [
+     "teatro"
+    ],
+    "edad": "Todos los públicos",
+    "duracion": 60,
+    "sinopsis": "\"Birakolore nos habla de la belleza de relacionarnos desde el lugar amable, cíclico y fructuoso que nos\nenseña la Naturaleza, así como de la oportunidad intervenir en el espacio desde una nueva mirada poética\ny comprometida.\"",
+    "descripcion": "\"BIRAKOLORE es el viaje de una pareja de ancianos que comparten su sabiduría de estar en el mundo\nrelacionándose con las personas y el paisaje de un modo genuino y comprometido: deambulan por las\ncalles con su carrito lleno de flores, semillas, poesías y árboles, ofreciendo a grandes y pequeñxs el placer\nde sensibilizarse con la Naturaleza e intervenir con ella en el espacio. Una experiencia político-poética\ndelicada, divertida y conmovedora.\"",
+    "frase": "\"Birakolore una experiencia político-poética delicada, divertida y conmovedora protagonizada por dos\nancianos que recorren las calles sembrando semillas de ternura con las personas que se encuentran en\nsu camino.\"",
+    "video": {
+     "tipo": "youtube",
+     "id": "Uyn95umdkBw",
+     "url": "https://www.youtube.com/watch?v=Uyn95umdkBw"
+    },
+    "imagen_wix": "0171ea_a3a9bb9139594350923b73aefc9fd760~mv2.jpg"
+   }
+  ],
+  "imagen_wix": "0171ea_a3a9bb9139594350923b73aefc9fd760~mv2.jpg"
+ }
+]

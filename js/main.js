@@ -3,6 +3,7 @@
   try { document.documentElement.classList.remove("sin-js"); } catch (e) {}
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var sinAcentos = function (t) { return String(t || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); };
 
   // Menú móvil
   try {
@@ -28,30 +29,56 @@
 
   try { var a = $("#anio"); if (a) a.textContent = String(new Date().getFullYear()); } catch (e) {}
 
-  // Filtro de compañías por disciplina
+  // Filtro de compañías por género (portada) y archivo de compañías (año + género + búsqueda)
   try {
-    $$(".filtro").forEach(function (b) {
+    var archivo = $("#archivo");
+    var genero = "todas", anioA = "", qA = "";
+    var aplicarCompanias = function () {
+      var n = 0;
+      $$(".compania").forEach(function (c) {
+        var ok = (genero === "todas" || (" " + c.getAttribute("data-tipos") + " ").indexOf(" " + genero + " ") >= 0) &&
+          (!anioA || (" " + (c.getAttribute("data-anios") || "") + " ").indexOf(" " + anioA + " ") >= 0) &&
+          (!qA || (c.getAttribute("data-texto") || "").indexOf(qA) >= 0);
+        c.hidden = !ok; if (ok) n++;
+      });
+      var cu = $("#a-cuenta"); if (cu) cu.textContent = n + (n === 1 ? " compañía" : " compañías");
+      var va = $("#a-vacio"); if (va) va.hidden = n > 0;
+    };
+    $$(".filtro[data-filtro]").forEach(function (b) {
       b.addEventListener("click", function () {
-        var f = b.getAttribute("data-filtro");
-        $$(".filtro").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-        $$(".compania").forEach(function (c) { c.hidden = f !== "todas" && (" " + c.getAttribute("data-tipos") + " ").indexOf(" " + f + " ") < 0; });
+        genero = b.getAttribute("data-filtro");
+        $$(".filtro[data-filtro]").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+        aplicarCompanias();
+      });
+    });
+    if (archivo) {
+      $$(".filtro[data-anio]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          anioA = b.getAttribute("data-anio");
+          $$(".filtro[data-anio]").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+          aplicarCompanias();
+        });
+      });
+      var qa = $("#a-q"); if (qa) qa.addEventListener("input", function () { qA = sinAcentos(qa.value.trim()); aplicarCompanias(); });
+    }
+  } catch (e) {}
+
+  // Vídeos: solo se cargan (YouTube sin cookies / Vimeo) cuando se pulsan
+  try {
+    $$(".video button").forEach(function (v) {
+      v.addEventListener("click", function () {
+        var cont = v.parentNode, id = cont.getAttribute("data-video"), tipo = cont.getAttribute("data-tipo") || "youtube";
+        var f = document.createElement("iframe");
+        f.src = tipo === "vimeo" ? "https://player.vimeo.com/video/" + id + "?autoplay=1&dnt=1" : "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+        f.title = cont.getAttribute("data-titulo") || "Vídeo";
+        f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+        f.allowFullscreen = true;
+        cont.innerHTML = ""; cont.appendChild(f);
       });
     });
   } catch (e) {}
 
-  // Vídeo: solo se carga YouTube (sin cookies) cuando se pulsa
-  try {
-    var v = $(".video button");
-    if (v) v.addEventListener("click", function () {
-      var cont = v.parentNode, id = cont.getAttribute("data-video");
-      var f = document.createElement("iframe");
-      f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
-      f.title = cont.getAttribute("data-titulo") || "Vídeo";
-      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
-      f.allowFullscreen = true;
-      cont.innerHTML = ""; cont.appendChild(f);
-    });
-  } catch (e) {}
+  try { programa(); } catch (e) { if (window.console) console.error(e); }
 
   // ---------------- Formulario de inscripción ----------------
   var form = $("#form-inscripcion");
@@ -164,4 +191,217 @@
       })
       .then(function () { btn.disabled = false; });
   });
+
+  // ---------------- Programa: filtros, «ahora» y mi itinerario ----------------
+  function programa() {
+    var raiz = $(".programa");
+    if (!raiz) return;
+    var CLAVE_IT = "enpie-itinerario";
+    var funciones = $$(".funcion", raiz);
+    var porId = {};
+    funciones.forEach(function (f) { porId[f.getAttribute("data-id")] = f; });
+    var estado = { q: "", dia: "", espacio: "", compania: "", generos: [], vista: "programa" };
+    var q = $("#p-q"), selEsp = $("#p-espacio"), selCia = $("#p-compania");
+
+    // --- itinerario guardado (solo en este navegador)
+    var leer = function () { try { return JSON.parse(localStorage.getItem(CLAVE_IT) || "[]").filter(function (x) { return typeof x === "string"; }); } catch (e) { return []; } };
+    var mio = leer();
+    var guardar = function () { try { localStorage.setItem(CLAVE_IT, JSON.stringify(mio)); } catch (e) {} };
+    var compartido = null;
+
+    // --- estado <-> URL
+    var leerURL = function () {
+      var p = new URLSearchParams(location.search);
+      estado.q = p.get("q") || ""; estado.dia = p.get("dia") || ""; estado.espacio = p.get("espacio") || "";
+      estado.compania = p.get("compania") || ""; estado.generos = (p.get("genero") || "").split(",").filter(Boolean);
+      estado.vista = p.get("vista") === "itinerario" || p.get("it") ? "itinerario" : "programa";
+      var it = p.get("it");
+      compartido = it ? it.split(",").filter(function (id) { return porId[id]; }) : null;
+    };
+    var escribirURL = function () {
+      var p = new URLSearchParams();
+      if (estado.q) p.set("q", estado.q);
+      if (estado.dia) p.set("dia", estado.dia);
+      if (estado.espacio) p.set("espacio", estado.espacio);
+      if (estado.compania) p.set("compania", estado.compania);
+      if (estado.generos.length) p.set("genero", estado.generos.join(","));
+      if (estado.vista === "itinerario") p.set("vista", "itinerario");
+      if (compartido) p.set("it", compartido.join(","));
+      var u = location.pathname + (p.toString() ? "?" + p.toString() : "") + location.hash;
+      try { history.replaceState(null, "", u); } catch (e) {}
+    };
+
+    // --- filtros
+    var hayFiltros = function () { return !!(estado.q || estado.dia || estado.espacio || estado.compania || estado.generos.length); };
+    var aplicar = function () {
+      var n = 0, qq = sinAcentos(estado.q.trim());
+      funciones.forEach(function (f) {
+        var gs = " " + f.getAttribute("data-generos") + " ";
+        var ok = (!estado.dia || f.getAttribute("data-dia") === estado.dia) &&
+          (!estado.espacio || f.getAttribute("data-espacio") === estado.espacio) &&
+          (!estado.compania || f.getAttribute("data-compania") === estado.compania) &&
+          (!estado.generos.length || estado.generos.some(function (g) { return gs.indexOf(" " + g + " ") >= 0; })) &&
+          (!qq || (f.getAttribute("data-texto") || "").indexOf(qq) >= 0);
+        f.hidden = !ok; if (ok) n++;
+      });
+      $$(".dia", raiz).forEach(function (d) { d.hidden = !$(".funcion:not([hidden])", d); });
+      $("#p-cuenta").textContent = n + (n === 1 ? " función" : " funciones");
+      $("#p-vacio").hidden = n > 0;
+      $("#p-limpiar").hidden = !hayFiltros();
+      $$("[data-dia]", $(".barra-filtros")).forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-dia") === estado.dia ? "true" : "false"); });
+      $$("[data-genero]", raiz).forEach(function (b) { b.setAttribute("aria-pressed", estado.generos.indexOf(b.getAttribute("data-genero")) >= 0 ? "true" : "false"); });
+      if (q.value !== estado.q) q.value = estado.q;
+      selEsp.value = estado.espacio; selCia.value = estado.compania;
+      escribirURL();
+    };
+    q.addEventListener("input", function () { estado.q = q.value; aplicar(); });
+    selEsp.addEventListener("change", function () { estado.espacio = selEsp.value; aplicar(); });
+    selCia.addEventListener("change", function () { estado.compania = selCia.value; aplicar(); });
+    $$("[data-dia]", $(".barra-filtros")).forEach(function (b) { b.addEventListener("click", function () { estado.dia = b.getAttribute("data-dia"); aplicar(); }); });
+    $$("[data-genero]", raiz).forEach(function (b) {
+      b.addEventListener("click", function () {
+        var g = b.getAttribute("data-genero"), i = estado.generos.indexOf(g);
+        if (i >= 0) estado.generos.splice(i, 1); else estado.generos.push(g);
+        aplicar();
+      });
+    });
+    var limpiar = function () { estado.q = ""; estado.dia = ""; estado.espacio = ""; estado.compania = ""; estado.generos = []; aplicar(); };
+    $("#p-limpiar").addEventListener("click", limpiar);
+    $$("[data-limpiar]", raiz).forEach(function (b) { b.addEventListener("click", limpiar); });
+
+    // --- estrellas
+    var pintarEstrellas = function () {
+      funciones.forEach(function (f) {
+        var on = mio.indexOf(f.getAttribute("data-id")) >= 0;
+        f.classList.toggle("marcada", on);
+        var b = $(".estrella", f); b.setAttribute("aria-pressed", on ? "true" : "false");
+        b.title = on ? "Quitar de mi itinerario" : "Añadir a mi itinerario";
+      });
+      var c = $("#contador-itinerario"); c.textContent = String(mio.length); c.classList.toggle("lleno", mio.length > 0);
+    };
+    raiz.addEventListener("click", function (ev) {
+      var b = ev.target.closest && ev.target.closest(".estrella");
+      if (!b) return;
+      var f = b.closest(".funcion"), id = f && f.getAttribute("data-id");
+      if (!id) return;
+      var i = mio.indexOf(id);
+      if (i >= 0) mio.splice(i, 1); else mio.push(id);
+      guardar(); pintarEstrellas();
+      if (estado.vista === "itinerario") pintarItinerario();
+      b.classList.remove("salta"); void b.offsetWidth; b.classList.add("salta");
+    });
+
+    // --- vista itinerario
+    var ordenar = function (ids) {
+      return ids.filter(function (id) { return porId[id]; }).sort(function (a, b) {
+        return porId[a].getAttribute("data-inicio") < porId[b].getAttribute("data-inicio") ? -1 : 1;
+      });
+    };
+    var pintarItinerario = function () {
+      var lista = $("#it-lista"), ids = ordenar(compartido || mio);
+      lista.innerHTML = "";
+      $("#it-vacio").hidden = ids.length > 0;
+      $("#it-acciones").hidden = !ids.length || !!compartido;
+      var av = $("#it-compartido"); av.hidden = !compartido;
+      if (compartido) $("#it-compartido-n").textContent = String(ids.length);
+      var ol = null, diaActual = "", finAnterior = "", tituloAnterior = "";
+      ids.forEach(function (id) {
+        var f = porId[id], d = f.getAttribute("data-dia");
+        if (d !== diaActual) {
+          diaActual = d; finAnterior = "";
+          var t = $(".dia[data-dia='" + d + "'] .dia-titulo", raiz);
+          var h = document.createElement("h2"); h.className = "dia-titulo"; h.textContent = t ? t.textContent : d;
+          lista.appendChild(h);
+          ol = document.createElement("ol"); ol.className = "funciones"; lista.appendChild(ol);
+        }
+        var copia = f.cloneNode(true);
+        copia.hidden = false; copia.removeAttribute("id");
+        if (finAnterior && f.getAttribute("data-inicio") < finAnterior) {
+          copia.classList.add("solapa");
+          var aviso = document.createElement("p"); aviso.className = "aviso-solapa";
+          aviso.textContent = "Se pisa con " + tituloAnterior + ": tendrás que elegir o llegar a mitad.";
+          $(".funcion-cuerpo", copia).appendChild(aviso);
+        }
+        if (f.getAttribute("data-fin") > finAnterior) { finAnterior = f.getAttribute("data-fin"); tituloAnterior = f.getAttribute("data-titulo"); }
+        if (compartido) { var est = $(".estrella", copia); if (est) est.remove(); }
+        ol.appendChild(copia);
+      });
+    };
+    var mostrar = function (vista) {
+      estado.vista = vista;
+      $("#vista-programa").hidden = vista !== "programa";
+      $("#vista-itinerario").hidden = vista !== "itinerario";
+      $(".barra-filtros").hidden = vista !== "programa";
+      $(".resultado", raiz).hidden = vista !== "programa";
+      $("#tab-programa").setAttribute("aria-selected", vista === "programa" ? "true" : "false");
+      $("#tab-itinerario").setAttribute("aria-selected", vista === "itinerario" ? "true" : "false");
+      if (vista === "itinerario") pintarItinerario();
+      escribirURL();
+    };
+    $("#tab-programa").addEventListener("click", function () { compartido = null; mostrar("programa"); });
+    $("#tab-itinerario").addEventListener("click", function () { mostrar("itinerario"); });
+    $("#it-guardar").addEventListener("click", function () {
+      mio = ordenar(compartido); compartido = null; guardar(); pintarEstrellas(); mostrar("itinerario");
+    });
+    $("#it-vaciar").addEventListener("click", function () {
+      if (!mio.length) return;
+      if (!confirmarVaciar.dataset.armado) { confirmarVaciar.dataset.armado = "1"; setEstado("Pulsa otra vez «Vaciar» para borrar todo tu itinerario."); setTimeout(function () { delete confirmarVaciar.dataset.armado; }, 4000); return; }
+      delete confirmarVaciar.dataset.armado; mio = []; guardar(); pintarEstrellas(); pintarItinerario(); setEstado("Itinerario vaciado.");
+    });
+    var confirmarVaciar = $("#it-vaciar");
+    var setEstado = function (t) { $("#it-estado").textContent = t; };
+    $("#it-compartir").addEventListener("click", function () {
+      var url = location.origin + location.pathname + "?it=" + ordenar(mio).join(",");
+      var titulo = "Mi itinerario en En Pie " + raiz.getAttribute("data-anio");
+      if (navigator.share) { navigator.share({ title: titulo, url: url }).catch(function () {}); return; }
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(function () { setEstado("Enlace copiado: pégalo donde quieras."); }, function () { setEstado(url); });
+      else setEstado(url);
+    });
+    $("#it-calendario").addEventListener("click", function () {
+      var dos = function (n) { return (n < 10 ? "0" : "") + n; };
+      var aICS = function (s) { var d = new Date(s); return d.getUTCFullYear() + dos(d.getUTCMonth() + 1) + dos(d.getUTCDate()) + "T" + dos(d.getUTCHours()) + dos(d.getUTCMinutes()) + "00Z"; };
+      var limpio = function (t) { return String(t).replace(/([,;\\])/g, "\\$1"); };
+      // Las horas del festival son de Canarias (UTC+1 en verano, UTC+0 en invierno)
+      var conZona = function (s) { var m = +s.slice(5, 7); return s + (m >= 4 && m <= 10 ? ":00+01:00" : ":00+00:00"); };
+      var lineas = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Festival En Pie Teror//Itinerario//ES", "CALSCALE:GREGORIAN"];
+      ordenar(mio).forEach(function (id) {
+        var f = porId[id];
+        lineas.push("BEGIN:VEVENT", "UID:" + id + "@festivalenpieteror.com", "DTSTAMP:" + aICS(new Date().toISOString()),
+          "DTSTART:" + aICS(conZona(f.getAttribute("data-inicio"))), "DTEND:" + aICS(conZona(f.getAttribute("data-fin"))),
+          "SUMMARY:" + limpio(f.getAttribute("data-titulo")), "LOCATION:" + limpio(f.getAttribute("data-lugar") + ", Teror"),
+          "URL:" + location.origin + f.getAttribute("data-url"), "END:VEVENT");
+      });
+      lineas.push("END:VCALENDAR");
+      var blob = new Blob([lineas.join("\r\n")], { type: "text/calendar;charset=utf-8" });
+      var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "mi-itinerario-en-pie.ics";
+      document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+      setEstado("Descargado: ábrelo para añadirlo a tu calendario.");
+    });
+
+    // --- «ahora»: durante el festival se marca lo que está en marcha y se apaga lo que ya pasó
+    var marcarAhora = function () {
+      var ahora = new Date(), dos = function (n) { return (n < 10 ? "0" : "") + n; };
+      // hora de Canarias aproximada a partir de la del dispositivo
+      var t = ahora.getFullYear() + "-" + dos(ahora.getMonth() + 1) + "-" + dos(ahora.getDate()) + "T" + dos(ahora.getHours()) + ":" + dos(ahora.getMinutes());
+      var hay = false;
+      funciones.forEach(function (f) {
+        var en = f.getAttribute("data-inicio") <= t && t < f.getAttribute("data-fin");
+        f.classList.toggle("ahora", en); f.classList.toggle("pasada", f.getAttribute("data-fin") <= t && f.getAttribute("data-dia") === t.slice(0, 10));
+        if (en) hay = true;
+      });
+      return { hoy: t.slice(0, 10), hay: hay };
+    };
+
+    leerURL();
+    var a = marcarAhora();
+    if (!estado.dia && !location.search && $$("[data-dia='" + a.hoy + "']", $(".barra-filtros")).length) estado.dia = a.hoy;
+    setInterval(marcarAhora, 60000);
+    pintarEstrellas();
+    aplicar();
+    mostrar(estado.vista);
+    if (location.hash && location.hash.indexOf("#f-") === 0) {
+      var objetivo = $(location.hash);
+      if (objetivo) { objetivo.classList.add("destacada"); setTimeout(function () { objetivo.scrollIntoView({ block: "center" }); }, 50); }
+    }
+  }
 })();

@@ -1,0 +1,42 @@
+name: Publicar la web
+
+# Cada vez que cambian los datos (desde el portal o a mano) o los scripts:
+#  1) trae de Wix las fotos de compañías que falten (WebP),
+#  2) regenera todas las páginas con scripts/generar.py,
+#  3) sube el resultado; Cloudflare publica solo al recibir el commit.
+# También se puede lanzar a mano: Actions > "Publicar la web" > Run workflow.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [data/**, scripts/**, img/companias/**, img/espectaculos/**]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Imágenes que falten
+        run: python3 scripts/imagenes.py
+      - name: Generar las páginas
+        run: python3 scripts/generar.py
+      - name: Guardar en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A img programa companias *.html _redirects sitemap.xml robots.txt
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Web regenerada con los datos actuales"
+          git pull --rebase origin main
+          git push

@@ -1,0 +1,848 @@
+[
+ {
+  "id": "2024-0831-1100-raul-perez",
+  "edicion": 2024,
+  "inicio": "2024-08-31T11:00",
+  "espacio": "antiguo-ayuntamiento",
+  "compania": "raul-perez",
+  "espectaculo": "risoterapia",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-1100-titiriclown",
+  "edicion": 2024,
+  "inicio": "2024-08-31T11:00",
+  "espacio": "teresa-de-bolivar",
+  "compania": "titiriclown",
+  "espectaculo": "cuantos-cuentos",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-1200-vol-e-temps",
+  "edicion": 2024,
+  "inicio": "2024-08-31T12:00",
+  "espacio": "oficinas-municipales",
+  "compania": "vol-e-temps",
+  "espectaculo": "extrana-sinfonia",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-1245-the-circus-troupe",
+  "edicion": 2024,
+  "inicio": "2024-08-31T12:45",
+  "espacio": "itinerante",
+  "compania": "the-circus-troupe",
+  "espectaculo": "pasacalle-circus",
+  "nota": "Desde Bulevar"
+ },
+ {
+  "id": "2024-0831-1245-the-plunger-dixie-band",
+  "edicion": 2024,
+  "inicio": "2024-08-31T12:45",
+  "espacio": "itinerante",
+  "compania": "the-plunger-dixie-band",
+  "espectaculo": "the-plunger-dixie-band",
+  "nota": "Desde Bulevar"
+ },
+ {
+  "id": "2024-0831-1330-la-chorimurga",
+  "edicion": 2024,
+  "inicio": "2024-08-31T13:30",
+  "espacio": "sintes-escenario",
+  "compania": "la-chorimurga",
+  "espectaculo": "bar-beria",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-1430-toni-bob",
+  "edicion": 2024,
+  "inicio": "2024-08-31T14:30",
+  "espacio": "sintes-escenario",
+  "compania": "toni-bob",
+  "espectaculo": "toni-bob",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-1700-entropias-imposibles",
+  "edicion": 2024,
+  "inicio": "2024-08-31T17:00",
+  "espacio": "teresa-de-bolivar",
+  "compania": "entropias-imposibles",
+  "espectaculo": "clicka-el-duende-que-suena-cuentos",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-1800-mario-comaneci",
+  "edicion": 2024,
+  "inicio": "2024-08-31T18:00",
+  "espacio": "oficinas-municipales",
+  "compania": "mario-comaneci",
+  "espectaculo": "ad-limitum",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-1900-orain-bi",
+  "edicion": 2024,
+  "inicio": "2024-08-31T19:00",
+  "espacio": "alameda",
+  "compania": "orain-bi",
+  "espectaculo": "mute",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-2000-botproject",
+  "edicion": 2024,
+  "inicio": "2024-08-31T20:00",
+  "espacio": "sintes-calle",
+  "compania": "botproject",
+  "espectaculo": "collage",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-2100-sacude",
+  "edicion": 2024,
+  "inicio": "2024-08-31T21:00",
+  "espacio": "oficinas-municipales",
+  "compania": "sacude",
+  "espectaculo": "donde-te-miro-y-me-veo",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-2130-ultima-llave",
+  "edicion": 2024,
+  "inicio": "2024-08-31T21:30",
+  "espacio": "sintes-escenario",
+  "compania": "ultima-llave",
+  "espectaculo": "ultima-llave-concierto",
+  "nota": ""
+ },
+ {
+  "id": "2024-0831-2300-tio-matt",
+  "edicion": 2024,
+  "inicio": "2024-08-31T23:00",
+  "espacio": "sintes-escenario",
+  "compania": "tio-matt",
+  "espectaculo": "tio-matt-concierto",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-1100-la-godot-escenica",
+  "edicion": 2024,
+  "inicio": "2024-09-01T11:00",
+  "espacio": "teresa-de-bolivar",
+  "compania": "la-godot-escenica",
+  "espectaculo": "hipatia-y-el-asteroide-b-612",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-1100-raul-perez",
+  "edicion": 2024,
+  "inicio": "2024-09-01T11:00",
+  "espacio": "antiguo-ayuntamiento",
+  "compania": "raul-perez",
+  "espectaculo": "taller-de-risoterapia",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-1215-bolina-titeres",
+  "edicion": 2024,
+  "inicio": "2024-09-01T12:15",
+  "espacio": "itinerante",
+  "compania": "bolina-titeres",
+  "espectaculo": "las-jirafas-de-colores",
+  "nota": "Salida Plaza del Pino"
+ },
+ {
+  "id": "2024-0901-1300-la-boina-de-fito",
+  "edicion": 2024,
+  "inicio": "2024-09-01T13:00",
+  "espacio": "sintes-escenario",
+  "compania": "la-boina-de-fito",
+  "espectaculo": "la-boina-de-fito-concierto",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-1445-escuela-de-calor",
+  "edicion": 2024,
+  "inicio": "2024-09-01T14:45",
+  "espacio": "plaza-del-pino",
+  "compania": "escuela-de-calor",
+  "espectaculo": "escuela-de-calor-concierto",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-1700-quique-montoya",
+  "edicion": 2024,
+  "inicio": "2024-09-01T17:00",
+  "espacio": "plaza-del-pino",
+  "compania": "quique-montoya",
+  "espectaculo": "tornillo-magic-clown",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-1810-circanario-aime-morales",
+  "edicion": 2024,
+  "inicio": "2024-09-01T18:10",
+  "espacio": "alameda",
+  "compania": "circanario-aime-morales",
+  "espectaculo": "ai-moko",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-1850-botproject",
+  "edicion": 2024,
+  "inicio": "2024-09-01T18:50",
+  "espacio": "sintes-calle",
+  "compania": "botproject",
+  "espectaculo": "rec-on-struccion",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-1950-bucraa-circus",
+  "edicion": 2024,
+  "inicio": "2024-09-01T19:50",
+  "espacio": "oficinas-municipales",
+  "compania": "bucraa-circus",
+  "espectaculo": "el-gran-final",
+  "nota": ""
+ },
+ {
+  "id": "2024-0901-2100-vol-e-temps",
+  "edicion": 2024,
+  "inicio": "2024-09-01T21:00",
+  "espacio": "sintes-escenario",
+  "compania": "vol-e-temps",
+  "espectaculo": "distans",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1100-chichirito",
+  "edicion": 2025,
+  "inicio": "2025-08-30T11:00",
+  "espacio": "antiguo-ayuntamiento",
+  "compania": "chichirito",
+  "espectaculo": "taller-de-risoterapia",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1100-rafaelillo-clown",
+  "edicion": 2025,
+  "inicio": "2025-08-30T11:00",
+  "espacio": "teresa-de-bolivar",
+  "compania": "rafaelillo-clown",
+  "espectaculo": "viajando-con-la-imaginacion",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1200-eddy-eighty",
+  "edicion": 2025,
+  "inicio": "2025-08-30T12:00",
+  "espacio": "alameda",
+  "compania": "eddy-eighty",
+  "espectaculo": "the-power-of-the-80-s",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1300-la-gata-japonesa",
+  "edicion": 2025,
+  "inicio": "2025-08-30T13:00",
+  "espacio": "sintes-calle",
+  "compania": "la-gata-japonesa",
+  "espectaculo": "el-showroom-de-paipai-rouge",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1300-zurrunka-teatro-y-la-semilla-voladora",
+  "edicion": 2025,
+  "inicio": "2025-08-30T13:00",
+  "espacio": "itinerante",
+  "compania": "zurrunka-teatro-y-la-semilla-voladora",
+  "espectaculo": "birakolore",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1400-101-brass-band",
+  "edicion": 2025,
+  "inicio": "2025-08-30T14:00",
+  "espacio": "itinerante",
+  "compania": "101-brass-band",
+  "espectaculo": "musica",
+  "nota": "Salida desde Bulevar"
+ },
+ {
+  "id": "2025-0830-1500-biphasic",
+  "edicion": 2025,
+  "inicio": "2025-08-30T15:00",
+  "espacio": "sintes-calle",
+  "compania": "biphasic",
+  "espectaculo": "artistas-esther-suarez-y-luis-merino",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1600-escuela-de-circo-msb",
+  "edicion": 2025,
+  "inicio": "2025-08-30T16:00",
+  "espacio": "bulevar",
+  "compania": "escuela-de-circo-msb",
+  "espectaculo": "circoteca",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1700-the-circus-troupe",
+  "edicion": 2025,
+  "inicio": "2025-08-30T17:00",
+  "espacio": "plaza-del-pino",
+  "compania": "the-circus-troupe",
+  "espectaculo": "el-gran-chispita",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1800-suso-imbernon",
+  "edicion": 2025,
+  "inicio": "2025-08-30T18:00",
+  "espacio": "teresa-de-bolivar",
+  "compania": "suso-imbernon",
+  "espectaculo": "paco-panjabi-profesor-de-yoga",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1900-zurrunka-teatro-y-la-semilla-voladora",
+  "edicion": 2025,
+  "inicio": "2025-08-30T19:00",
+  "espacio": "itinerante",
+  "compania": "zurrunka-teatro-y-la-semilla-voladora",
+  "espectaculo": "birakolore",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-1910-wilbur",
+  "edicion": 2025,
+  "inicio": "2025-08-30T19:10",
+  "espacio": "sintes-calle",
+  "compania": "wilbur",
+  "espectaculo": "piensa-en-wilbur",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-2030-la-gata-japonesa",
+  "edicion": 2025,
+  "inicio": "2025-08-30T20:30",
+  "espacio": "alameda",
+  "compania": "la-gata-japonesa",
+  "espectaculo": "voa",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-2145-eventi-verticali",
+  "edicion": 2025,
+  "inicio": "2025-08-30T21:45",
+  "espacio": "oficinas-municipales",
+  "compania": "eventi-verticali",
+  "espectaculo": "cubo",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-2230-tataband",
+  "edicion": 2025,
+  "inicio": "2025-08-30T22:30",
+  "espacio": "sintes-calle",
+  "compania": "tataband",
+  "espectaculo": "tataband",
+  "nota": ""
+ },
+ {
+  "id": "2025-0830-2345-perrakos-soundsystem",
+  "edicion": 2025,
+  "inicio": "2025-08-30T23:45",
+  "espacio": "sintes-calle",
+  "compania": "perrakos-soundsystem",
+  "espectaculo": "perrakos-sound-system",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1100-chichirito",
+  "edicion": 2025,
+  "inicio": "2025-08-31T11:00",
+  "espacio": "antiguo-ayuntamiento",
+  "compania": "chichirito",
+  "espectaculo": "taller-de-risoterapia",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1100-entropias-imposibles",
+  "edicion": 2025,
+  "inicio": "2025-08-31T11:00",
+  "espacio": "teresa-de-bolivar",
+  "compania": "entropias-imposibles",
+  "espectaculo": "el-gran-kamishibai",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1100-escuela-de-circo-msb",
+  "edicion": 2025,
+  "inicio": "2025-08-31T11:00",
+  "espacio": "bulevar",
+  "compania": "escuela-de-circo-msb",
+  "espectaculo": "circoteca",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1130-zurrunka-teatro-y-la-semilla-voladora",
+  "edicion": 2025,
+  "inicio": "2025-08-31T11:30",
+  "espacio": "itinerante",
+  "compania": "zurrunka-teatro-y-la-semilla-voladora",
+  "espectaculo": "birakolore",
+  "nota": "Salida desde Alameda"
+ },
+ {
+  "id": "2025-0831-1200-the-circus-troupe",
+  "edicion": 2025,
+  "inicio": "2025-08-31T12:00",
+  "espacio": "plaza-del-pino",
+  "compania": "the-circus-troupe",
+  "espectaculo": "circopatas",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1300-motion-house",
+  "edicion": 2025,
+  "inicio": "2025-08-31T13:00",
+  "espacio": "sintes-calle",
+  "compania": "motion-house",
+  "espectaculo": "captive",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1330-101-brass-band",
+  "edicion": 2025,
+  "inicio": "2025-08-31T13:30",
+  "espacio": "itinerante",
+  "compania": "101-brass-band",
+  "espectaculo": "musica",
+  "nota": "Salida desde Alameda"
+ },
+ {
+  "id": "2025-0831-1430-aseres",
+  "edicion": 2025,
+  "inicio": "2025-08-31T14:30",
+  "espacio": "sintes-calle",
+  "compania": "aseres",
+  "espectaculo": "vida-plena",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1600-fran-baraja",
+  "edicion": 2025,
+  "inicio": "2025-08-31T16:00",
+  "espacio": "sintes-calle",
+  "compania": "fran-baraja",
+  "espectaculo": "disculpen-mi-desorden",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1700-payasos-rebambaramba",
+  "edicion": 2025,
+  "inicio": "2025-08-31T17:00",
+  "espacio": "alameda",
+  "compania": "payasos-rebambaramba",
+  "espectaculo": "rebambaramba-el-retorno",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1815-anartistas",
+  "edicion": 2025,
+  "inicio": "2025-08-31T18:15",
+  "espacio": "teresa-de-bolivar",
+  "compania": "anartistas",
+  "espectaculo": "el-rey-leoncio",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-1930-cris-clown",
+  "edicion": 2025,
+  "inicio": "2025-08-31T19:30",
+  "espacio": "plaza-del-pino",
+  "compania": "cris-clown",
+  "espectaculo": "home",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-2000-zurrunka-teatro-y-la-semilla-voladora",
+  "edicion": 2025,
+  "inicio": "2025-08-31T20:00",
+  "espacio": "itinerante",
+  "compania": "zurrunka-teatro-y-la-semilla-voladora",
+  "espectaculo": "birakolore",
+  "nota": "Llegada a Sintes"
+ },
+ {
+  "id": "2025-0831-2030-wilbur",
+  "edicion": 2025,
+  "inicio": "2025-08-31T20:30",
+  "espacio": "sintes-calle",
+  "compania": "wilbur",
+  "espectaculo": "piensa-en-wilbur",
+  "nota": ""
+ },
+ {
+  "id": "2025-0831-2145-levi-y-estrella",
+  "edicion": 2025,
+  "inicio": "2025-08-31T21:45",
+  "espacio": "oficinas-municipales",
+  "compania": "levi-y-estrella",
+  "espectaculo": "entre-el-cielo-y-la-tierra",
+  "nota": ""
+ },
+ {
+  "id": "2026-0828-1730-pere-hosta",
+  "edicion": 2026,
+  "inicio": "2026-08-28T17:30",
+  "espacio": "teresa-de-bolivar",
+  "compania": "pere-hosta",
+  "espectaculo": "woof",
+  "nota": ""
+ },
+ {
+  "id": "2026-0828-1815-trocos-lucos",
+  "edicion": 2026,
+  "inicio": "2026-08-28T18:15",
+  "espacio": "alameda",
+  "compania": "trocos-lucos",
+  "espectaculo": "tartana",
+  "nota": ""
+ },
+ {
+  "id": "2026-0828-2300-andrea-rodriguez-y-la-banda-del-tropico",
+  "edicion": 2026,
+  "inicio": "2026-08-28T23:00",
+  "espacio": "sintes-escenario",
+  "compania": "andrea-rodriguez-y-la-banda-del-tropico",
+  "espectaculo": "tropico-de-capri",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-0000-son-de-la-isla",
+  "edicion": 2026,
+  "inicio": "2026-08-29T00:00",
+  "espacio": "sintes-escenario",
+  "compania": "son-de-la-isla",
+  "espectaculo": "son-de-la-isla",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1100-giuseppe-salchichone",
+  "edicion": 2026,
+  "inicio": "2026-08-29T11:00",
+  "espacio": "bulevar",
+  "compania": "giuseppe-salchichone",
+  "espectaculo": "los-retos-de-giuseppe-salchichone",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1100-risoterapia-islas-canarias",
+  "edicion": 2026,
+  "inicio": "2026-08-29T11:00",
+  "espacio": "antiguo-ayuntamiento",
+  "compania": "risoterapia-islas-canarias",
+  "espectaculo": "risoterapia",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1200-circo-akroshcan",
+  "edicion": 2026,
+  "inicio": "2026-08-29T12:00",
+  "espacio": "sintes-calle",
+  "compania": "circo-akroshcan",
+  "espectaculo": "a-kabaret",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1200-noelia-mederos",
+  "edicion": 2026,
+  "inicio": "2026-08-29T12:00",
+  "espacio": "bulevar",
+  "compania": "noelia-mederos",
+  "espectaculo": "noelia-mederos",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1300-patri-viera",
+  "edicion": 2026,
+  "inicio": "2026-08-29T13:00",
+  "espacio": "plaza-del-pino",
+  "compania": "patri-viera",
+  "espectaculo": "patri-viera",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1300-pere-hosta",
+  "edicion": 2026,
+  "inicio": "2026-08-29T13:00",
+  "espacio": "alameda",
+  "compania": "pere-hosta",
+  "espectaculo": "woof",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1330-la-dixie-de-en-pie",
+  "edicion": 2026,
+  "inicio": "2026-08-29T13:30",
+  "espacio": "itinerante",
+  "compania": "la-dixie-de-en-pie",
+  "espectaculo": "dixieland",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1400-el-nino-de-la-hipoteca",
+  "edicion": 2026,
+  "inicio": "2026-08-29T14:00",
+  "espacio": "sintes-escenario",
+  "compania": "el-nino-de-la-hipoteca",
+  "espectaculo": "el-nino-de-la-hipoteca",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1600-enkassette",
+  "edicion": 2026,
+  "inicio": "2026-08-29T16:00",
+  "espacio": "sintes-escenario",
+  "compania": "enkassette",
+  "espectaculo": "concierto-banda-enkassette",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1700-joe-farnarier",
+  "edicion": 2026,
+  "inicio": "2026-08-29T17:00",
+  "espacio": "plaza-del-pino",
+  "compania": "joe-farnarier",
+  "espectaculo": "invisible",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1700-tadeo-campanotto",
+  "edicion": 2026,
+  "inicio": "2026-08-29T17:00",
+  "espacio": "alameda",
+  "compania": "tadeo-campanotto",
+  "espectaculo": "show-de-tadeo",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1800-el-gordo-y-el-chapa",
+  "edicion": 2026,
+  "inicio": "2026-08-29T18:00",
+  "espacio": "teresa-de-bolivar",
+  "compania": "el-gordo-y-el-chapa",
+  "espectaculo": "el-ultimo-hombre-bala",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1800-patri-viera",
+  "edicion": 2026,
+  "inicio": "2026-08-29T18:00",
+  "espacio": "bulevar",
+  "compania": "patri-viera",
+  "espectaculo": "patri-viera",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-1900-jesus-soria",
+  "edicion": 2026,
+  "inicio": "2026-08-29T19:00",
+  "espacio": "plaza-del-pino",
+  "compania": "jesus-soria",
+  "espectaculo": "hablo-mas-que-salto",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-2000-la-cote-folle",
+  "edicion": 2026,
+  "inicio": "2026-08-29T20:00",
+  "espacio": "alameda",
+  "compania": "la-cote-folle",
+  "espectaculo": "entre-bous-i-vaques-entre-bueyes-y-vacas",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-2100-collectif-bislacco",
+  "edicion": 2026,
+  "inicio": "2026-08-29T21:00",
+  "espacio": "sintes-calle",
+  "compania": "collectif-bislacco",
+  "espectaculo": "smooth-as-fiasco",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-2215-grupo-puja",
+  "edicion": 2026,
+  "inicio": "2026-08-29T22:15",
+  "espacio": "oficinas-municipales",
+  "compania": "grupo-puja",
+  "espectaculo": "verne",
+  "nota": ""
+ },
+ {
+  "id": "2026-0829-2230-aseres",
+  "edicion": 2026,
+  "inicio": "2026-08-29T22:30",
+  "espacio": "sintes-escenario",
+  "compania": "aseres",
+  "espectaculo": "aseres-en-concierto",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-0100-perrakos-soundsystem",
+  "edicion": 2026,
+  "inicio": "2026-08-30T01:00",
+  "espacio": "sintes-escenario",
+  "compania": "perrakos-soundsystem",
+  "espectaculo": "fiestaka-en-teror",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1100-risoterapia-islas-canarias",
+  "edicion": 2026,
+  "inicio": "2026-08-30T11:00",
+  "espacio": "antiguo-ayuntamiento",
+  "compania": "risoterapia-islas-canarias",
+  "espectaculo": "risoterapia",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1100-tami-circo",
+  "edicion": 2026,
+  "inicio": "2026-08-30T11:00",
+  "espacio": "bulevar",
+  "compania": "tami-circo",
+  "espectaculo": "djtami",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1200-jesus-soria",
+  "edicion": 2026,
+  "inicio": "2026-08-30T12:00",
+  "espacio": "sintes-calle",
+  "compania": "jesus-soria",
+  "espectaculo": "hablo-mas-que-salto",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1200-joe-farnarier",
+  "edicion": 2026,
+  "inicio": "2026-08-30T12:00",
+  "espacio": "itinerante",
+  "compania": "joe-farnarier",
+  "espectaculo": "invisible",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1200-patri-viera",
+  "edicion": 2026,
+  "inicio": "2026-08-30T12:00",
+  "espacio": "bulevar",
+  "compania": "patri-viera",
+  "espectaculo": "patri-viera",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1300-toto-el-payaso",
+  "edicion": 2026,
+  "inicio": "2026-08-30T13:00",
+  "espacio": "teresa-de-bolivar",
+  "compania": "toto-el-payaso",
+  "espectaculo": "el-ring",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1300-trocos-lucos",
+  "edicion": 2026,
+  "inicio": "2026-08-30T13:00",
+  "espacio": "alameda",
+  "compania": "trocos-lucos",
+  "espectaculo": "tartana",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1330-la-dixie-de-en-pie",
+  "edicion": 2026,
+  "inicio": "2026-08-30T13:30",
+  "espacio": "itinerante",
+  "compania": "la-dixie-de-en-pie",
+  "espectaculo": "dixieland",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1400-agua-del-chorro",
+  "edicion": 2026,
+  "inicio": "2026-08-30T14:00",
+  "espacio": "sintes-escenario",
+  "compania": "agua-del-chorro",
+  "espectaculo": "llegaron-los-pibes",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1600-la-suerte-de-mi-vida",
+  "edicion": 2026,
+  "inicio": "2026-08-30T16:00",
+  "espacio": "sintes-escenario",
+  "compania": "la-suerte-de-mi-vida",
+  "espectaculo": "tributo-a-el-canto-del-loco",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1700-patri-viera",
+  "edicion": 2026,
+  "inicio": "2026-08-30T17:00",
+  "espacio": "plaza-del-pino",
+  "compania": "patri-viera",
+  "espectaculo": "patri-viera",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1730-jesus-soria",
+  "edicion": 2026,
+  "inicio": "2026-08-30T17:30",
+  "espacio": "sintes-calle",
+  "compania": "jesus-soria",
+  "espectaculo": "hablo-mas-que-salto",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1730-joe-farnarier",
+  "edicion": 2026,
+  "inicio": "2026-08-30T17:30",
+  "espacio": "teresa-de-bolivar",
+  "compania": "joe-farnarier",
+  "espectaculo": "invisible",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1800-maite-guevara",
+  "edicion": 2026,
+  "inicio": "2026-08-30T18:00",
+  "espacio": "alameda",
+  "compania": "maite-guevara",
+  "espectaculo": "que-buen-dia",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-1900-la-cote-folle",
+  "edicion": 2026,
+  "inicio": "2026-08-30T19:00",
+  "espacio": "sintes-calle",
+  "compania": "la-cote-folle",
+  "espectaculo": "entre-bous-i-vaques-entre-bueyes-y-vacas",
+  "nota": ""
+ },
+ {
+  "id": "2026-0830-2000-grupo-puja",
+  "edicion": 2026,
+  "inicio": "2026-08-30T20:00",
+  "espacio": "oficinas-municipales",
+  "compania": "grupo-puja",
+  "espectaculo": "asteroide-b612-el-principito",
+  "nota": ""
+ }
+]

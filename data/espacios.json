@@ -1,0 +1,74 @@
+[
+ {
+  "id": "sintes-escenario",
+  "nombre": "Plaza de Sintes · Escenario",
+  "corto": "Sintes Escenario",
+  "lat": 28.0585054,
+  "lng": -15.5481718,
+  "direccion": "Plaza de Sintes, Teror"
+ },
+ {
+  "id": "sintes-calle",
+  "nombre": "Plaza de Sintes · Calle",
+  "corto": "Sintes Calle",
+  "lat": 28.0585054,
+  "lng": -15.5481718,
+  "direccion": "Plaza de Sintes, Teror"
+ },
+ {
+  "id": "teresa-de-bolivar",
+  "nombre": "Plaza Teresa de Bolívar",
+  "corto": "Teresa de Bolívar",
+  "lat": 28.0596361,
+  "lng": -15.5468912,
+  "direccion": "Plaza Teresa de Bolívar, Teror"
+ },
+ {
+  "id": "alameda",
+  "nombre": "Alameda de Pío XII",
+  "corto": "Alameda",
+  "lat": 28.059158,
+  "lng": -15.5482407,
+  "direccion": "Plaza de la Alameda, Teror"
+ },
+ {
+  "id": "plaza-del-pino",
+  "nombre": "Plaza del Pino",
+  "corto": "Plaza del Pino",
+  "lat": 28.0595658,
+  "lng": -15.5474849,
+  "direccion": "Plaza del Pino, Teror"
+ },
+ {
+  "id": "bulevar",
+  "nombre": "Bulevar (Paseo González Díaz)",
+  "corto": "Bulevar",
+  "lat": null,
+  "lng": null,
+  "direccion": "Paseo González Díaz, Teror"
+ },
+ {
+  "id": "oficinas-municipales",
+  "nombre": "Oficinas Municipales",
+  "corto": "Oficinas Municipales",
+  "lat": 28.0606983,
+  "lng": -15.5459753,
+  "direccion": "Plaza Muro Nuevo, Teror"
+ },
+ {
+  "id": "antiguo-ayuntamiento",
+  "nombre": "Sala Polivalente (Antiguo Ayuntamiento)",
+  "corto": "Antiguo Ayuntamiento",
+  "lat": 28.0595333,
+  "lng": -15.5484768,
+  "direccion": "Calle Padre Cueto, Teror"
+ },
+ {
+  "id": "itinerante",
+  "nombre": "Itinerante por las calles",
+  "corto": "Itinerante",
+  "lat": null,
+  "lng": null,
+  "direccion": "Teror"
+ }
+]

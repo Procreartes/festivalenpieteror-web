@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Descarga las imágenes de la antigua web de Wix (y la miniatura del vídeo y el programa en PDF) y las guarda
-en WebP optimizado dentro de img/. Lo ejecuta la acción de GitHub «Traer imágenes de Wix».
+en WebP optimizado dentro de img/. Lo ejecuta la acción de GitHub «Publicar la web».
+
+Solo descarga lo que falta: las fotos de compañías y espectáculos salen de data/companias.json
+(campo imagen_wix) y se guardan en img/companias/<id>-400|800.webp e img/espectaculos/<compañía>--<espectáculo>-…
 
     pip install pillow && python3 scripts/imagenes.py
 """
 import io
+import json
 import pathlib
 import urllib.request
 
@@ -13,34 +17,8 @@ from PIL import Image, ImageOps
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 W = "https://static.wixstatic.com/media/0171ea_{}"
 
-COMPANIAS = {
-    "son-de-la-isla": "b3af8b3636e54c0c9562110150c5d587~mv2.jpg",
-    "pere-hosta": "0885e260d2f848a7aaa397ad7c41f456~mv2.jpg",
-    "trocos-lucos": "3cded60d29e543ffac8184285237c857~mv2.png",
-    "andrea-rodriguez-tropico": "f4ad17e7c2cf40fbad26a7a25d3a9f31~mv2.jpeg",
-    "risoterapia-islas-canarias": "90649a6c58af4a2f96b1301687be702a~mv2.jpg",
-    "giuseppe-salchichone": "4c7fca43fb84461087f9cbd829d51284~mv2.png",
-    "noelia-mederos": "7918fdecb1de4ace99756ee46d69b4d9~mv2.jpeg",
-    "circo-akroshcan": "6d73601d77814b749c2189c943bf31b0~mv2.jpeg",
-    "patri-viera": "6a1abc1fcf6f42bfa5604af88d47e396~mv2.jpeg",
-    "la-dixie-de-en-pie": "acf833d521984119a7e495be9e71370b~mv2.png",
-    "el-nino-de-la-hipoteca": "0aca7cb68f6d4da2a61b78eef9c37797~mv2.jpg",
-    "enkassette": "aef3709e06fd420cb942da3a4a62779f~mv2.jpg",
-    "joe-farnarier": "c8a6241e4afc45958e5d45e40c76b0dc~mv2.png",
-    "tadeo-campanotto": "718ab3e787494566850e5f6ac7ec738f~mv2.jpg",
-    "el-gordo-y-el-chapa": "f5d6dd51175a4b6b907b0e92bb277113~mv2.jpeg",
-    "jesus-soria": "10ee53a2e00948538da678ea4dccecc4~mv2.jpg",
-    "la-cote-folle": "00f7792a37cf4df2abe6dd99ad3282b5~mv2.jpg",
-    "collectif-bislacco": "7dc5d56645e744889c6d6d7999ede50a~mv2.jpg",
-    "grupo-puja": "8c944f60c23a4d4d8d784db8e4ace9cc~mv2.jpg",
-    "aseres": "77560c04597041a2a10f527061f2b7e5~mv2.jpg",
-    "perrakos-soundsystem": "c42c18c1d4f34b0ebf422b29e51a3388~mv2.jpg",
-    "tami-circo": "c6526b1fe4c74fb28e7bae05cfd16699~mv2.jpeg",
-    "toto-el-payaso": "5c7d06cd18b64c879c2390e4c259438e~mv2.jpeg",
-}
-
 # destino (sin sufijo), URL, anchos
-FOTOS = [("img/companias/" + k, W.format(v), [400, 800]) for k, v in COMPANIAS.items()] + [
+FOTOS = [
     ("img/fotos/puja-asteroide", W.format("acf49b51f5454ef9a2509f3c433d93b1~mv2.jpg"), [900, 1600, 2400]),
     ("img/fotos/festival", W.format("eeabc9d3a7fe4e77a7af9fbcb08ed3ba~mv2.jpg"), [500]),
     ("img/fotos/valla-2026", W.format("69ace100f20241a882dda2aa4cff72bc~mv2.jpg"), [840]),
@@ -90,8 +68,38 @@ def guardar(im, destino, calidad=80):
     print(f"  {destino}  {im.size[0]}x{im.size[1]}  {p.stat().st_size // 1024} KB")
 
 
+def desde_datos():
+    datos = RAIZ / "data/companias.json"
+    if not datos.exists():
+        return
+    pendientes = []
+    for c in json.loads(datos.read_text(encoding="utf-8")):
+        if c.get("imagen_wix"):
+            pendientes.append((f"img/companias/{c['id']}", c["imagen_wix"]))
+        for e in c.get("espectaculos", []):
+            if e.get("imagen_wix") and e["imagen_wix"] != c.get("imagen_wix"):
+                pendientes.append((f"img/espectaculos/{c['id']}--{e['id']}", e["imagen_wix"]))
+    for destino, wix in pendientes:
+        if (RAIZ / f"{destino}-400.webp").exists():
+            continue
+        print(destino)
+        try:
+            im = bajar(f"https://static.wixstatic.com/media/{wix}").convert("RGB")
+        except Exception as e:
+            print("  ERROR", e)
+            continue
+        for w in (400, 800):
+            c = im.copy()
+            if c.width > w:
+                c = c.resize((w, round(c.height * w / c.width)), Image.LANCZOS)
+            guardar(c, f"{destino}-{w}.webp")
+
+
 def main():
+    desde_datos()
     for destino, url, anchos in FOTOS:
+        if (RAIZ / f"{destino}-{anchos[0]}.webp").exists():
+            continue
         print(destino)
         try:
             im = bajar(url).convert("RGB")
@@ -104,6 +112,8 @@ def main():
                 c = c.resize((w, round(c.height * w / c.width)), Image.LANCZOS)
             guardar(c, f"{destino}-{w}.webp")
     for destino, url, alto in LOGOS:
+        if (RAIZ / destino).exists():
+            continue
         print(destino)
         try:
             im = bajar(url)
@@ -113,6 +123,8 @@ def main():
         if im.height > alto:
             im = im.resize((round(im.width * alto / im.height), alto), Image.LANCZOS)
         guardar(im, destino, calidad=90)
+    if (RAIZ / "img/og-en-pie-teror.jpg").exists() and (RAIZ / PDF[0]).exists():
+        return
     try:
         im = bajar(W.format("acf49b51f5454ef9a2509f3c433d93b1~mv2.jpg")).convert("RGB")
         ImageOps.fit(im, (1200, 630), Image.LANCZOS).save(RAIZ / "img/og-en-pie-teror.jpg", "JPEG", quality=84, optimize=True, progressive=True)
